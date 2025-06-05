@@ -121,11 +121,7 @@ async def on_ready():
     except Exception as e:
         print(f"Error sincronizando comandos slash: {e}")
 
-
-
-# ////////////////////////////////////////////
-
-
+# //////////////////////////////////////////
 
 @bot.command()
 async def menu(ctx):
@@ -134,8 +130,6 @@ async def menu(ctx):
     view = MenuView(ctx.author, embeds)
     message = await ctx.send(embed=embeds[0], view=view)
     view.message = message
-    
-    
     
 # ////////////////////////////////////////////
 
