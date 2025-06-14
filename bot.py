@@ -274,6 +274,445 @@ def get_primer_ciclo_embeds():
     return embeds
 
 
+def get_segundo_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+def get_tercer_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+def get_cuarto_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+
+def get_quinto_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+def get_sexto_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+def get_septimo_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+
+def get_octavo_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+
+def get_noveno_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+
+def get_cursos_electivos_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed7)
+
+    return embeds
+
+
+# ///////////////////////////////////////////////////////////////////////////////////
+
 def get_ayuda_embed():
 
     embed = discord.Embed(
@@ -508,44 +947,56 @@ async def help_slash(interaction: discord.Interaction):
 
 
 class NumeroMenuCiclo(discord.ui.View):
+    def __init__(self):
+        super().__init__()
 
-    opciones = despliegue_lista_ciclos()
+        opciones = despliegue_lista_ciclos()
 
-    @discord.ui.select(
-        placeholder="Selecciona un ciclo.",
-        min_values=1,
-        max_values=1,
-        options=opciones,
-    )
-    async def select_callback(self, interaction: discord.Interaction, select: discord.ui.Select):
+        self.select = discord.ui.Select(
+            placeholder="Selecciona un ciclo.",
+            min_values=1,
+            max_values=1,
+            options=opciones,
+        )
 
-        view1 = NumeroMenuPrimerCiclo(int(select.values[0]))  # Crea una instancia de la vista con el número seleccionado
+        self.select.callback = self.select_callback
+        self.add_item(self.select)
+
+
+    async def select_callback(self, interaction: discord.Interaction):
+        valor_seleccionado = int(self.select.values[0])  # obtiene el número del ciclo seleccionado
+        view1 = NumeroMenuPrimerCiclo(valor_seleccionado)  # crea una nueva vista
         embeds = get_ciclos_cursos_embeds()
-        await interaction.response.edit_message(view=view1, embed=embeds[int(select.values[0])-1])  # Edita el mensaje original con la información del ciclo seleccionado
+        await interaction.response.edit_message(
+            view=view1,
+            embed=embeds[valor_seleccionado - 1]
+        )
 
 
 class NumeroMenuPrimerCiclo(discord.ui.View):
 
-    ciclo_seleccionado = 0 
-
     def __init__(self, ciclo_seleccionado):
         super().__init__()
-        NumeroMenuPrimerCiclo.ciclo_seleccionado = ciclo_seleccionado-1  # Guarda el número del ciclo seleccionado
 
-    despliegue_lista_cursos = despliegue_lista_cursos()
+        opciones = despliegue_lista_cursos()[ciclo_seleccionado-1]
 
-    @discord.ui.select(
-        placeholder="Selecciona un curso.",
-        min_values=1,
-        max_values=1,
-        options=despliegue_lista_cursos[ciclo_seleccionado],  # Usa la lista de opciones definida arriba
-    )
-    async def select_callback(self, interaction: discord.Interaction, select: discord.ui.Select):
-        curso_elegido_num = int(select.values[0])-1  # Obtiene el índice del curso seleccionado
+        self.select = discord.ui.Select(
+            placeholder="Selecciona un curso.",
+            min_values=1,
+            max_values=1,
+            options=opciones,
+        )
+
+        self.select.callback = self.select_callback
+        self.add_item(self.select)
+
+
+    async def select_callback(self, interaction: discord.Interaction):
+        curso_elegido_num = int(self.select.values[0]) - 1
         embed = get_primer_ciclo_embeds()
         embed[curso_elegido_num].set_footer(text="Gracias por usar FIEE-BOT.")
-        embed[curso_elegido_num].set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
-        await interaction.response.edit_message(embed=embed[curso_elegido_num], view=None)  # Edita el mensaje original con la información del curso seleccionado
+        embed[curso_elegido_num].set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+        await interaction.response.edit_message(embed=embed[curso_elegido_num], view=None)
 
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
