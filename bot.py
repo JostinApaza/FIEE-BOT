@@ -16,6 +16,8 @@ prefix = "!"  # Define el prefijo que se usará para los comandos del bot
 bot = commands.Bot(command_prefix = prefix, intents=intents, help_command=None) # Define el prefijo de los comandos y las "intenciones" (permisos internos) del bot
 
 
+# ////////////////////////////////////////////////////////////////////////
+
 @bot.event
 async def on_ready():
     await bot.wait_until_ready()
@@ -23,11 +25,249 @@ async def on_ready():
     try:
         synced = await bot.tree.sync()
         print(f"Comandos slash sincronizados: {len(synced)}")
-    except Exception as e:
-        print(f"Error al sincronizar comandos: {e}")
+    except Exception as NombreDelError:
+        print(f"Error al sincronizar comandos: {NombreDelError}")
 
 
-async def mostrar_help(ctx_or_interaction):
+# ////////////////////////////////////////////////////////////////////////
+# /////////////////////                            ///////////////////////
+# /////////////////////       FUNCIONES DE         ///////////////////////
+# /////////////////////     EMBEDS (MENSAJES)      ///////////////////////
+# /////////////////////                            ///////////////////////
+# ////////////////////////////////////////////////////////////////////////
+
+
+def get_ciclos_cursos_embeds():
+    lista_ciclos = []
+
+    embed0 = discord.Embed(
+        title="Primer ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed0.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed0.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed0)
+
+
+    embed1 = discord.Embed(
+        title="Segundo ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed1.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed1.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed1)
+
+    embed2 = discord.Embed(
+        title="Tercer ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed2.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed2.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed2)
+
+
+    embed3 = discord.Embed(
+        title="Cuarto ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed3.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed3.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed3)
+
+    embed4 = discord.Embed(
+        title="Quinto ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed4.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed4.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed4)
+
+    embed5 = discord.Embed(
+        title="Sexto ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed5.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed5.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed5)
+    
+    embed6 = discord.Embed(
+        title="Séptimo ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed6.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed6.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed6)
+
+    embed7 = discord.Embed(
+        title="Octavo ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed7.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed7.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed7)
+
+    embed8 = discord.Embed(
+        title="Noveno ciclo",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed8.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed8.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed8)
+
+    embed9 = discord.Embed(
+        title="Cursos electivos",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el curso.\n
+            - **BFI01** - Física 1
+            - **BMA01** - Cálculo diferencial
+            - **BMA03** - Álgebra lineal
+            - **EE250** - Dibujo técnico
+            - **BIC01** - Introducción a la computación
+            - **BRN01** - Realidad Nac. Constitución y DD.HH
+            - **CBS01** - Fundamentos de programación
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed9.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed9.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    lista_ciclos.append(embed9)
+
+    return lista_ciclos
+
+
+def get_primer_ciclo_embeds():
+    embeds = []
+
+    embed1 = discord.Embed(title="📗 Física 1", description="Estos son los incisos disponibles.", color=discord.Color.dark_green())
+    embed1.add_field(name="▸ Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed1.add_field(name="▸ Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
+    embed1.add_field(name="▸ Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed1)
+
+    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="Aquí tienes la segunda página.", color=discord.Color.orange())
+    embed2.add_field(name="Info útil", value="Texto aleatorio de relleno", inline=False)
+    embed2.set_footer(text="Continúa navegando para ver más")
+    embeds.append(embed2)
+
+    embed3 = discord.Embed(title="📗 Álgebra lineal", description="Última página del menú.", color=discord.Color.green())
+    embed3.add_field(name="Resumen", value="Gracias por revisar este menú paginado.", inline=False)
+    embed3.set_image(url="https://via.placeholder.com/300x100.png?text=Imagen+de+ejemplo")
+    embeds.append(embed3)
+
+    embed4 = discord.Embed(title="📙 Dibujo técnico", description="Última página del menú.", color=discord.Color.green())
+    embed4.add_field(name="Resumen", value="Gracias por revisar este menú paginado.", inline=False)
+    embed4.set_image(url="https://via.placeholder.com/300x100.png?text=Imagen+de+ejemplo")
+    embeds.append(embed4)
+
+    embed5 = discord.Embed(title="📗 Introducción a la computación", description="Última página del menú.", color=discord.Color.green())
+    embed5.add_field(name="Resumen", value="Gracias por revisar este menú paginado.", inline=False)
+    embed5.set_image(url="https://via.placeholder.com/300x100.png?text=Imagen+de+ejemplo")
+    embeds.append(embed5)
+
+    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="Última página del menú.", color=discord.Color.green())
+    embed6.add_field(name="Resumen", value="Gracias por revisar este menú paginado.", inline=False)
+    embed6.set_image(url="https://via.placeholder.com/300x100.png?text=Imagen+de+ejemplo")
+    embeds.append(embed6)
+
+    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="Última página del menú.", color=discord.Color.green())
+    embed7.add_field(name="Resumen", value="Gracias por revisar este menú paginado.", inline=False)
+    embed7.set_image(url="https://via.placeholder.com/300x100.png?text=Imagen+de+ejemplo")
+    embeds.append(embed7)
+
+    return embeds
+
+
+def get_ayuda_embed():
 
     embed = discord.Embed(
         title="Lista de comandos de FIEE-BOT.",
@@ -47,14 +287,10 @@ async def mostrar_help(ctx_or_interaction):
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
 
-    if isinstance(ctx_or_interaction, commands.Context):
-        await ctx_or_interaction.send(embed=embed) # Responde al comando de texto con el embed
-    else:
-        await ctx_or_interaction.response.send_message(embed=embed, ephemeral=False)  # Responde al comando slash con el embed
+    return embed
 
 
-
-async def menu_main(ctx_or_interaction):
+def get_ciclos_embeds():
 
     embed = discord.Embed(
         title="Repositorio de FIEE-BOT.",
@@ -76,7 +312,157 @@ async def menu_main(ctx_or_interaction):
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
     
-    view = NumeroMenu()  # Crea una instancia de la clase NumeroMenu
+    return embed
+
+
+# ////////////////////////////////////////////////////////////////////////
+# /////////////////////                            ///////////////////////
+# /////////////////////       FUNCIONES DE         ///////////////////////
+# /////////////////////    LISTAS DESPLEGABLES     ///////////////////////
+# /////////////////////                            ///////////////////////
+# ////////////////////////////////////////////////////////////////////////
+
+def despliegue_lista_ciclos():
+
+    opciones = [discord.SelectOption(label=str(i), description=f"Opción número {i}", value=i) for i in range(1, 10)]
+    opciones.append(discord.SelectOption(label="Electivos", description="Opción para los cursos electivos", value=10))
+
+    return opciones
+
+
+def despliegue_lista_cursos():
+
+    lista_cursos = []
+
+    opciones0 = [
+        discord.SelectOption(label="Física 1", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones0)
+
+    opciones1 = [
+        discord.SelectOption(label="Fundamentos de Ing. térmica y de fluidos", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones1)
+
+    opciones2 = [
+        discord.SelectOption(label="Fundamentos de Electricidad y Magnetismo", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones2)
+
+    opciones3 = [
+        discord.SelectOption(label="Introducción a la física moderna", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones3)
+
+    opciones4 = [
+        discord.SelectOption(label="Insertar opciones de quinto ciclo", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones4)
+
+    opciones5 = [
+        discord.SelectOption(label="Insertar opciones de sexto ciclo", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones5)
+
+    opciones6 = [
+        discord.SelectOption(label="Insertar opciones de séptimo ciclo", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones6)
+
+    opciones7 = [
+        discord.SelectOption(label="Insertar opciones de octavo ciclo", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones7)
+
+    opciones8 = [
+        discord.SelectOption(label="Insertar opciones de noveno ciclo", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones8)
+
+    opciones9 = [
+        discord.SelectOption(label="Insertar opciones de cursos electivos", value=1),
+        discord.SelectOption(label="Cálculo diferencial", value=2),
+        discord.SelectOption(label="Álgebra lineal", value=3),
+        discord.SelectOption(label="Dibujo técnico", value=4),
+        discord.SelectOption(label="Introducción a la computación", value=5),
+        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
+        discord.SelectOption(label="Fundamentos de programación", value=7),
+    ]
+    lista_cursos.append(opciones9)
+
+    return lista_cursos
+
+# ///////////////////////////////////////////////////////////////////////////////////////////
+
+async def mostrar_help(ctx_or_interaction):
+
+    embed = get_ayuda_embed()
+
+    if isinstance(ctx_or_interaction, commands.Context):
+        await ctx_or_interaction.send(embed=embed) # Responde al comando de texto con el embed
+    else:
+        await ctx_or_interaction.response.send_message(embed=embed, ephemeral=False)  # Responde al comando slash con el embed
+
+
+async def menu_main(ctx_or_interaction):
+
+    view = NumeroMenuCiclo()  # Crea una instancia de la clase NumeroMenuCiclo
+
+    embed = get_ciclos_embeds()
 
     if isinstance(ctx_or_interaction, commands.Context):
         await ctx_or_interaction.send(view=view, embed=embed) # Responde al comando de texto con el embed
@@ -84,65 +470,29 @@ async def menu_main(ctx_or_interaction):
         await ctx_or_interaction.response.send_message(view=view, embed=embed, ephemeral=False)  # Responde al comando slash con el embed
 
 
-# Comando de texto para mostrar ayuda
 @bot.command(name="help")
 async def help_text(ctx):
     await mostrar_help(ctx)
 
-# Comando slash para mostrar ayuda
 @bot.tree.command(name="help", description="Muestra la lista de comandos disponibles.")
 async def help_slash(interaction: discord.Interaction):
     await mostrar_help(interaction)
 
-
-# Comando de texto para mostrar el menú principal
-
-# Comando de texto para mostrar menú
-@bot.command(name="menu3")
+@bot.command(name="menu")
 async def help_text(ctx):
     await menu_main(ctx)
 
-# Comando slash para mostrar menú
-@bot.tree.command(name="menu3", description="Muestra el menú principal de FIEE-BOT.")
+@bot.tree.command(name="menu", description="Muestra el menú principal de FIEE-BOT.")
 async def help_slash(interaction: discord.Interaction):
     await menu_main(interaction)
 
 
+# //////////////////////////////////////////////////////////////////////////////////////////////
 
 
+class NumeroMenuCiclo(discord.ui.View):
 
-
-
-
-
-# ///////////////////////////////////////////////////////////////////////////////////////////
-
-
-def get_embeds():
-    embeds = []
-
-    embed1 = discord.Embed(title="📘 Página 1", description="Esta es la primera página del menú.", color=discord.Color.blue())
-    embed1.add_field(name="Dato A", value="Contenido de prueba A", inline=False)
-    embed1.add_field(name="Dato B", value="Contenido de prueba B", inline=False)
-    embeds.append(embed1)
-
-    embed2 = discord.Embed(title="📙 Página 2", description="Aquí tienes la segunda página.", color=discord.Color.orange())
-    embed2.add_field(name="Info útil", value="Texto aleatorio de relleno", inline=False)
-    embed2.set_footer(text="Continúa navegando para ver más")
-    embeds.append(embed2)
-
-    embed3 = discord.Embed(title="📗 Página 3", description="Última página del menú.", color=discord.Color.green())
-    embed3.add_field(name="Resumen", value="Gracias por revisar este menú paginado.", inline=False)
-    embed3.set_image(url="https://via.placeholder.com/300x100.png?text=Imagen+de+ejemplo")
-    embeds.append(embed3)
-
-    return embeds
-
-
-class NumeroMenu(discord.ui.View):
-
-    opciones = [discord.SelectOption(label=str(i), description=f"Opción número {i}") for i in range(1, 10)]
-    opciones.append(discord.SelectOption(label="Electivos", description="Opción para los cursos electivos"))
+    opciones = despliegue_lista_ciclos()
 
     @discord.ui.select(
         placeholder="Selecciona un ciclo.",
@@ -151,110 +501,36 @@ class NumeroMenu(discord.ui.View):
         options=opciones,
     )
     async def select_callback(self, interaction: discord.Interaction, select: discord.ui.Select):
-        numero_elegido = select.values[0]
-        await interaction.response.send_message(f"Elegiste el ciclo {numero_elegido}", ephemeral=True)
+
+        view1 = NumeroMenuPrimerCiclo(int(select.values[0]))  # Crea una instancia de la vista con el número seleccionado
+        embeds = get_ciclos_cursos_embeds()
+        await interaction.response.edit_message(view=view1, embed=embeds[int(select.values[0])-1])  # Edita el mensaje original con la información del ciclo seleccionado
 
 
+class NumeroMenuPrimerCiclo(discord.ui.View):
 
-class MenuView(discord.ui.View):
-    def __init__(self, author, embeds, timeout=60):
-        super().__init__(timeout=timeout)
-        self.author = author
-        self.embeds = embeds
-        self.page = 0
-        self.message = None
+    ciclo_seleccionado = 0 
 
-    async def update_message(self):
-        await self.message.edit(embed=self.embeds[self.page], view=self)
+    def __init__(self, ciclo_seleccionado):
+        super().__init__()
+        NumeroMenuPrimerCiclo.ciclo_seleccionado = ciclo_seleccionado-1  # Guarda el número del ciclo seleccionado
 
-    def not_author(self, interaction):
-        return interaction.user != self.author
+    despliegue_lista_cursos = despliegue_lista_cursos()
 
-    @discord.ui.button(label="⏮️", style=discord.ButtonStyle.secondary)
-    async def first(self, interaction: discord.Interaction, button: discord.ui.Button):
-        if self.not_author(interaction):
-            return await interaction.response.send_message("❌ Solo el autor puede usar los botones.", ephemeral=True)
-        self.page = 0
-        await interaction.response.defer()
-        await self.update_message()
-
-    @discord.ui.button(label="⬅️", style=discord.ButtonStyle.primary)
-    async def previous(self, interaction: discord.Interaction, button: discord.ui.Button):
-        if self.not_author(interaction):
-            return await interaction.response.send_message("❌ Solo el autor puede usar los botones.", ephemeral=True)
-        self.page = max(0, self.page - 1)
-        await interaction.response.defer()
-        await self.update_message()
-
-    @discord.ui.button(label="➡️", style=discord.ButtonStyle.primary)
-    async def next(self, interaction: discord.Interaction, button: discord.ui.Button):
-        if self.not_author(interaction):
-            return await interaction.response.send_message("❌ Solo el autor puede usar los botones.", ephemeral=True)
-        self.page = min(len(self.embeds) - 1, self.page + 1)
-        await interaction.response.defer()
-        await self.update_message()
-
-    @discord.ui.button(label="⏭️", style=discord.ButtonStyle.secondary)
-    async def last(self, interaction: discord.Interaction, button: discord.ui.Button):
-        if self.not_author(interaction):
-            return await interaction.response.send_message("❌ Solo el autor puede usar los botones.", ephemeral=True)
-        self.page = len(self.embeds) - 1
-        await interaction.response.defer()
-        await self.update_message()
-
-# Registro del comando slash
-@bot.tree.command(name="menu", description="Muestra un menú con embeds y botones de navegación.")
-async def menu(interaction: discord.Interaction):
-    embeds = get_embeds()
-    view = MenuView(interaction.user, embeds)
-    message = await interaction.response.send_message(embed=embeds[0], view=view, ephemeral=False)
-    # interaction.response.send_message devuelve None, no el mensaje, así que necesitamos obtener el mensaje
-    # Por eso, usamos followup
-    # Esperamos para poder obtener el mensaje
-    sent_message = await interaction.original_response()
-    view.message = sent_message
-
-
-
-# ////////////////////////////////////////////
-
-
-
-@bot.command()
-async def menu(ctx):
-    # Muestra un menú con embeds y botones de navegación
-    embeds = get_embeds()
-    view = MenuView(ctx.author, embeds)
-    message = await ctx.send(embed=embeds[0], view=view)
-    view.message = message
-    
-    
-
-@bot.command()
-async def menu2(ctx):
-    
-    view = NumeroMenu()
-    await ctx.send("Selecciona un número del menú desplegable:", view=view)
-
-
-
-
-# ////////////////////////////////////////////
-
-@bot.command()
-async def imagen(ctx):
-    embed = discord.Embed(
-        title="Imagen grande",
-        description="Aquí tienes una imagen grande incrustada.",
-        color=discord.Color.blue()
+    @discord.ui.select(
+        placeholder="Selecciona un curso.",
+        min_values=1,
+        max_values=1,
+        options=despliegue_lista_cursos[ciclo_seleccionado],  # Usa la lista de opciones definida arriba
     )
+    async def select_callback(self, interaction: discord.Interaction, select: discord.ui.Select):
+        curso_elegido_num = int(select.values[0])-1  # Obtiene el índice del curso seleccionado
+        embed = get_primer_ciclo_embeds()
+        embed[curso_elegido_num].set_footer(text="Gracias por usar FIEE-BOT.")
+        embed[curso_elegido_num].set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+        await interaction.response.edit_message(embed=embed[curso_elegido_num], view=None)  # Edita el mensaje original con la información del curso seleccionado
 
-    # Imagen principal grande
-    embed.set_image(url="https://fondosmil.co/fondo/17031.jpg")
 
-    # (Opcional) miniatura pequeña
-    # embed.set_thumbnail(url="https://example.com/miniatura.jpg")
-
-    await ctx.send(embed=embed)
+# ///////////////////////////////////////////////////////////////////////////////////////////
 
 bot.run("MTM3OTg5MDYyMjQ1Nzk3NDc5NA.G6HXNR.ig6eSs1pb0nKKCaxDoAN46UES8-xrIhF-MxNNA")
