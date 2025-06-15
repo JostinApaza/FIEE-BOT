@@ -82,7 +82,7 @@ def get_ciclos_cursos_embeds():
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
             - **BFI03** - Fundamentos de electricidad y magnetismo
             - **BMA05** - Ecuaciones diferenciales
-            - **BMA10** - Probabilidad y estadística
+            - **BMA10** - Probabilidades y estadística
             - **BMA15** - Programación orientada a objetos
             - **BEG01** - Economía general
             - **CBN02** - Redes de datos II
