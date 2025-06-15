@@ -1,6 +1,5 @@
 import discord # Importa el módulo principal "discord" de la librería discord.py
 from discord.ext import commands # Importa el submódulo "commands" desde el submódulo de extensiones discord.ext, que facilita crear comandos para el bot
-from discord import app_commands # Importa el submódulo "app_commands" para manejar comandos slash
 import textwrap
 
 intents = discord.Intents.default() # Crea un objeto de la clase discord.Intents con la configuración por defecto
@@ -14,7 +13,6 @@ intents.guilds = False            # Ver información del servidor
 prefix = "!"  # Define el prefijo que se usará para los comandos del bot
 
 bot = commands.Bot(command_prefix = prefix, intents=intents, help_command=None) # Define el prefijo de los comandos y las "intenciones" (permisos internos) del bot
-
 
 # ////////////////////////////////////////////////////////////////////////
 
@@ -63,13 +61,14 @@ def get_ciclos_cursos_embeds():
         title="Segundo ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - **BFI05** - Fund. de Ing. térmica y de fluidos
+            - **BMA02** - Cálculo integral
+            - **BMA09** - Algoritmos y estructuras de datos I
+            - **BQU01** - Química I
+            - **EE152** - Fund. de ingeniería del computador
+            - **BRC01** - Redacción y comunicación
+            - **CBN01** - Redes de datos I
+            - **CBS02** - Sistemas operativos I
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -81,13 +80,12 @@ def get_ciclos_cursos_embeds():
         title="Tercer ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - **BFI03** - Fundamentos de electricidad y magnetismo
+            - **BMA05** - Ecuaciones diferenciales
+            - **BMA10** - Probabilidad y estadística
+            - **BMA15** - Programación orientada a objetos
+            - **BEG01** - Economía general
+            - **CBN02** - Redes de datos II
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -100,13 +98,14 @@ def get_ciclos_cursos_embeds():
         title="Cuarto ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - **BFI06** - Introducción a la física moderna
+            - **EE410** - Análisis de señales y sistemas
+            - **BMA07** - Cálculo vectorial
+            - **BMA18** - Métodos numéricos
+            - **EE320** - Circuitos eléctricos I
+            - **EE306** - Electrotecnia e instalación de redes
+            - **BEF01** - Ética y filosofía política
+            - **CBS03** - Sistemas operativos II
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -118,13 +117,13 @@ def get_ciclos_cursos_embeds():
         title="Quinto ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - **BFM16** - Mecánica de fluidos y termodinámica
+            - **BMA22** - Procesos estocásticos
+            - **EE418** - Dispositivos y circuitos electrónicos I
+            - **EE420** - Circuitos eléctricos II
+            - **EE428** - Laboratorio de electrónica
+            - **EE522** - Electromagnetismo I
+            - **EE647** - Sistemas de control I
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -136,13 +135,13 @@ def get_ciclos_cursos_embeds():
         title="Sexto ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - **EE430** - Sistemas de comunicaciones I
+            - **EE438** - Dispositivos y circuitos electrónicos II
+            - **EE458** - Laboratorio de electrónica
+            - **EE588** - Electromagnetismo II
+            - **EE604** - Microcontroladores
+            - **EE648** - Sistemas de control II
+            - **CODE1** - blank text
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -154,13 +153,13 @@ def get_ciclos_cursos_embeds():
         title="Séptimo ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - **EE467** - Protocolos de enrutamiento y arquitectura de redes
+            - **EE528** - Conversión de energía electromecánica
+            - **EE530** - Sistemas de comunicaciones II
+            - **EE590** - Fibra óptica
+            - **CODE2** - blank
+            - **CODE3** - blank
+            - **CODE4** - blank
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -172,13 +171,13 @@ def get_ciclos_cursos_embeds():
         title="Octavo ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - **BEG06** - Formulación y evaluación de proyectos
+            - **EE498** - Laboratorio de radiocomunicaciones
+            - **EE592** - Microondas
+            - **CODE5** - blank
+            - **CODE6** - blank
+            - **CODE7** - blank
+            - **CODE8** - blank
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -190,13 +189,8 @@ def get_ciclos_cursos_embeds():
         title="Noveno ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - **EE708** - Sistemas de conmutación
+            - **CODE9** - Gestión y seguridad de redes
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -803,100 +797,106 @@ def despliegue_lista_cursos():
 
     opciones1 = [
         discord.SelectOption(label="Fundamentos de Ing. térmica y de fluidos", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Cálculo integral", value=2),
+        discord.SelectOption(label="Química", value=3),
+        discord.SelectOption(label="Algoritmos y estructuras de datos I", value=4),
+        discord.SelectOption(label="Fund. de ingeniería del computador", value=5),
+        discord.SelectOption(label="Redacción y comunicación", value=6),
+        discord.SelectOption(label="Redes de datos I", value=7),
+        discord.SelectOption(label="Sistemas operativos I", value=8),
     ]
     lista_cursos.append(opciones1)
 
     opciones2 = [
         discord.SelectOption(label="Fundamentos de Electricidad y Magnetismo", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Ecuaciones diferenciales", value=2),
+        discord.SelectOption(label="Probabilidades y estadística", value=3),
+        discord.SelectOption(label="Programación orientada a objetos", value=4),
+        discord.SelectOption(label="Economía general", value=5),
+        discord.SelectOption(label="Redes de datos II", value=6),
     ]
     lista_cursos.append(opciones2)
 
     opciones3 = [
         discord.SelectOption(label="Introducción a la física moderna", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Análisis de señales y sistemas", value=2),
+        discord.SelectOption(label="Cálculo vectorial", value=3),
+        discord.SelectOption(label="Métodos numéricos", value=4),
+        discord.SelectOption(label="Circuitos eléctricos I", value=5),
+        discord.SelectOption(label="Electrotecnia e instalación de redes", value=6),
+        discord.SelectOption(label="Ética y filosofía", value=7),
+        discord.SelectOption(label="Sistemas operativos II", value=8),
     ]
     lista_cursos.append(opciones3)
 
     opciones4 = [
-        discord.SelectOption(label="Insertar opciones de quinto ciclo", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Mecánica de fluidos y termodinámica", value=1),
+        discord.SelectOption(label="Procesos estocásticos", value=2),
+        discord.SelectOption(label="Dispositivos y circuitos electrónicos I", value=3),
+        discord.SelectOption(label="Circuitos eléctricos II", value=4),
+        discord.SelectOption(label="Laboratorio de electrónica I", value=5),
+        discord.SelectOption(label="Electromagnetismo I", value=6),
+        discord.SelectOption(label="Sistemas de control I", value=7),
     ]
     lista_cursos.append(opciones4)
 
     opciones5 = [
-        discord.SelectOption(label="Insertar opciones de sexto ciclo", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Sistemas de comunicaciones I", value=1),
+        discord.SelectOption(label="Dispositivos y circuitos electrónicos II", value=2),
+        discord.SelectOption(label="Laboratorio de electrónica II", value=3),
+        discord.SelectOption(label="Electromagnetismo II", value=4),
+        discord.SelectOption(label="Microcontroladores", value=5),
+        discord.SelectOption(label="Sistemas de control II", value=6),
+        discord.SelectOption(label="-", value=7),
     ]
     lista_cursos.append(opciones5)
 
     opciones6 = [
-        discord.SelectOption(label="Insertar opciones de séptimo ciclo", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Protocolos", value=1),
+        discord.SelectOption(label="Conversión de energía electromecánica", value=2),
+        discord.SelectOption(label="Sistemas de comunicaciones II", value=3),
+        discord.SelectOption(label="Fibra óptica", value=4),
+        discord.SelectOption(label="-", value=5),
+        discord.SelectOption(label="-", value=6),
+        discord.SelectOption(label="-", value=7),
     ]
     lista_cursos.append(opciones6)
 
     opciones7 = [
-        discord.SelectOption(label="Insertar opciones de octavo ciclo", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Formulación y evaluación de proyectos", value=1),
+        discord.SelectOption(label="Laboratorio de radiocomunicaciones", value=2),
+        discord.SelectOption(label="Microondas", value=3),
+        discord.SelectOption(label="-", value=4),
+        discord.SelectOption(label="-", value=5),
+        discord.SelectOption(label="-", value=6),
+        discord.SelectOption(label="-", value=7),
     ]
     lista_cursos.append(opciones7)
 
     opciones8 = [
-        discord.SelectOption(label="Insertar opciones de noveno ciclo", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Sistemas de conmutación", value=1),
+        discord.SelectOption(label="Gestión y seguridad de redes", value=2),
+        discord.SelectOption(label="-", value=3),
+        discord.SelectOption(label="-", value=4),
+        discord.SelectOption(label="-", value=5),
+        discord.SelectOption(label="-", value=6),
+        discord.SelectOption(label="-", value=7),
     ]
     lista_cursos.append(opciones8)
 
     opciones9 = [
-        discord.SelectOption(label="Insertar opciones de cursos electivos", value=1),
-        discord.SelectOption(label="Cálculo diferencial", value=2),
-        discord.SelectOption(label="Álgebra lineal", value=3),
-        discord.SelectOption(label="Dibujo técnico", value=4),
-        discord.SelectOption(label="Introducción a la computación", value=5),
-        discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Algoritmos y estructuras de datos II", value=1),
+        discord.SelectOption(label="Ingeniería de software", value=2),
+        discord.SelectOption(label="Aprendizaje de máquina y minería de datos", value=3),
+        discord.SelectOption(label="Introducción a la ingeniería biomédica", value=4),
+        discord.SelectOption(label="Electrónica de radiocomunicaciones", value=5),
+        discord.SelectOption(label="Redes inalámbricas y móviles", value=6),
+        discord.SelectOption(label="Sistema de radiocomunicaciones", value=7),
+        discord.SelectOption(label="Antenas", value=8),
+        discord.SelectOption(label="Redes de automatización", value=9),
+        discord.SelectOption(label="Ingeniería de audio y video", value=10),
+        discord.SelectOption(label="Inglés profesional", value=11),
+        discord.SelectOption(label="-", value=12),
     ]
     lista_cursos.append(opciones9)
 
