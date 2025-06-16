@@ -267,44 +267,44 @@ def get_primer_ciclo_embeds():
 def get_segundo_ciclo_embeds():
     embeds = []
 
-    embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
+    embed1 = discord.Embed(title="📗 Fundamentos de Ing. térmica y de fluidos", description="", color=discord.Color.dark_green())
     embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
     embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
     embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📙 Cálculo diferencial", description="", color=discord.Color.orange())
+    embed2 = discord.Embed(title="📙 Cálculo integral", description="", color=discord.Color.orange())
     embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
     embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📗 Álgebra lineal", description="", color=discord.Color.green())
+    embed3 = discord.Embed(title="📗 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
     embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
     embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📙 Dibujo técnico", description="", color=discord.Color.green())
+    embed4 = discord.Embed(title="📙 Química I", description="", color=discord.Color.green())
     embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
     embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📗 Introducción a la computación", description="", color=discord.Color.green())
+    embed5 = discord.Embed(title="📗 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
     embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
     embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📙 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
+    embed6 = discord.Embed(title="📙 Redacción y comunicación", description="", color=discord.Color.green())
     embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
     embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📗 Fundamentos de programación", description="", color=discord.Color.green())
+    embed7 = discord.Embed(title="📗 Redes de datos I", description="", color=discord.Color.green())
     embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
     embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
@@ -733,8 +733,8 @@ def get_fisica_1_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_fisica_1_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de Física 1",
@@ -789,8 +789,8 @@ def get_calc_diferencial_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_calc_diferencial_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de cálculo diferencial:",
@@ -801,6 +801,7 @@ def get_calc_diferencial_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
+            - PC 5
             - Examen Parcial
             - Examen Final
             - Examen sustitutorio
@@ -843,8 +844,8 @@ def get_algebra_lineal_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_algebra_lineal_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de algebra_lineal:",
@@ -855,6 +856,7 @@ def get_algebra_lineal_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
+            - PC 5
             - Examen Parcial
             - Examen Final
             - Examen sustitutorio
@@ -897,8 +899,8 @@ def get_dibujo_tecnico_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_dibujo_tecnico_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de dibujo_tecnico:",
@@ -909,9 +911,7 @@ def get_dibujo_tecnico_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
-            - Examen Parcial
-            - Examen Final
-            - Examen sustitutorio
+            - PC 5
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -952,8 +952,8 @@ def get_intro_computacion_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_intro_computacion_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de intro_computacion:",
@@ -964,6 +964,7 @@ def get_intro_computacion_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
+            - PC 5
             - Examen Parcial
             - Examen Final
             - Examen sustitutorio
@@ -1007,8 +1008,8 @@ def get_realidad_nacional_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_realidad_nacional_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de realidad_nacional:",
@@ -1019,9 +1020,7 @@ def get_realidad_nacional_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
-            - Examen Parcial
-            - Examen Final
-            - Examen sustitutorio
+            - PC 5
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1061,8 +1060,8 @@ def get_fundamentos_programacion_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_fundamentos_programacion_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de fundamentos_programacion:",
@@ -1073,9 +1072,6 @@ def get_fundamentos_programacion_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
-            - Examen Parcial
-            - Examen Final
-            - Examen sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1116,8 +1112,8 @@ def get_fisica_2_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_fisica_2_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de fisica_2:",
@@ -1172,8 +1168,8 @@ def get_calculo_integral_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_calculo_integral_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de calculo_integral:",
@@ -1227,8 +1223,8 @@ def get_algoritmos_1_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_algoritmos_1_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de algoritmos_1:",
@@ -1282,8 +1278,8 @@ def get_quimica_1_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_quimica_1_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de quimica_1:",
@@ -1337,8 +1333,8 @@ def get_fundamentos_computador_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_fundamentos_computador_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de fundamentos_computador:",
@@ -1391,8 +1387,8 @@ def get_redaccion_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_redaccion_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de redaccion:",
@@ -1445,8 +1441,8 @@ def get_redes_1_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_redes_1_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de redes_1:",
@@ -1499,8 +1495,8 @@ def get_operativos_1_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_operativos_1_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de operativos_1:",
@@ -1553,8 +1549,8 @@ def get_fundamentos_electricidad_magnetismo_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_fundamentos_electricidad_magnetismo_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de fundamentos_electricidad_magnetismo:",
@@ -1608,8 +1604,8 @@ def get_ecuaciones_diferenciales_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_ecuaciones_diferenciales_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de ecuaciones_diferenciales:",
@@ -1663,8 +1659,8 @@ def get_poo_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_poo_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de poo:",
@@ -1717,8 +1713,8 @@ def get_economia_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_economia_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de economia:",
@@ -1771,8 +1767,8 @@ def get_probabilidades_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_probabilidades_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de probabilidades:",
@@ -1826,8 +1822,8 @@ def get_redes_2_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_redes_2_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de redes_2:",
@@ -1880,8 +1876,8 @@ def get_intro_moderna_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_intro_moderna_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de intro_moderna:",
@@ -1935,8 +1931,8 @@ def get_circuitos_1_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_circuitos_1_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de circuitos_1:",
@@ -1989,8 +1985,8 @@ def get_calc_vectorial_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_calc_vectorial_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de calc_vectorial:",
@@ -2044,8 +2040,8 @@ def get_analisis_senales_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_analisis_senales_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de analisis_senales:",
@@ -2099,8 +2095,8 @@ def get_operativos_2_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_operativos_2_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de operativos_2:",
@@ -2153,8 +2149,8 @@ def get_electrotecnia_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_electrotecnia_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de electrotecnia:",
@@ -2207,8 +2203,8 @@ def get_metodos_numericos_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_metodos_numericos_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de metodos_numericos:",
@@ -2261,8 +2257,8 @@ def get_etica_filosofia_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_etica_filosofia_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de etica_filosofia:",
@@ -2315,8 +2311,8 @@ def get_procesos_estocasticos_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_procesos_estocasticos_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de procesos_estocasticos:",
@@ -2370,8 +2366,8 @@ def get_example_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-
 def get_example_examenes_embed():
+
 
     embed = discord.Embed(
         title="Practicas y exámenes de example:",
@@ -2417,8 +2413,8 @@ def opciones_fisica_1_embeds():
     embeds = []
 
     embeds.append(get_fisica_1_laboratorios_embed())  # [0]
-    embeds.append(get_fisica_1_clases_embed())        # [1]
     embeds.append(get_fisica_1_examenes_embed())      # [2]
+    embeds.append(get_fisica_1_clases_embed())        # [1]
     embeds.append(get_fisica_1_cuadernos_embed())     # [3]
 
     return embeds
@@ -2428,8 +2424,8 @@ def opciones_calc_diferencial_embeds():
     embeds = []
 
     embeds.append("get_calc_diferencial_laboratorios_embed()")  # [0]
-    embeds.append(get_calc_diferencial_clases_embed())  # [1]
     embeds.append(get_calc_diferencial_examenes_embed())  # [2]
+    embeds.append(get_calc_diferencial_clases_embed())  # [1]
     embeds.append(get_calc_diferencial_cuadernos_embed())  # [3]
 
     return embeds
@@ -2438,8 +2434,8 @@ def opciones_algebra_lineal_embeds():
     embeds = []
 
     embeds.append("get_algebra_lineal_laboratorios_embed()")  # [0]
-    embeds.append(get_algebra_lineal_clases_embed())        # [1]
     embeds.append(get_algebra_lineal_examenes_embed())      # [2]
+    embeds.append(get_algebra_lineal_clases_embed())        # [1]
     embeds.append(get_algebra_lineal_cuadernos_embed())     # [3]
 
     return embeds
@@ -2448,8 +2444,8 @@ def opciones_dibujo_tecnico_embeds():
     embeds = []
 
     embeds.append("get_dibujo_tecnico_laboratorios_embed()")  # [0]
-    embeds.append(get_dibujo_tecnico_clases_embed())        # [1]
     embeds.append(get_dibujo_tecnico_examenes_embed())      # [2]
+    embeds.append(get_dibujo_tecnico_clases_embed())        # [1]
     embeds.append(get_dibujo_tecnico_cuadernos_embed())     # [3]
 
     return embeds
@@ -2458,8 +2454,8 @@ def opciones_intro_computacion_embeds():
     embeds = []
 
     embeds.append("get_intro_computacion_laboratorios_embed()")  # [0]
-    embeds.append(get_intro_computacion_clases_embed())        # [1]
     embeds.append(get_intro_computacion_examenes_embed())      # [2]
+    embeds.append(get_intro_computacion_clases_embed())        # [1]
     embeds.append(get_intro_computacion_cuadernos_embed())     # [3]
 
     return embeds
@@ -2468,8 +2464,8 @@ def opciones_realidad_nacional_embeds():
     embeds = []
 
     embeds.append("get_realidad_nacional_laboratorios_embed()")  # [0]
-    embeds.append(get_realidad_nacional_clases_embed())        # [1]
     embeds.append(get_realidad_nacional_examenes_embed())      # [2]
+    embeds.append(get_realidad_nacional_clases_embed())        # [1]
     embeds.append(get_realidad_nacional_cuadernos_embed())     # [3]
 
     return embeds
@@ -2478,8 +2474,8 @@ def opciones_fundamentos_programacion_embeds():
     embeds = []
 
     embeds.append("get_fundamentos_programacion_laboratorios_embed()")  # [0]
-    embeds.append(get_fundamentos_programacion_clases_embed())        # [1]
     embeds.append(get_fundamentos_programacion_examenes_embed())      # [2]
+    embeds.append(get_fundamentos_programacion_clases_embed())        # [1]
     embeds.append(get_fundamentos_programacion_cuadernos_embed())     # [3]
 
     return embeds
@@ -2491,8 +2487,8 @@ def opciones_fisica_2_embeds():
     embeds = []
 
     embeds.append("get_fisica_2_laboratorios_embed()")  # [0]
-    embeds.append(get_fisica_2_clases_embed())        # [1]
     embeds.append(get_fisica_2_examenes_embed())      # [2]
+    embeds.append(get_fisica_2_clases_embed())        # [1]
     embeds.append(get_fisica_2_cuadernos_embed())     # [3]
 
     return embeds
@@ -2501,8 +2497,8 @@ def opciones_calculo_integral_embeds():
     embeds = []
 
     embeds.append("get_calculo_integral_laboratorios_embed()")  # [0]
-    embeds.append(get_calculo_integral_clases_embed())        # [1]
     embeds.append(get_calculo_integral_examenes_embed())      # [2]
+    embeds.append(get_calculo_integral_clases_embed())        # [1]
     embeds.append(get_calculo_integral_cuadernos_embed())     # [3]
 
     return embeds
@@ -2511,8 +2507,8 @@ def opciones_algoritmos_1_embeds():
     embeds = []
 
     embeds.append("get_algoritmos_1_laboratorios_embed()")  # [0]
-    embeds.append(get_algoritmos_1_clases_embed())        # [1]
     embeds.append(get_algoritmos_1_examenes_embed())      # [2]
+    embeds.append(get_algoritmos_1_clases_embed())        # [1]
     embeds.append(get_algoritmos_1_cuadernos_embed())     # [3]
 
     return embeds
@@ -2521,8 +2517,8 @@ def opciones_fundamentos_computador_embeds():
     embeds = []
 
     embeds.append("get_fundamentos_computador_laboratorios_embed()")  # [0]
-    embeds.append(get_fundamentos_computador_clases_embed())        # [1]
     embeds.append(get_fundamentos_computador_examenes_embed())      # [2]
+    embeds.append(get_fundamentos_computador_clases_embed())        # [1]
     embeds.append(get_fundamentos_computador_cuadernos_embed())     # [3]
 
     return embeds
@@ -2531,18 +2527,17 @@ def opciones_quimica_1_embeds():
     embeds = []
 
     embeds.append("get_quimica_1_laboratorios_embed()")  # [0]
-    embeds.append(get_quimica_1_clases_embed())        # [1]
     embeds.append(get_quimica_1_examenes_embed())      # [2]
+    embeds.append(get_quimica_1_clases_embed())        # [1]
     embeds.append(get_quimica_1_cuadernos_embed())     # [3]
-
     return embeds
 
 def opciones_redes_1_embeds():
     embeds = []
 
     embeds.append("get_redes_1_laboratorios_embed()")  # [0]
-    embeds.append(get_redes_1_clases_embed())        # [1]
     embeds.append(get_redes_1_examenes_embed())      # [2]
+    embeds.append(get_redes_1_clases_embed())        # [1]
     embeds.append(get_redes_1_cuadernos_embed())     # [3]
 
     return embeds
@@ -2551,8 +2546,8 @@ def opciones_redaccion_embeds():
     embeds = []
 
     embeds.append("get_redaccion_laboratorios_embed()")  # [0]
-    embeds.append(get_redaccion_clases_embed())        # [1]
     embeds.append(get_redaccion_examenes_embed())      # [2]
+    embeds.append(get_redaccion_clases_embed())        # [1]
     embeds.append(get_redaccion_cuadernos_embed())     # [3]
 
     return embeds
@@ -2564,8 +2559,8 @@ def opciones_fundamentos_electricidad_magnetismo_embeds():
     embeds = []
 
     embeds.append("get_fundamentos_electricidad_magnetismo_laboratorios_embed()")  # [0]
-    embeds.append(get_fundamentos_electricidad_magnetismo_clases_embed())        # [1]
     embeds.append(get_fundamentos_electricidad_magnetismo_examenes_embed())      # [2]
+    embeds.append(get_fundamentos_electricidad_magnetismo_clases_embed())        # [1]
     embeds.append(get_fundamentos_electricidad_magnetismo_cuadernos_embed())     # [3]
 
     return embeds
@@ -2717,7 +2712,7 @@ def despliegue_lista_opciones_LAB():
     opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
     opciones.append(discord.SelectOption(label="Clases", value=3))
-    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
 
@@ -2728,7 +2723,7 @@ def despliegue_lista_opciones_LAB_NO_CUADERNO():
     opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
     opciones.append(discord.SelectOption(label="Clases", value=3))
-    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
 
@@ -2739,7 +2734,7 @@ def despliegue_lista_opciones_NO_LAB():
     # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
     opciones.append(discord.SelectOption(label="Clases", value=3))
-    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
 
@@ -2750,7 +2745,7 @@ def despliegue_lista_opciones_NO_LAB_NO_PC():
     # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     # opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
     opciones.append(discord.SelectOption(label="Clases", value=3))
-    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
 
@@ -2761,7 +2756,7 @@ def despliegue_lista_opciones_NO_LAB_NO_PC_NO_CUADERNO():
     # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     # opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
     opciones.append(discord.SelectOption(label="Clases", value=3))
-    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
 def despliegue_lista_opciones_NO_LAB_NO_PC_NO_CLASE():
 
@@ -2770,7 +2765,7 @@ def despliegue_lista_opciones_NO_LAB_NO_PC_NO_CLASE():
     # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     # opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
     # opciones.append(discord.SelectOption(label="Clases", value=3))
-    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
 def despliegue_lista_opciones_NO_LAB_NO_CUADERNO():
@@ -2780,9 +2775,138 @@ def despliegue_lista_opciones_NO_LAB_NO_CUADERNO():
     # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
     opciones.append(discord.SelectOption(label="Clases", value=3))
-    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
+
+
+
+def despliegue_lista_4PCS():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="PC-1", value=1))
+    opciones.append(discord.SelectOption(label="PC-2", value=2))
+    opciones.append(discord.SelectOption(label="PC-3", value=3))
+    opciones.append(discord.SelectOption(label="PC-4", value=4))
+    opciones.append(discord.SelectOption(label="Ex. Parcial", value=6))
+    opciones.append(discord.SelectOption(label="Ex. Final", value=7))
+    opciones.append(discord.SelectOption(label="Prueba de entrada", value=8))
+
+    return opciones
+
+def despliegue_lista_5PCS():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="PC-1", value=1))
+    opciones.append(discord.SelectOption(label="PC-2", value=2))
+    opciones.append(discord.SelectOption(label="PC-3", value=3))
+    opciones.append(discord.SelectOption(label="PC-4", value=4))
+    opciones.append(discord.SelectOption(label="PC-5", value=5))
+    opciones.append(discord.SelectOption(label="Ex. Parcial", value=6))
+    opciones.append(discord.SelectOption(label="Ex. Final", value=7))
+    opciones.append(discord.SelectOption(label="Prueba de entrada", value=8))
+
+    return opciones
+
+def despliegue_lista_4PCS_NO_EXAMEN():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="PC-1", value=1))
+    opciones.append(discord.SelectOption(label="PC-2", value=2))
+    opciones.append(discord.SelectOption(label="PC-3", value=3))
+    opciones.append(discord.SelectOption(label="PC-4", value=4))
+    # opciones.append(discord.SelectOption(label="Prueba de entrada", value=8))
+
+    return opciones
+
+def despliegue_lista_5PCS_NO_EXAMEN():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="PC-1", value=1))
+    opciones.append(discord.SelectOption(label="PC-2", value=2))
+    opciones.append(discord.SelectOption(label="PC-3", value=3))
+    opciones.append(discord.SelectOption(label="PC-4", value=4))
+    opciones.append(discord.SelectOption(label="PC-5", value=5))
+    # opciones.append(discord.SelectOption(label="Prueba de entrada", value=8))
+
+    return opciones
+
+
+
+
+def despliegue_lista_PCS(ciclo_seleccionado, curso_seleccionado):
+
+    if ciclo_seleccionado == 0: # Primer ciclo
+        if curso_seleccionado == 0: # Física 1
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1: # Cálculo diferencial
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # Álgebra lineal
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 3: #  Dibujo técnico
+            despliegue_lista_pcs = despliegue_lista_5PCS_NO_EXAMEN()
+        if curso_seleccionado == 4: # Introducción a la computación
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 5: #  Realidad Nac. Constitución y DD.HH
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 6: # Fundamentos de programación
+            despliegue_lista_pcs = despliegue_lista_5PCS_NO_EXAMEN()
+    if ciclo_seleccionado == 1: # Segundo ciclo
+        if curso_seleccionado == 0: # Física 2
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1: # Cálculo integral
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # Algoritmos y estructuras de datos I
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 3: # Fundamentos de ingeniería del computador
+            despliegue_lista_pcs = despliegue_lista_5PCS_NO_EXAMEN()
+        if curso_seleccionado == 4: # Química
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 5: # Redes de datos I
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 6: # Redacción y comunicación
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 7: # Sistemas operativos I
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+    if ciclo_seleccionado == 2: # Tercer ciclo
+        if curso_seleccionado == 0: # Fundamentos de Electricidad y Magnetismo
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1: # Ecuaciones diferenciales
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # Probabilidades y estadística
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 3: # Programación orientada a objetos
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 4: # Economía general
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 5: # Redes de datos II
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+    if ciclo_seleccionado == 3: # Cuarto ciclo
+        if curso_seleccionado == 0: # Introducción a la física moderna
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1: # Análisis de señales y sistemas
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # Cálculo vectorial
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 3: #  Métodos numéricos
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 4: # Circuitos eléctricos I
+            despliegue_lista_pcs = despliegue_lista_4PCS() # -------------------- DUDA xd ----------------
+        if curso_seleccionado == 5: # Electrotecnia e instalación de redes
+            despliegue_lista_pcs = despliegue_lista_4PCS() # -------------------- otra duda --------------
+        if curso_seleccionado == 6: # Ética y filosofía
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 7: # Sistemas operativos II
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+
+
+
+    return despliegue_lista_pcs
+
 
 
 def despliegue_lista_cursos():
@@ -3029,7 +3153,7 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
                 opciones = despliegue_lista_opciones_LAB()
 
             if curso_seleccionado == 1: # Cálculo diferencial
-                opciones = despliegue_lista_opciones_NO_LAB
+                opciones = despliegue_lista_opciones_NO_LAB()
 
             if curso_seleccionado == 2: # Álgebra lineal
                 opciones = despliegue_lista_opciones_NO_LAB()
@@ -3047,7 +3171,24 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
                 opciones = despliegue_lista_opciones_LAB()
             
         if ciclo_seleccionado == 1:  # Segundo ciclo
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+            
 
         if ciclo_seleccionado == 2:  # Tercer ciclo
             pass # Falta llenar
@@ -3075,7 +3216,46 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
             
         
         self.select = discord.ui.Select(
-            placeholder="Selecciona un curso.",
+            placeholder="Selecciona una opción.",
+            min_values=1,
+            max_values=1,
+            options=opciones,
+        )
+
+        self.select.callback = self.select_callback
+        self.add_item(self.select)
+
+
+    async def select_callback(self, interaction: discord.Interaction):
+    
+        view = None
+
+        opcion_elegida = int(self.select.values[0]) - 1
+
+        if opcion_elegida == 1:  # Prácticas y exámenes
+            view =  NumeroMenuPCS(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
+
+        embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][opcion_elegida]
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(view=view, embed=embed)
+
+
+
+class NumeroMenuPCS(discord.ui.View):
+
+    def __init__(self, ciclo_seleccionado, curso_seleccionado, opcion):
+        super().__init__()
+
+        self.ciclo_seleccionado = ciclo_seleccionado
+        self.curso_seleccionado = curso_seleccionado
+        self.opcion = opcion
+
+        opciones = despliegue_lista_PCS(self.ciclo_seleccionado, self.curso_seleccionado)
+
+        self.select = discord.ui.Select(
+            placeholder="Selecciona una PC o examen.",
             min_values=1,
             max_values=1,
             options=opciones,
@@ -3087,12 +3267,14 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
 
     async def select_callback(self, interaction: discord.Interaction):
         
+        view = None
+
         opcion_elegida = int(self.select.values[0]) - 1
         embed =  discord.Embed(title="POR LLENAR", description="", color=discord.Color.blue())
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
         embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
-        await interaction.response.edit_message(embed=embed, view=None)
+        await interaction.response.edit_message(view=view, embed=embed)
 
 
 
