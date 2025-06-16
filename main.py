@@ -202,13 +202,7 @@ def get_ciclos_cursos_embeds():
         title="Cursos electivos",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
-            - **BMA01** - Cálculo diferencial
-            - **BMA03** - Álgebra lineal
-            - **EE250** - Dibujo técnico
-            - **BIC01** - Introducción a la computación
-            - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
+            - 
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -218,14 +212,16 @@ def get_ciclos_cursos_embeds():
 
     return lista_ciclos
 
+# ////////////////////////////////////////////////////////////////////////
 
 def get_primer_ciclo_embeds():
     embeds = []
 
     embed1 = discord.Embed(title="📗 Física 1", description="", color=discord.Color.dark_green())
     embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes del curso.", inline=False)
+    embed1.add_field(name="▸  Cuadernos", value="Cuadernos y libros del curso.", inline=False)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
@@ -704,6 +700,1941 @@ def get_cursos_electivos_embeds():
 
     return embeds
 
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_fisica_1_laboratorios_embed():
+
+    embed = discord.Embed(
+        title="Laboratorios de Física 1",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el periodo.\n
+            - Laboratorios 2019-II
+            - Laboratorios 2020-II
+            - Laboratorios 2021-II
+            - Laboratorios 2023-I
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fisica_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de Física 1",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Clases PDF's - Prof. Caro
+            - Clases PDF's 2020-I-II - Prof. Huallpa
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fisica_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de Física 1",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fisica_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de Física 1",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_calc_diferencial_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de calc. diferencial.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_calc_diferencial_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de cálculo diferencial:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_calc_diferencial_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de cálculo diferencial",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_algebra_lineal_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de álgebra_lineal.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_algebra_lineal_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de algebra_lineal:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_algebra_lineal_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de algebra_lineal:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_dibujo_tecnico_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de dibujo_tecnico.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_dibujo_tecnico_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de dibujo_tecnico:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_dibujo_tecnico_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de dibujo_tecnico:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_intro_computacion_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de intro_computacion.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_intro_computacion_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de intro_computacion:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_intro_computacion_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de intro_computacion:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_realidad_nacional_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de realidad_nacional.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_realidad_nacional_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de realidad_nacional:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_realidad_nacional_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de realidad_nacional:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_fundamentos_programacion_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de fundamentos_programacion.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fundamentos_programacion_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de fundamentos_programacion:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fundamentos_programacion_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de fundamentos_programacion:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_fisica_2_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de fisica_2.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fisica_2_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de fisica_2:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fisica_2_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de fisica_2:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_calculo_integral_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de calculo_integral.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_calculo_integral_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de calculo_integral:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_calculo_integral_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de calculo_integral:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_algoritmos_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de algoritmos_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_algoritmos_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de algoritmos_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_algoritmos_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de algoritmos_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_quimica_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de quimica_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_quimica_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de quimica_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_quimica_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de quimica_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_fundamentos_computador_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de fundamentos_computador.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fundamentos_computador_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de fundamentos_computador:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fundamentos_computador_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de fundamentos_computador:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_redaccion_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de redaccion.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_redaccion_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de redaccion:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_redaccion_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de redaccion:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_redes_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de redes_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_redes_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de redes_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_redes_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de redes_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_operativos_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de operativos_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_operativos_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de operativos_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_operativos_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de operativos_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_fundamentos_electricidad_magnetismo_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de fundamentos_electricidad_magnetismo.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fundamentos_electricidad_magnetismo_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de fundamentos_electricidad_magnetismo:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_fundamentos_electricidad_magnetismo_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de fundamentos_electricidad_magnetismo:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_ecuaciones_diferenciales_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de ecuaciones_diferenciales.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_ecuaciones_diferenciales_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de ecuaciones_diferenciales:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_ecuaciones_diferenciales_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de ecuaciones_diferenciales:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_poo_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de poo.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_poo_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de poo:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_poo_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de poo:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_economia_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de economia.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_economia_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de economia:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_economia_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de economia:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_probabilidades_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de probabilidades.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_probabilidades_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de probabilidades:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_probabilidades_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de probabilidades:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_redes_2_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de redes_2.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_redes_2_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de redes_2:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_redes_2_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de redes_2:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_intro_moderna_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de intro_moderna.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_intro_moderna_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de intro_moderna:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_intro_moderna_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de intro_moderna:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_circuitos_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de circuitos_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_circuitos_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de circuitos_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_circuitos_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de circuitos_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_calc_vectorial_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de calc_vectorial.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_calc_vectorial_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de calc_vectorial:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_calc_vectorial_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de calc_vectorial:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_analisis_senales_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de analisis_senales.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_analisis_senales_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de analisis_senales:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_analisis_senales_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de analisis_senales:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_operativos_2_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de operativos_2.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_operativos_2_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de operativos_2:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_operativos_2_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de operativos_2:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_electrotecnia_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de electrotecnia.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_electrotecnia_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de electrotecnia:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_electrotecnia_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de electrotecnia:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_metodos_numericos_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de metodos_numericos.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_metodos_numericos_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de metodos_numericos:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_metodos_numericos_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de metodos_numericos:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_etica_filosofia_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de etica_filosofia.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_etica_filosofia_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de etica_filosofia:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_etica_filosofia_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de etica_filosofia:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_procesos_estocasticos_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de procesos_estocasticos.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_procesos_estocasticos_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de procesos_estocasticos:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_procesos_estocasticos_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de procesos_estocasticos:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_example_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de example.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_example_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de example:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - Examen Parcial
+            - Examen Final
+            - Examen sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_example_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de example:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+
+def opciones_fisica_1_embeds():
+
+    embeds = []
+
+    embeds.append(get_fisica_1_laboratorios_embed())  # [0]
+    embeds.append(get_fisica_1_clases_embed())        # [1]
+    embeds.append(get_fisica_1_examenes_embed())      # [2]
+    embeds.append(get_fisica_1_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_calc_diferencial_embeds():
+
+    embeds = []
+
+    embeds.append("get_calc_diferencial_laboratorios_embed()")  # [0]
+    embeds.append(get_calc_diferencial_clases_embed())  # [1]
+    embeds.append(get_calc_diferencial_examenes_embed())  # [2]
+    embeds.append(get_calc_diferencial_cuadernos_embed())  # [3]
+
+    return embeds
+
+def opciones_algebra_lineal_embeds():
+    embeds = []
+
+    embeds.append("get_algebra_lineal_laboratorios_embed()")  # [0]
+    embeds.append(get_algebra_lineal_clases_embed())        # [1]
+    embeds.append(get_algebra_lineal_examenes_embed())      # [2]
+    embeds.append(get_algebra_lineal_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_dibujo_tecnico_embeds():
+    embeds = []
+
+    embeds.append("get_dibujo_tecnico_laboratorios_embed()")  # [0]
+    embeds.append(get_dibujo_tecnico_clases_embed())        # [1]
+    embeds.append(get_dibujo_tecnico_examenes_embed())      # [2]
+    embeds.append(get_dibujo_tecnico_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_intro_computacion_embeds():
+    embeds = []
+
+    embeds.append("get_intro_computacion_laboratorios_embed()")  # [0]
+    embeds.append(get_intro_computacion_clases_embed())        # [1]
+    embeds.append(get_intro_computacion_examenes_embed())      # [2]
+    embeds.append(get_intro_computacion_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_realidad_nacional_embeds():
+    embeds = []
+
+    embeds.append("get_realidad_nacional_laboratorios_embed()")  # [0]
+    embeds.append(get_realidad_nacional_clases_embed())        # [1]
+    embeds.append(get_realidad_nacional_examenes_embed())      # [2]
+    embeds.append(get_realidad_nacional_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_fundamentos_programacion_embeds():
+    embeds = []
+
+    embeds.append("get_fundamentos_programacion_laboratorios_embed()")  # [0]
+    embeds.append(get_fundamentos_programacion_clases_embed())        # [1]
+    embeds.append(get_fundamentos_programacion_examenes_embed())      # [2]
+    embeds.append(get_fundamentos_programacion_cuadernos_embed())     # [3]
+
+    return embeds
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+
+def opciones_fisica_2_embeds():
+    embeds = []
+
+    embeds.append("get_fisica_2_laboratorios_embed()")  # [0]
+    embeds.append(get_fisica_2_clases_embed())        # [1]
+    embeds.append(get_fisica_2_examenes_embed())      # [2]
+    embeds.append(get_fisica_2_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_calculo_integral_embeds():
+    embeds = []
+
+    embeds.append("get_calculo_integral_laboratorios_embed()")  # [0]
+    embeds.append(get_calculo_integral_clases_embed())        # [1]
+    embeds.append(get_calculo_integral_examenes_embed())      # [2]
+    embeds.append(get_calculo_integral_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_algoritmos_1_embeds():
+    embeds = []
+
+    embeds.append("get_algoritmos_1_laboratorios_embed()")  # [0]
+    embeds.append(get_algoritmos_1_clases_embed())        # [1]
+    embeds.append(get_algoritmos_1_examenes_embed())      # [2]
+    embeds.append(get_algoritmos_1_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_fundamentos_computador_embeds():
+    embeds = []
+
+    embeds.append("get_fundamentos_computador_laboratorios_embed()")  # [0]
+    embeds.append(get_fundamentos_computador_clases_embed())        # [1]
+    embeds.append(get_fundamentos_computador_examenes_embed())      # [2]
+    embeds.append(get_fundamentos_computador_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_quimica_1_embeds():
+    embeds = []
+
+    embeds.append("get_quimica_1_laboratorios_embed()")  # [0]
+    embeds.append(get_quimica_1_clases_embed())        # [1]
+    embeds.append(get_quimica_1_examenes_embed())      # [2]
+    embeds.append(get_quimica_1_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_redes_1_embeds():
+    embeds = []
+
+    embeds.append("get_redes_1_laboratorios_embed()")  # [0]
+    embeds.append(get_redes_1_clases_embed())        # [1]
+    embeds.append(get_redes_1_examenes_embed())      # [2]
+    embeds.append(get_redes_1_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_redaccion_embeds():
+    embeds = []
+
+    embeds.append("get_redaccion_laboratorios_embed()")  # [0]
+    embeds.append(get_redaccion_clases_embed())        # [1]
+    embeds.append(get_redaccion_examenes_embed())      # [2]
+    embeds.append(get_redaccion_cuadernos_embed())     # [3]
+
+    return embeds
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+
+def opciones_fundamentos_electricidad_magnetismo_embeds():
+    embeds = []
+
+    embeds.append("get_fundamentos_electricidad_magnetismo_laboratorios_embed()")  # [0]
+    embeds.append(get_fundamentos_electricidad_magnetismo_clases_embed())        # [1]
+    embeds.append(get_fundamentos_electricidad_magnetismo_examenes_embed())      # [2]
+    embeds.append(get_fundamentos_electricidad_magnetismo_cuadernos_embed())     # [3]
+
+    return embeds
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+
+def get_opciones_primer_ciclo_embeds():
+
+    embeds = []
+
+    embeds.append(opciones_fisica_1_embeds())  # [0]
+    embeds.append(opciones_calc_diferencial_embeds())  # [1]
+    embeds.append(opciones_algebra_lineal_embeds())  # [2]
+    embeds.append(opciones_dibujo_tecnico_embeds())  # [3]
+    embeds.append(opciones_intro_computacion_embeds())  # [4]
+    embeds.append(opciones_realidad_nacional_embeds())  # [5]
+    embeds.append(opciones_fundamentos_programacion_embeds())  # [6]
+
+    return embeds
+
+
+def get_opciones_segundo_ciclo_embeds():
+    embeds = []
+
+    embeds.append(opciones_fisica_2_embeds())  # [0]
+    embeds.append(opciones_calculo_integral_embeds())  # [1]
+    embeds.append(opciones_algoritmos_1_embeds())  # [2]
+    embeds.append(opciones_fundamentos_computador_embeds())  # [3]
+    embeds.append(opciones_quimica_1_embeds())  # [4]
+    embeds.append(opciones_redes_1_embeds())  # [5]
+    embeds.append(opciones_redaccion_embeds())  # [6]
+
+    return embeds
+
+
+def get_opciones_todos_los_ciclos_embeds():
+
+    embeds = []
+
+    embeds.append(get_opciones_primer_ciclo_embeds())  # [0]
+    embeds.append(get_opciones_segundo_ciclo_embeds())  # [1]
+
+    return embeds
+
+
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+
+def get_lista_cursos_suprema_embeds():
+
+    lista_de_listas = []
+
+    lista_de_listas.append(get_primer_ciclo_embeds()) # [0]
+    lista_de_listas.append(get_segundo_ciclo_embeds())
+    lista_de_listas.append(get_tercer_ciclo_embeds())
+    lista_de_listas.append(get_cuarto_ciclo_embeds())
+    lista_de_listas.append(get_quinto_ciclo_embeds())
+    lista_de_listas.append(get_sexto_ciclo_embeds())
+    lista_de_listas.append(get_septimo_ciclo_embeds())
+    lista_de_listas.append(get_octavo_ciclo_embeds())
+    lista_de_listas.append(get_noveno_ciclo_embeds())
+    lista_de_listas.append(get_cursos_electivos_embeds()) # [9]
+    
+    return lista_de_listas
+
+
 
 # ///////////////////////////////////////////////////////////////////////////////////
 
@@ -779,6 +2710,80 @@ def despliegue_lista_ciclos():
 
     return opciones
 
+def despliegue_lista_opciones_LAB():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="Laboratorios", value=1))
+    opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
+    opciones.append(discord.SelectOption(label="Clases", value=3))
+    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+
+    return opciones
+
+def despliegue_lista_opciones_LAB_NO_CUADERNO():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="Laboratorios", value=1))
+    opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
+    opciones.append(discord.SelectOption(label="Clases", value=3))
+    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+
+    return opciones
+
+def despliegue_lista_opciones_NO_LAB():
+
+    opciones = []
+
+    # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
+    opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
+    opciones.append(discord.SelectOption(label="Clases", value=3))
+    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+
+    return opciones
+
+def despliegue_lista_opciones_NO_LAB_NO_PC():
+
+    opciones = []
+
+    # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
+    # opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
+    opciones.append(discord.SelectOption(label="Clases", value=3))
+    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+
+    return opciones
+
+def despliegue_lista_opciones_NO_LAB_NO_PC_NO_CUADERNO():
+
+    opciones = []
+
+    # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
+    # opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
+    opciones.append(discord.SelectOption(label="Clases", value=3))
+    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+
+def despliegue_lista_opciones_NO_LAB_NO_PC_NO_CLASE():
+
+    opciones = []
+
+    # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
+    # opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
+    # opciones.append(discord.SelectOption(label="Clases", value=3))
+    opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+
+    return opciones
+def despliegue_lista_opciones_NO_LAB_NO_CUADERNO():
+
+    opciones = []
+
+    # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
+    opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
+    opciones.append(discord.SelectOption(label="Clases", value=3))
+    # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=7))
+
+    return opciones
+
 
 def despliegue_lista_cursos():
 
@@ -792,6 +2797,7 @@ def despliegue_lista_cursos():
         discord.SelectOption(label="Introducción a la computación", value=5),
         discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
         discord.SelectOption(label="Fundamentos de programación", value=7),
+        discord.SelectOption(label="Asesorías 1er ciclo", value=8),
     ]
     lista_cursos.append(opciones0)
 
@@ -904,7 +2910,7 @@ def despliegue_lista_cursos():
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
 
-async def mostrar_help(ctx_or_interaction):
+async def show_help(ctx_or_interaction):
 
     embed = get_ayuda_embed()
 
@@ -914,9 +2920,9 @@ async def mostrar_help(ctx_or_interaction):
         await ctx_or_interaction.response.send_message(embed=embed, ephemeral=False)  # Responde al comando slash con el embed
 
 
-async def menu_main(ctx_or_interaction):
+async def show_menu(ctx_or_interaction):
 
-    view = NumeroMenuCiclo()  # Crea una instancia de la clase NumeroMenuCiclo
+    view = NumeroMenuCiclo()
 
     embed = get_ciclos_embeds()
 
@@ -926,21 +2932,24 @@ async def menu_main(ctx_or_interaction):
         await ctx_or_interaction.response.send_message(view=view, embed=embed, ephemeral=False)  # Responde al comando slash con el embed
 
 
+# ///////////////////////////////////////////////////////////////////////////////////////////
+
+
 @bot.command(name="help")
 async def help_text(ctx):
-    await mostrar_help(ctx)
+    await show_help(ctx)
 
 @bot.tree.command(name="help", description="Muestra la lista de comandos disponibles.")
 async def help_slash(interaction: discord.Interaction):
-    await mostrar_help(interaction)
+    await show_help(interaction)
 
 @bot.command(name="menu")
 async def help_text(ctx):
-    await menu_main(ctx)
+    await show_menu(ctx)
 
 @bot.tree.command(name="menu", description="Muestra el menú principal de FIEE-BOT.")
 async def help_slash(interaction: discord.Interaction):
-    await menu_main(interaction)
+    await show_menu(interaction)
 
 
 # //////////////////////////////////////////////////////////////////////////////////////////////
@@ -964,21 +2973,23 @@ class NumeroMenuCiclo(discord.ui.View):
 
 
     async def select_callback(self, interaction: discord.Interaction):
-        valor_seleccionado = int(self.select.values[0])  # obtiene el número del ciclo seleccionado
-        view1 = NumeroMenuPrimerCiclo(valor_seleccionado)  # crea una nueva vista
-        embeds = get_ciclos_cursos_embeds()
-        await interaction.response.edit_message(
-            view=view1,
-            embed=embeds[valor_seleccionado - 1]
-        )
+
+        ciclo_seleccionado = int(self.select.values[0])-1  # obtiene el número del ciclo seleccionado
+
+        view1 = NumeroMenuTodosLosCiclos(ciclo_seleccionado)
+
+        embed1 = get_ciclos_cursos_embeds()[ciclo_seleccionado]
+
+        await interaction.response.edit_message(view=view1, embed=embed1)
 
 
-class NumeroMenuPrimerCiclo(discord.ui.View):
+class NumeroMenuTodosLosCiclos(discord.ui.View):
 
     def __init__(self, ciclo_seleccionado):
         super().__init__()
 
-        opciones = despliegue_lista_cursos()[ciclo_seleccionado-1]
+        self.ciclo_seleccionado = ciclo_seleccionado
+        opciones = despliegue_lista_cursos()[ciclo_seleccionado]
 
         self.select = discord.ui.Select(
             placeholder="Selecciona un curso.",
@@ -992,11 +3003,97 @@ class NumeroMenuPrimerCiclo(discord.ui.View):
 
 
     async def select_callback(self, interaction: discord.Interaction):
-        curso_elegido_num = int(self.select.values[0]) - 1
-        embed = get_primer_ciclo_embeds()
-        embed[curso_elegido_num].set_footer(text="Gracias por usar FIEE-BOT.")
-        embed[curso_elegido_num].set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
-        await interaction.response.edit_message(embed=embed[curso_elegido_num], view=None)
+
+        curso_seleccionado = int(self.select.values[0]) - 1
+
+        view2 = NumeroMenuOpcionesCurso(self.ciclo_seleccionado, curso_seleccionado)
+
+        embed = get_lista_cursos_suprema_embeds()[self.ciclo_seleccionado][curso_seleccionado]
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(view=view2, embed=embed)
+
+
+class NumeroMenuOpcionesCurso(discord.ui.View):
+
+    def __init__(self, ciclo_seleccionado, curso_seleccionado):
+        super().__init__()
+
+        self.ciclo_seleccionado = ciclo_seleccionado
+        self.curso_seleccionado = curso_seleccionado
+
+        if ciclo_seleccionado == 0:  # Primer ciclo
+
+            if curso_seleccionado == 0: # Física 1
+                opciones = despliegue_lista_opciones_LAB()
+
+            if curso_seleccionado == 1: # Cálculo diferencial
+                opciones = despliegue_lista_opciones_NO_LAB
+
+            if curso_seleccionado == 2: # Álgebra lineal
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: # Dibujo técnico
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: # Introducción a la computación
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 5: # Realidad Nac. Constitución y DD.HH
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6: # Fundamentos de programación
+                opciones = despliegue_lista_opciones_LAB()
+            
+        if ciclo_seleccionado == 1:  # Segundo ciclo
+            pass # Falta llenar
+
+        if ciclo_seleccionado == 2:  # Tercer ciclo
+            pass # Falta llenar
+
+        if ciclo_seleccionado == 3:  # Cuarto ciclo
+            pass # Falta llenar
+
+        if ciclo_seleccionado == 4:  # Quinto ciclo
+            pass # Falta llenar
+
+        if ciclo_seleccionado == 5:  # Sexto ciclo
+            pass # Falta llenar
+
+        if ciclo_seleccionado == 6:  # Séptimo ciclo
+            pass # Falta llenar
+
+        if ciclo_seleccionado == 7:  # Octavo ciclo
+            pass # Falta llenar
+
+        if ciclo_seleccionado == 8:  # Noveno ciclo
+            pass # Falta llenar
+
+        if ciclo_seleccionado == 9:  # Cursos electivos
+            pass # Falta llenar
+            
+        
+        self.select = discord.ui.Select(
+            placeholder="Selecciona un curso.",
+            min_values=1,
+            max_values=1,
+            options=opciones,
+        )
+
+        self.select.callback = self.select_callback
+        self.add_item(self.select)
+
+
+    async def select_callback(self, interaction: discord.Interaction):
+        
+        opcion_elegida = int(self.select.values[0]) - 1
+        embed =  discord.Embed(title="POR LLENAR", description="", color=discord.Color.blue())
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(embed=embed, view=None)
+
 
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
