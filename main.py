@@ -1737,8 +1737,8 @@ def get_economia_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_economia_examenes_embed():
 
+def get_economia_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de economia:",
@@ -1791,8 +1791,8 @@ def get_probabilidades_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_probabilidades_examenes_embed():
 
+def get_probabilidades_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de probabilidades:",
@@ -1846,8 +1846,8 @@ def get_redes_2_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_redes_2_examenes_embed():
 
+def get_redes_2_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de redes_2:",
@@ -1858,9 +1858,6 @@ def get_redes_2_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
-            - Examen Parcial
-            - Examen Final
-            - Examen sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1900,8 +1897,8 @@ def get_intro_moderna_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_intro_moderna_examenes_embed():
 
+def get_intro_moderna_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de intro_moderna:",
@@ -2009,8 +2006,8 @@ def get_calc_vectorial_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_calc_vectorial_examenes_embed():
 
+def get_calc_vectorial_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de calc_vectorial:",
@@ -2064,8 +2061,8 @@ def get_analisis_senales_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_analisis_senales_examenes_embed():
 
+def get_analisis_senales_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de analisis_senales:",
@@ -2119,8 +2116,8 @@ def get_operativos_2_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_operativos_2_examenes_embed():
 
+def get_operativos_2_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de operativos_2:",
@@ -2173,8 +2170,8 @@ def get_electrotecnia_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_electrotecnia_examenes_embed():
 
+def get_electrotecnia_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de electrotecnia:",
@@ -2227,8 +2224,8 @@ def get_metodos_numericos_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_metodos_numericos_examenes_embed():
 
+def get_metodos_numericos_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de metodos_numericos:",
@@ -3272,6 +3269,17 @@ class NumeroMenuTodosLosCiclos(discord.ui.View):
         embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
         await interaction.response.edit_message(view=view2, embed=embed)
+    
+    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
+    async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
+
+        view = NumeroMenuCiclo()
+        embed = get_ciclos_embeds()
+
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(embed=embed, view=view)
 
 
 class NumeroMenuOpcionesCurso(discord.ui.View):
@@ -3538,6 +3546,16 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
 
         await interaction.response.edit_message(view=view, embed=embed)
 
+    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
+    async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
+
+        view = NumeroMenuTodosLosCiclos(self.ciclo_seleccionado)
+        embed = get_ciclos_cursos_embeds()[self.ciclo_seleccionado]
+
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(embed=embed, view=view)
 
 
 class NumeroMenuPCS_LABS(discord.ui.View):
@@ -3590,10 +3608,21 @@ class NumeroMenuPCS_LABS(discord.ui.View):
         # embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
         await interaction.response.edit_message(view=view, embed=embed)
+    
+    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
+    async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
 
+        view = NumeroMenuOpcionesCurso(self.ciclo_seleccionado, self.curso_seleccionado)
+        embed = get_lista_cursos_suprema_embeds()[self.ciclo_seleccionado][self.curso_seleccionado]
+
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(embed=embed, view=view)
 
 
 class NavegarDosPaginasPCS_LABS(discord.ui.View):
+
     def __init__(self, embed1, embed2, ciclo_seleccionado, curso_seleccionado, opcion):
         super().__init__()
 
@@ -3613,14 +3642,18 @@ class NavegarDosPaginasPCS_LABS(discord.ui.View):
     @discord.ui.button(label="←", style=discord.ButtonStyle.secondary)
     async def anterior(self, interaction: discord.Interaction, button: discord.ui.Button):
         self.pagina_actual = (self.pagina_actual - 1) % len(self.embeds)
-        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=self)
+        view = NavegarDosPaginasPCS_LABS_v2(self.embed1, self.embed2, self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+
+        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=view)
 
     @discord.ui.button(label="→", style=discord.ButtonStyle.primary)
     async def siguiente(self, interaction: discord.Interaction, button: discord.ui.Button):
         self.pagina_actual = (self.pagina_actual + 1) % len(self.embeds)
-        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=self)
+        view = NavegarDosPaginasPCS_LABS_v2(self.embed1, self.embed2, self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+            
+        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=view)
 
-    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.primary)
+    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
     async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
 
         view = NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
@@ -3631,6 +3664,49 @@ class NavegarDosPaginasPCS_LABS(discord.ui.View):
 
         await interaction.response.edit_message(embed=embed, view=view)
 
+
+class NavegarDosPaginasPCS_LABS_v2(discord.ui.View):
+
+    def __init__(self, embed1, embed2, ciclo_seleccionado, curso_seleccionado, opcion):
+        super().__init__()
+
+        self.pagina_actual = 1
+        self.embed1 = embed1
+        self.embed2 = embed2
+
+        self.ciclo_seleccionado = ciclo_seleccionado
+        self.curso_seleccionado = curso_seleccionado
+        self.opcion = opcion
+
+        # self.embed1.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
+        # self.embed2.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+
+        self.embeds = [self.embed1, self.embed2]
+
+    @discord.ui.button(label="←", style=discord.ButtonStyle.primary)
+    async def anterior(self, interaction: discord.Interaction, button: discord.ui.Button):
+        self.pagina_actual = (self.pagina_actual - 1) % len(self.embeds)
+        view = NavegarDosPaginasPCS_LABS(self.embed1, self.embed2, self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+
+        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=view)
+
+    @discord.ui.button(label="→", style=discord.ButtonStyle.secondary)
+    async def siguiente(self, interaction: discord.Interaction, button: discord.ui.Button):
+        self.pagina_actual = (self.pagina_actual + 1) % len(self.embeds)
+        view = NavegarDosPaginasPCS_LABS(self.embed1, self.embed2, self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+
+        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=view)
+
+    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
+    async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
+
+        view = NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+
+        embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(embed=embed, view=view)
 
 
 class PaginaAnteriorPCS_LABS(discord.ui.View):
@@ -3644,9 +3720,9 @@ class PaginaAnteriorPCS_LABS(discord.ui.View):
     @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
     async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
 
-        view = NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+        view = NumeroMenuOpcionesCurso(self.ciclo_seleccionado, self.curso_seleccionado)
+        embed = get_lista_cursos_suprema_embeds()[self.ciclo_seleccionado][self.curso_seleccionado]
 
-        embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
         embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
