@@ -2447,6 +2447,98 @@ def get_embed_fisica_1_laboratorios_2019_II():
 
     return embed
 
+def get_embed_fisica_1_laboratorios_2020_II():
+    embed = discord.Embed(
+        title="Laboratorios de Física 1 - 2020-II",
+        description=textwrap.dedent(f"""\
+            - [Guía de Laboratorio 1 ciclo 2020-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384370133379711066/Guia_de_Laboratorio_1_ciclo_2020-2.pdf?ex=68522ea8&is=6850dd28&hm=13c6c4cbfb94155de7761a8558864c849249f0a3af667cbac5066458b3814ad7&)
+            - [GUIA LABORATORIO 2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384371196820328539/GUIA_LABORATORIO_2.pdf?ex=68522fa5&is=6850de25&hm=89185fe2638b3ac4083596f38b15187c69caf68db48606f9c02bd49d2415bde4&)
+            - [Test N°2 Ajuste de datos.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384371226939490304/Test_N2_Ajuste_de_datos.pdf?ex=68522fac&is=6850de2c&hm=9c683cb274bca40420424b46bb639688cf96a66451d0973687d8d7686c010344&)
+            - [Guia Laboratorio 3.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384371523678376006/Guia_Laboratorio_3.pdf?ex=68522ff3&is=6850de73&hm=0cffcda31e54a8117fe5fbb9194d230f5c881d95f1feaf23e5775b55784d6f5b&)
+            - [Laboratorio 4 Movimiento de un proyectil.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384372361524150312/Laboratorio_4_Movimiento_de_un_proyectil.pdf?ex=685230bb&is=6850df3b&hm=f21584ef798abd62a750c111036b700457d921eb91114864c79e679e039ad979&)
+            - [Laboratorio 5 Principio de Conservación de la Energía.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384372361163444265/Laboratorio_5_Principio_de_Conservacion_de_la_Energia.pdf?ex=685230bb&is=6850df3b&hm=f56dfeccf6d400d1cb1cd1705379ef458f8e5c8d48430aad073891e88ce64eef&)
+            - [Laboratorio 06 10-02-2021.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384372360706134026/Laboratorio_06_10-02-2021.pdf?ex=685230bb&is=6850df3b&hm=4d5aeff8a9a17759cba5f6845a603a71d2ca2d5a597f1370e63ddb381d4095a5&)
+            - [Indicaciones de Laboratorio N°1 BFI01 (Prof. Huallpa).mp4](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjunior%5Fveli%5Fm%5Funi%5Fpe%2FDocuments%2FTODOS%20LOS%20DRIVES%20FIEE%20UNI%2FDrive%201er%20Ciclo%2FBFI01%20F%C3%ADsica%201%2FLaboratorios%202020%2DI%2DII%20%28Virtuales%29%2FLaboratorio%20N%C2%B01%20%28Mediciones%20y%20Propagaci%C3%B3n%20de%20Errores%29%2FIndicaciones%20de%20Laboratorio%20N%C2%B01%20BFI01%20%28Prof%2E%20Huallpa%29%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9f1ef0c0%2D8f1e%2D461a%2Da151%2Dc208840cbcb6)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_laboratorios_2021_II():
+
+    embed = discord.Embed(
+        title="Laboratorios de Física 1 - 2021-II",
+        description=textwrap.dedent(f"""\
+            - [Exp01Errores.docx (1).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375018586378240/Exp01Errores.docx_1.pdf?ex=68523334&is=6850e1b4&hm=4aef33bda669a26a09536bc3f9c4d0bac40b953dde75e7b12c5fc0bfcd913d5a&)
+            - [Exp02 Estadistica (4).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375018032599040/Exp02_Estadistica_4.pdf?ex=68523334&is=6850e1b4&hm=b6079af3e4710bae5fc303d77ead999cd461f75884c3cdd7bdfdbbc357f40620&)
+            - [EXp3 Pendulo (2).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375017726283796/EXp3_Pendulo_2.pdf?ex=68523334&is=6850e1b4&hm=cd85cb3954fffe4160f79149c320baacee9be8d65747da79801a67cd1e10244d&)
+            - [EXp04 Movimiento Rectilíneo Trucker OK (1).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375016874840104/EXp04_Movimiento_Rectilineo_Trucker_OK_1.pdf?ex=68523334&is=6850e1b4&hm=2f82048e87cfca0b7f1cbc9dae3c1819f92afb8042a624e2bd2c13386ab3036a&)
+            - [Exp5 Centro de masa Tracker (1).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375016572981248/Exp5_Centro_de_masa_Tracker_1.pdf?ex=68523334&is=6850e1b4&hm=829a55b0a68f55cc65512820aa0df79e492f36cf7a28c25e69e069594244f849&)
+            - [Exp6 Colisiones Tracker.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375015926927360/Exp6_Colisiones_Tracker.pdf?ex=68523334&is=6850e1b4&hm=3d663303efc97dba7e501cc1871fe4652deef38e25c2c90ea7ab9882216f81c6&)
+            - [EXp7 Colisiones 2 Tracker.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375015591641148/EXp7_Coliciones_2_Trucker.pdf?ex=68523334&is=6850e1b4&hm=41b1832da785f6dffdbeb081ddc38d1b45befffcd54044b66d2b88baa8ea2d38&)
+            - [laboratorio N°4 (Reparado) (1) (5) (1).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375017206317087/laboratorio_N4_Reparado_1_5_1.pdf?ex=68523334&is=6850e1b4&hm=0d81aef0076450716e29822c4cf080b3dd8cc8d5d1fc71e3e1d6379976aa7672&)
+            - [Laboratorio de Física N°5.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375016250150912/Laboratorio_de_Fisica_N5.pdf?ex=68523334&is=6850e1b4&hm=b81f3d378a43044fe5ada2bd5523d028e30b1cc905e228616ade5eb75bc2a4cf&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+def get_embed_fisica_1_laboratorios_2023_I_pag1():
+
+    embed = discord.Embed(
+        title="Laboratorios de Física 1 - 2023-I",
+        description=textwrap.dedent(f"""\
+            - [Guía de lab 1 y 2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384377554621825074/Guia_de_lab_1_y_2.pdf?ex=68523591&is=6850e411&hm=5a79b0fa5033483d72eb33725bf666793c6f07f5db28c2e991331ae2d2f4b9a4&)
+            - [Guía lab 3 .pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384377554999181382/Guia_lab_3_.pdf?ex=68523591&is=6850e411&hm=23923aff2520cb62faa5454a3847465ecde24fe2d96578c5bbf8636ece756ba9&)
+            - [Guía lab 4.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384377555326603345/Guia_lab_4.pdf?ex=68523591&is=6850e411&hm=9090d09888b1edc21037dfb59b1a0f1ebfc83a1e7b4886f2575fb77ab15d28a5&)
+            - [Guía lab 5 (1).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384377555670270032/Guia_lab_5_1.pdf?ex=68523591&is=6850e411&hm=35780739fb74976db2782855eb53a81a3dab2146bdc8e8fb3288b07ae57eb70c&)
+            - [Guía lab 5 (2).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384377556010270720/Guia_lab_5_2.pdf?ex=68523591&is=6850e411&hm=9873b5c85cbc75b039e812ae0f414856b27042ee45b5b025a11fdddc8d98ea58&)
+            - [Guía lab 6.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384377556295356478/Guia_lab_6.pdf?ex=68523591&is=6850e411&hm=1ee6f91f03d1333a1db27500c66ae3d83cb8532b3ecc224bd21e5bc459ea4071&)
+            - [Estructura de informes.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384377554227429427/Estructura_de_informes.pdf?ex=68523591&is=6850e411&hm=90305bdf526810cac7b2d467a562f8a016edf0175f627abf4f71342a99e4e7c5&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_laboratorios_2023_I_pag2():
+
+    embed = discord.Embed(
+        title="Laboratorios de Física 1 - 2023-I",
+        description=textwrap.dedent(f"""\
+            - [LAB NRO 1 (NOTA 11).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384382691566424184/LAB_NRO_1_NOTA_11.pdf?ex=68523a5a&is=6850e8da&hm=3f87c53cef9d849f8083bfcd3080c6f430cfb3a7c6d667f967b1db8b9e3149c5&)
+            - [LAB NRO 2 (NOTA 14).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384382692082319421/LAB_NRO_2_NOTA_14.pdf?ex=68523a5a&is=6850e8da&hm=cbf4e3c8bf1ff6c5104e3385b3bf822a0c4050f5dae48cf594753e9553a8e793&)
+            - [LAB NRO 3 (NOTA 15).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384382692509880351/LAB_NRO_3_NOTA_15.pdf?ex=68523a5a&is=6850e8da&hm=ba4ef9bd5bd895c8a6d4ebdfdd72c5d2c0b1e3c2f3d622cc7dabe9acdb8e0f90&)
+            - [LAB NRO 4 (NOTA 15).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384382692933501058/LAB_NRO_4_NOTA_15.pdf?ex=68523a5a&is=6850e8da&hm=cdf9fcf03cae6bae9d44960eec137388b2754ce303c16a4ce2f8dbb40b3cccd2&)
+            - [LAB NRO 5 (NOTA 15).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384382693491347536/LAB_NRO_5_NOTA_15.pdf?ex=68523a5a&is=6850e8da&hm=0a882ee8e6f0fb4aef37925cb4d014b0a251c487131077114d76b2daddb8e76c&)
+            - [LAB NRO 6 (NOTA 12).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384382694095323136/LAB_NRO_6_NOTA_12.pdf?ex=68523a5a&is=6850e8da&hm=cc3ac671acc81b185591389d87db73b67d5b1effaf5abf0b9221e50334c4ae9d&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+def get_embeds_fisica_1_labos():
+
+    lista = []
+
+    lista.append(get_embed_fisica_1_laboratorios_2019_II())
+    lista.append(get_embed_fisica_1_laboratorios_2020_II())
+    lista.append(get_embed_fisica_1_laboratorios_2021_II())
+    lista.append(get_embed_fisica_1_laboratorios_2023_I_pag1())
+    lista.append(get_embed_fisica_1_laboratorios_2023_I_pag2())
+
+    return lista
+
+
 
 def get_embed_por_curso(ciclo_seleccionado, curso_seleccionado, opcion1, opcion2):
 
@@ -3319,23 +3411,91 @@ class NumeroMenuPCS_LABS(discord.ui.View):
         self.select.callback = self.select_callback
         self.add_item(self.select)
 
-
+    
     async def select_callback(self, interaction: discord.Interaction):
         
-        view = None
+        view = PaginaAnteriorPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+        
+        embed =  discord.Embed(title="POR LLENAR", description="", color=discord.Color.blue())
 
-        embed = get_embed_por_curso(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion, int(self.select.values[0]) - 1)
+        # Test con Física 1
 
-        embed = get_embed_fisica_1_laboratorios_2019_II()
+        periodo = int(self.select.values[0]) - 1
+
+        embed = get_embed_por_curso(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion, periodo)
+
+        embed = get_embeds_fisica_1_labos()[periodo]
+
+        if periodo == 3:
+            view = NavegarDosPaginasPCS_LABS(get_embed_fisica_1_laboratorios_2023_I_pag1(), get_embed_fisica_1_laboratorios_2023_I_pag2(), self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
 
         opcion_elegida = int(self.select.values[0]) - 1
-        # embed =  discord.Embed(title="POR LLENAR", description="", color=discord.Color.blue())
+        
         # embed.set_footer(text="Gracias por usar FIEE-BOT.")
         # embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
         await interaction.response.edit_message(view=view, embed=embed)
 
 
+
+class NavegarDosPaginasPCS_LABS(discord.ui.View):
+    def __init__(self, embed1, embed2, ciclo_seleccionado, curso_seleccionado, opcion):
+        super().__init__()
+
+        self.pagina_actual = 0
+        self.embed1 = embed1
+        self.embed2 = embed2
+
+        self.ciclo_seleccionado = ciclo_seleccionado
+        self.curso_seleccionado = curso_seleccionado
+        self.opcion = opcion
+
+        # self.embed1.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
+        # self.embed2.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+
+        self.embeds = [self.embed1, self.embed2]
+
+    @discord.ui.button(label="←", style=discord.ButtonStyle.secondary)
+    async def anterior(self, interaction: discord.Interaction, button: discord.ui.Button):
+        self.pagina_actual = (self.pagina_actual - 1) % len(self.embeds)
+        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=self)
+
+    @discord.ui.button(label="→", style=discord.ButtonStyle.primary)
+    async def siguiente(self, interaction: discord.Interaction, button: discord.ui.Button):
+        self.pagina_actual = (self.pagina_actual + 1) % len(self.embeds)
+        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=self)
+
+    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.primary)
+    async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
+
+        view = NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+
+        embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(embed=embed, view=view)
+
+
+
+class PaginaAnteriorPCS_LABS(discord.ui.View):
+    def __init__(self, ciclo_seleccionado, curso_seleccionado, opcion):
+        super().__init__()
+
+        self.ciclo_seleccionado = ciclo_seleccionado
+        self.curso_seleccionado = curso_seleccionado
+        self.opcion = opcion
+
+    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
+    async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
+
+        view = NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+
+        embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(embed=embed, view=view)
 
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
