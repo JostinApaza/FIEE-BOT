@@ -1519,8 +1519,8 @@ def get_operativos_1_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_operativos_1_examenes_embed():
 
+def get_operativos_1_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de operativos_1:",
@@ -2281,8 +2281,8 @@ def get_etica_filosofia_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_etica_filosofia_examenes_embed():
 
+def get_etica_filosofia_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de etica_filosofia:",
@@ -2335,8 +2335,8 @@ def get_procesos_estocasticos_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_procesos_estocasticos_examenes_embed():
 
+def get_procesos_estocasticos_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de procesos_estocasticos:",
@@ -2390,8 +2390,8 @@ def get_example_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_example_examenes_embed():
 
+def get_example_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de example:",
@@ -2427,6 +2427,30 @@ def get_example_cuadernos_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
+
+
+# ///////////////////////////////////////////////////////////////////////////////////////
+
+
+def get_embed_fisica_1_laboratorios_2019_II():
+    embed = discord.Embed(
+        title="Laboratorios de Física 1 - 2019-II",
+        description=textwrap.dedent(f"""\
+            - [LAB N°1_ MEDICIÓN Y ERROR EXPERIMENTAL.docx](https://cdn.discordapp.com/attachments/1384359269570187284/1384359292563357848/Lab_N1__MEDICION_Y_ERROR_EXPERIMENTAL.docx?ex=6852248f&is=6850d30f&hm=70ab2e162258ffcc04430aaf2d9fc5b86c554d3e371bdf816ab03430bf0fcfa4&)
+            - [LAB N°2 FIA UNI_ VELOCIDAD INSTANTÁNEA Y ACELERACIÓN.doc](https://cdn.discordapp.com/attachments/1384359269570187284/1384359441343709194/Lab_N2_FIA_UNI__VELOCIDAD_INSTANTANEA_Y_ACELERACION.doc?ex=685224b2&is=6850d332&hm=ef2b96fa937317e7ed0744cfbfcb23e0d4687a2a08d0bdf0866ffcd143ae87ac&)
+            - [LAB N°2_ VELOCIDAD INSTANTÁNEA Y ACELERACIÓN.docx](https://cdn.discordapp.com/attachments/1384359269570187284/1384359450520981544/Lab_N2__VELOCIDAD_INSTANTANEA_Y_ACELERACION.docx?ex=685224b5&is=6850d335&hm=483629508bf29b0fef5dca464ab7761e221b0c65a3970292514463091733f70a&)
+            - [LAB N°4_ TRABAJO Y ENERGÍA.docx](https://cdn.discordapp.com/attachments/1384359269570187284/1384359467419828245/Lab_N4__TRABAJO_Y_ENERGIA.docx?ex=685224b9&is=6850d339&hm=582a7e3cffbd5e924c2f7258fe9081c99ca94351842da738123b3d60af238191&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+def get_embed_por_curso(ciclo_seleccionado, curso_seleccionado, opcion1, opcion2):
+
+    pass
 
 
 # /////////////////////////////////////////////////////////////////////////////////////
@@ -2655,6 +2679,7 @@ def get_lista_cursos_suprema_embeds():
 
 
 
+
 # ///////////////////////////////////////////////////////////////////////////////////
 
 def get_ayuda_embed():
@@ -2686,6 +2711,7 @@ def get_ayuda_embed():
 # /////////////////////    LISTAS DESPLEGABLES     ///////////////////////
 # /////////////////////                            ///////////////////////
 # ////////////////////////////////////////////////////////////////////////
+
 
 def despliegue_lista_ciclos():
 
@@ -3298,10 +3324,14 @@ class NumeroMenuPCS_LABS(discord.ui.View):
         
         view = None
 
+        embed = get_embed_por_curso(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion, int(self.select.values[0]) - 1)
+
+        embed = get_embed_fisica_1_laboratorios_2019_II()
+
         opcion_elegida = int(self.select.values[0]) - 1
-        embed =  discord.Embed(title="POR LLENAR", description="", color=discord.Color.blue())
-        embed.set_footer(text="Gracias por usar FIEE-BOT.")
-        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+        # embed =  discord.Embed(title="POR LLENAR", description="", color=discord.Color.blue())
+        # embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        # embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
         await interaction.response.edit_message(view=view, embed=embed)
 
