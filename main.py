@@ -2427,6 +2427,186 @@ def get_example_cuadernos_embed():
 # ///////////////////////////////////////////////////////////////////////////////////////
 
 
+def get_embed_curso_example():
+    embed = discord.Embed(
+        title="Example",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+# ////////////////////////////////////////////////////////////////////////////////////////
+
+
+def get_embed_cursobase_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_cursobase_pc2():
+    embed = discord.Embed(
+        title="2da PC's - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_cursobase_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_cursobase_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_cursobase_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_cursobase_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_cursobase_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_fisica_1_pcs():
+
+    lista = []
+
+    lista.append(get_embed_cursobase_pc1())
+    lista.append(get_embed_cursobase_pc2())
+    lista.append(get_embed_cursobase_pc3())
+    lista.append(get_embed_cursobase_pc4())
+    lista.append(get_embed_cursobase_exparcial())
+    lista.append(get_embed_cursobase_exfinal())
+    lista.append(get_embed_cursobase_entrada())
+
+    return lista
+
+# ///////////////////////////////////////////////////////////////////////////////////////
+
+
 def get_embed_fisica_1_laboratorios_2019_II():
     embed = discord.Embed(
         title="Laboratorios de Física 1 - 2019-II",
@@ -2533,11 +2713,456 @@ def get_embeds_fisica_1_labos():
 
     return lista
 
+def get_embed_fisica_1_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - Física 1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_pc2():
+    embed = discord.Embed(
+        title="2da PC's - Física 1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_fisica_1_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - Física 1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_fisica_1_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - Física 1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - Física 1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - Física 1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - Física 1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
 
 
-def get_embed_por_curso(ciclo_seleccionado, curso_seleccionado, opcion1, opcion2):
 
-    pass
+def get_embeds_fisica_1_pcs():
+
+    lista = []
+
+    lista.append(get_embed_fisica_1_pc1()) # [0]
+    lista.append(get_embed_fisica_1_pc2())
+    lista.append(get_embed_fisica_1_pc3())
+    lista.append(get_embed_fisica_1_pc4())
+    lista.append("get_embed_fisica_1_pc5()")
+    lista.append(get_embed_fisica_1_exparcial()) # [5]
+    lista.append(get_embed_fisica_1_exfinal()) # [6]
+    lista.append(get_embed_fisica_1_entrada()) # [7]
+
+    return lista
+
+def get_embed_fisica_1_clase_caro():
+    embed = discord.Embed(
+        title="Clases PDF's Prof. Caro",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_clase_huallpa():
+    embed = discord.Embed(
+        title="Clases PDF's Prof. Huallpa",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+def get_embeds_fisica_1_clases():
+
+    lista = []
+
+    lista.append(get_embed_fisica_1_clase_caro())
+    lista.append(get_embed_fisica_1_clase_huallpa())
+    
+    return lista
+
+
+
+
+
+
+
+
+
+
+
+
+def get_embed_and_view_por_curso(ciclo_seleccionado, curso_seleccionado, lab_pc_clase, periodo_o_pc):
+
+    view = PaginaAnteriorPCS_LABS(ciclo_seleccionado, curso_seleccionado, lab_pc_clase) # default
+
+    if ciclo_seleccionado == 0:  # Primer ciclo
+        if curso_seleccionado == 0: # Física 1
+            if lab_pc_clase == 1:
+                embed = get_embeds_fisica_1_labos()[periodo_o_pc]
+                if periodo_o_pc == 3:
+                    view = NavegarDosPaginasPCS_LABS(get_embed_fisica_1_laboratorios_2023_I_pag1(), get_embed_fisica_1_laboratorios_2023_I_pag2(), ciclo_seleccionado, curso_seleccionado, lab_pc_clase)
+            if lab_pc_clase == 2:
+                embed = get_embeds_fisica_1_pcs()[periodo_o_pc]
+            if lab_pc_clase == 3:
+                embed = get_embeds_fisica_1_clases()[periodo_o_pc]
+
+        if curso_seleccionado == 1: # Cálculo diferencial
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: # Álgebra lineal
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: # Dibujo técnico
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: # Introducción a la computación
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 5: # Realidad Nac. Constitución y DD.HH
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6: # Fundamentos de programación
+                opciones = despliegue_lista_opciones_LAB()
+            
+    if ciclo_seleccionado == 1:  # Segundo ciclo
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+            
+
+    if ciclo_seleccionado == 2:  # Tercer ciclo
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+    if ciclo_seleccionado == 3:  # Cuarto ciclo
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+    if ciclo_seleccionado == 4:  # Quinto ciclo
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+    if ciclo_seleccionado == 5:  # Sexto ciclo
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+    if ciclo_seleccionado == 6:  # Séptimo ciclo
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+    if ciclo_seleccionado == 7:  # Octavo ciclo
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+    if ciclo_seleccionado == 8:  # Noveno ciclo
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+    if ciclo_seleccionado == 9:  # Cursos electivos
+        if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+        if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+        if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+
+    return embed, view
 
 
 # /////////////////////////////////////////////////////////////////////////////////////
@@ -3568,6 +4193,9 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
         await interaction.response.edit_message(embed=embed, view=view)
 
 
+# &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
 class NumeroMenuPCS_LABS_CLASES(discord.ui.View):
 
     def __init__(self, ciclo_seleccionado, curso_seleccionado, opcion):
@@ -3583,7 +4211,7 @@ class NumeroMenuPCS_LABS_CLASES(discord.ui.View):
             texto_lista = "Selecciona un periodo."
         if self.opcion == 2:  # Prácticas y exámenes
             texto_lista = "Selecciona una PC o examen."
-        if self.opcion == 3:
+        if self.opcion == 3: # Clases
             texto_lista = "Selecciona una opción."
 
         self.select = discord.ui.Select(
@@ -3599,28 +4227,16 @@ class NumeroMenuPCS_LABS_CLASES(discord.ui.View):
     
     async def select_callback(self, interaction: discord.Interaction):
         
-        view = PaginaAnteriorPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado)
-        
-        embed =  discord.Embed(title="POR LLENAR", description="", color=discord.Color.blue())
+        periodo_o_pc = int(self.select.values[0]) - 1
 
-        # Test con Física 1
-
-        periodo = int(self.select.values[0]) - 1
-
-        embed = get_embed_por_curso(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion, periodo)
-
-        embed = get_embeds_fisica_1_labos()[periodo]
-
-        if periodo == 3:
-            view = NavegarDosPaginasPCS_LABS(get_embed_fisica_1_laboratorios_2023_I_pag1(), get_embed_fisica_1_laboratorios_2023_I_pag2(), self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
-
-        opcion_elegida = int(self.select.values[0]) - 1
+        embed, view = get_embed_and_view_por_curso(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion, periodo_o_pc)
         
         # embed.set_footer(text="Gracias por usar FIEE-BOT.")
         # embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
         await interaction.response.edit_message(view=view, embed=embed)
     
+
     @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
     async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
 
@@ -3631,6 +4247,9 @@ class NumeroMenuPCS_LABS_CLASES(discord.ui.View):
         embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
         await interaction.response.edit_message(embed=embed, view=view)
+
+
+# &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 
 class NavegarDosPaginasPCS_LABS(discord.ui.View):
@@ -3721,7 +4340,7 @@ class NavegarDosPaginasPCS_LABS_v2(discord.ui.View):
         await interaction.response.edit_message(embed=embed, view=view)
 
 
-class PaginaAnteriorPCS_LABS(discord.ui.View):
+class PaginaAnterior(discord.ui.View):
     def __init__(self, ciclo_seleccionado, curso_seleccionado):
         super().__init__()
 
@@ -3734,6 +4353,25 @@ class PaginaAnteriorPCS_LABS(discord.ui.View):
         view = NumeroMenuOpcionesCurso(self.ciclo_seleccionado, self.curso_seleccionado)
         embed = get_lista_cursos_suprema_embeds()[self.ciclo_seleccionado][self.curso_seleccionado]
 
+        embed.set_footer(text="Gracias por usar FIEE-BOT.")
+        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+        await interaction.response.edit_message(embed=embed, view=view)
+
+class PaginaAnteriorPCS_LABS(discord.ui.View):
+    def __init__(self, ciclo_seleccionado, curso_seleccionado, opcion):
+        super().__init__()
+
+        self.ciclo_seleccionado = ciclo_seleccionado
+        self.curso_seleccionado = curso_seleccionado
+        self.opcion = opcion
+
+    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
+    async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
+
+        view = NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+
+        embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
         embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
