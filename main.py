@@ -246,7 +246,7 @@ def get_primer_ciclo_embeds():
     embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes del curso.", inline=False)
     embed1.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
     embed1.add_field(name="▸  Cuadernos", value="Cuadernos y libros del curso.", inline=False)
-    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://cdn.discordapp.com/attachments/1384359269570187284/1384616543538774246/Syllabus_BFI01_Fisica_1.pdf?ex=68531424&is=6851c2a4&hm=6e6106be23cab05db5f85fc8991dd6d80a2b4f862f14f81820c4c6e992d889d0&)", inline=False)
     embeds.append(embed1)
 
     embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
@@ -785,9 +785,7 @@ def get_fisica_1_cuadernos_embed():
         title="Cuadernos y libros de Física 1",
         description=textwrap.dedent(f"""\
             \n
-            - Prueba
-            -
-            -
+            - [Cuaderno Física 2020-03-20 16.04.15.pdf](https://download1500.mediafire.com/9w6sla8v5drgfzbpYQAEk7ve62ssrG0oi4m88TeX2yG9NckODt96EyTnC5O4h4YlRsm2u76ObJx0NljObrDBiTuZ4auoTJ6hCWptUqNOp9-DRkVhGnbND5czu8ISHfknX6GKTWwrIVq17R3tt5NNDJ4uYEyalqY4Pwcw2DdN5XI24m8/xsswn33etbow4ng/Cuaderno+F%C3%ADsica+2020-03-20+16.04.15.pdf)
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -2963,13 +2961,23 @@ def despliegue_lista_LABS_fisica_1():
 
     return opciones
 
+def despliegue_lista_CLASES_fisica_1():
 
-def despliegue_lista_PCS_LABS(ciclo_seleccionado, curso_seleccionado, opcion_elegida):
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="Clases PDF's Prof. Caro", value=1))
+    opciones.append(discord.SelectOption(label="Clases PDF's 2020-I-II Prof. Huallpa", value=2))
+
+    return opciones
+
+
+def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opcion_elegida):
 
     if ciclo_seleccionado == 0: # Primer ciclo
         if curso_seleccionado == 0: # Física 1
             despliegue_lista_pcs = despliegue_lista_4PCS()
             despliegue_lista_labs = despliegue_lista_LABS_fisica_1()
+            despliegue_lista_clases = despliegue_lista_CLASES_fisica_1()
         if curso_seleccionado == 1: # Cálculo diferencial
             despliegue_lista_pcs = despliegue_lista_5PCS()
         if curso_seleccionado == 2: # Álgebra lineal
@@ -3032,8 +3040,10 @@ def despliegue_lista_PCS_LABS(ciclo_seleccionado, curso_seleccionado, opcion_ele
 
     if opcion_elegida == 1:
         devolver = despliegue_lista_labs
-    elif opcion_elegida == 2:
+    if opcion_elegida == 2:
         devolver = despliegue_lista_pcs
+    if opcion_elegida == 3:
+        devolver = despliegue_lista_clases
 
     return devolver
 
@@ -3529,16 +3539,16 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
         opcion_elegida = int(self.select.values[0])
 
         if opcion_elegida == 1: # Laboratorios
-            view =  NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
+            view =  NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
 
         if opcion_elegida == 2:  # Prácticas y exámenes
-            view =  NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
+            view =  NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
         
         if opcion_elegida == 3:  # Clases
-            view =  NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
+            view =  NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
 
         if opcion_elegida == 4:  # Cuadernos y libros
-            view =  NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
+            view =  PaginaAnteriorPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado)
 
         embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][opcion_elegida-1]
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
@@ -3558,7 +3568,7 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
         await interaction.response.edit_message(embed=embed, view=view)
 
 
-class NumeroMenuPCS_LABS(discord.ui.View):
+class NumeroMenuPCS_LABS_CLASES(discord.ui.View):
 
     def __init__(self, ciclo_seleccionado, curso_seleccionado, opcion):
         super().__init__()
@@ -3567,12 +3577,14 @@ class NumeroMenuPCS_LABS(discord.ui.View):
         self.curso_seleccionado = curso_seleccionado
         self.opcion = opcion
 
-        opciones = despliegue_lista_PCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+        opciones = despliegue_lista_PCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
 
         if self.opcion == 1:  # Laboratorios
             texto_lista = "Selecciona un periodo."
-        elif self.opcion == 2:  # Prácticas y exámenes
+        if self.opcion == 2:  # Prácticas y exámenes
             texto_lista = "Selecciona una PC o examen."
+        if self.opcion == 3:
+            texto_lista = "Selecciona una opción."
 
         self.select = discord.ui.Select(
             placeholder=texto_lista,
@@ -3587,7 +3599,7 @@ class NumeroMenuPCS_LABS(discord.ui.View):
     
     async def select_callback(self, interaction: discord.Interaction):
         
-        view = PaginaAnteriorPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+        view = PaginaAnteriorPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado)
         
         embed =  discord.Embed(title="POR LLENAR", description="", color=discord.Color.blue())
 
@@ -3656,7 +3668,7 @@ class NavegarDosPaginasPCS_LABS(discord.ui.View):
     @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
     async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
 
-        view = NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+        view = NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
 
         embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
@@ -3700,7 +3712,7 @@ class NavegarDosPaginasPCS_LABS_v2(discord.ui.View):
     @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
     async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
 
-        view = NumeroMenuPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+        view = NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
 
         embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
@@ -3710,12 +3722,11 @@ class NavegarDosPaginasPCS_LABS_v2(discord.ui.View):
 
 
 class PaginaAnteriorPCS_LABS(discord.ui.View):
-    def __init__(self, ciclo_seleccionado, curso_seleccionado, opcion):
+    def __init__(self, ciclo_seleccionado, curso_seleccionado):
         super().__init__()
 
         self.ciclo_seleccionado = ciclo_seleccionado
         self.curso_seleccionado = curso_seleccionado
-        self.opcion = opcion
 
     @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
     async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
