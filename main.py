@@ -2713,8 +2713,8 @@ def get_opciones_primer_ciclo_embeds():
     embeds = []
 
     embeds.append(opciones_fisica_1_embeds())  # [0]
-    embeds.append(opciones_calc_diferencial_embeds())  # [2]
-    embeds.append(opciones_algebra_lineal_embeds())  # [1]
+    embeds.append(opciones_calc_diferencial_embeds())  # [1]
+    embeds.append(opciones_algebra_lineal_embeds())  # [2]
     embeds.append(opciones_dibujo_tecnico_embeds())  # [3]
     embeds.append(opciones_intro_computacion_embeds())  # [4]
     embeds.append(opciones_realidad_nacional_embeds())  # [1]
@@ -3323,31 +3323,186 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
 
             if curso_seleccionado == 6:
                 opciones = despliegue_lista_opciones_LAB()
+
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
             
 
         if ciclo_seleccionado == 2:  # Tercer ciclo
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
 
         if ciclo_seleccionado == 3:  # Cuarto ciclo
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
 
         if ciclo_seleccionado == 4:  # Quinto ciclo
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
 
         if ciclo_seleccionado == 5:  # Sexto ciclo
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
 
         if ciclo_seleccionado == 6:  # Séptimo ciclo
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
 
         if ciclo_seleccionado == 7:  # Octavo ciclo
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
 
         if ciclo_seleccionado == 8:  # Noveno ciclo
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
 
         if ciclo_seleccionado == 9:  # Cursos electivos
-            pass # Falta llenar
+            if curso_seleccionado == 0: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 1: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 2: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 3: 
+                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+
+            if curso_seleccionado == 4: 
+                opciones = despliegue_lista_opciones_NO_LAB()
+
+            if curso_seleccionado == 6:
+                opciones = despliegue_lista_opciones_LAB()
+                
+            if curso_seleccionado == 7:
+                opciones = despliegue_lista_opciones_NO_LAB()
             
         
         self.select = discord.ui.Select(
