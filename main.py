@@ -8775,6 +8775,10 @@ def get_embed_and_view_por_curso(ciclo_seleccionado, curso_seleccionado, lab_pc_
     view = PaginaAnteriorPCS_LABS(ciclo_seleccionado, curso_seleccionado, lab_pc_clase) # default
 
 
+    if lab_pc_clase == 1: # Laboratorios
+        pass
+
+
     if lab_pc_clase == 2: # PC y exámenes en general.
 
         if isinstance(get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc], list):
@@ -8783,6 +8787,10 @@ def get_embed_and_view_por_curso(ciclo_seleccionado, curso_seleccionado, lab_pc_
         else:
             embed = get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc]
 
+    if lab_pc_clase == 3: # Clases
+        pass
+
+    # FINES DE TESTEO
 
     if ciclo_seleccionado == 0:  # Primer ciclo
         if curso_seleccionado == 0: # Física 1
