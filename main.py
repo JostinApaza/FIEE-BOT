@@ -8006,7 +8006,7 @@ def get_embeds_electromagnetismo_1_pcs():
     lista.append(get_embed_electromagnetismo_1_pc2())
     lista.append(get_embed_electromagnetismo_1_pc3())
     lista.append(get_embed_electromagnetismo_1_pc4())
-    lista.append(get_embed_electromagnetismo_1_pc5())
+    lista.append("get_embed_electromagnetismo_1_pc5()")
     lista.append(get_embed_electromagnetismo_1_exparcial())
     lista.append(get_embed_electromagnetismo_1_exfinal())
     lista.append(get_embed_electromagnetismo_1_exsusti())
@@ -8507,41 +8507,104 @@ def get_embed_fisica_1_clase_caro():
     embed = discord.Embed(
         title="Clases PDF's Prof. Caro",
         description=textwrap.dedent(f"""\
-            - 
-            - 
-            - 
-            - 
-            - 
-            - 
-            - 
-            - 
-            - 
+            - [01. Teoria de Errores-JAC.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384933391635583119/01._Teoria_de_Errores-JAC.pdf?ex=68543b3b&is=6852e9bb&hm=3c37db81aa4307b5cc5000f20352aade214b34eef5485035d7d937c328edadb2&)
+            - [02. Mov. Curvilineo.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384933391241183372/02._Mov._Curvilineo.pdf?ex=68543b3b&is=6852e9bb&hm=00773f2d32fdf8dfb6dd18f02e78b54058e65d1fad42f8ff5869c7aa8aea4146&)
+            - [03. MCL-M2D.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384933390943260783/03._MCL-M2D.pdf?ex=68543b3b&is=6852e9bb&hm=a52cc93f9787b375bf1992183b626e5e106282876f5beef50d662b916f0cfae9&)
+            - [04. Mov. Dependientes.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384933390620430478/04._Mov._Dependientes.pdf?ex=68543b3b&is=6852e9bb&hm=c0333b2ef8201cfa30d7d02caeb7945deb81be89b0bb08815c70297fad9c98aa&)
+            - [05. Mov. Curvilineo.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384933390305984706/05._Mov._Curvilineo.pdf?ex=68543b3b&is=6852e9bb&hm=0a0a101cb110ac511b23522026583a396fb6f1d2c6f1ff19428600ffa8cfbf8d&)
+            - [06. Mov. Relativo.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384935532546756793/06._Mov._Relativo.pdf?ex=68543d39&is=6852ebb9&hm=f8bc5f224066046facbb74ff9ffa5c0add891f7b66bcd25f5c4aef4e4972abe1&)
+            - [07. Dinámica-JCA.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384935531938578544/07._Dinamica-JCA.pdf?ex=68543d39&is=6852ebb9&hm=720bc9938b9b74f31bbdec61c9be252841c830f9c8d55ca9868bd76596cf3bbe&)
+            - [08. Dinámica SR no I.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384935531544318052/08._Dinamica_SR_no_I.pdf?ex=68543d39&is=6852ebb9&hm=51f2097f96ee24a4ba75e64502a95058e805a4b5573dd4c5c34c78a2292a51e7&)
         """),
         color=0x701B13)
-    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_clase_caro2():
+    embed = discord.Embed(
+        title="Clases PDF's Prof. Caro",
+        description=textwrap.dedent(f"""\
+            - [09. Trabajo-Energía.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384935531112038512/09._Trabajo-Energia.pdf?ex=68543d39&is=6852ebb9&hm=3b6c6dde8d60b9823e8ad7e1cdfe26006b235aa14c3cf5a841a00ec5ed54dbaa&)
+            - [10. Impulso - Momentum.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384935530315387012/10._Impulso_-_Momentum.pdf?ex=68543d39&is=6852ebb9&hm=7197b1fde81a25d9facbc310776a2618a3d4793c55b729cc37e2ab0f6b2e6613&)
+            - [11. Dinamica de CR.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384935529887432825/11._Dinamica_de_CR.pdf?ex=68543d39&is=6852ebb9&hm=29145f11d611c340a6ae32876bf7bbf44bf6d193c00d2e8e1f22036d18be4775&)
+            - [12. Hidrostática.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384935528914223247/12._Hidrostatica.pdf?ex=68543d38&is=6852ebb8&hm=556766b941ac4bb44dfee5f1ea09296d59e74a2667ca0f0364bef67e8731aaf7&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_clase_huallpa1():
+    embed = discord.Embed(
+        title="Clases PDF's - PPT's Prof. Huallpa",
+        description=textwrap.dedent(f"""\
+            - [Presentación del curso 1.PNG](https://media.discordapp.net/attachments/1384359269570187284/1384948267678175333/Presentacion_de_curso_1.PNG?ex=68544916&is=6852f796&hm=e9017320b2d9a93fed3a1e14dac9fbcbbdda9df8ed363e577909b8acd824ed74&=&format=webp&quality=lossless&width=1423&height=859)
+            - [Presentación del curso 2.PNG](https://media.discordapp.net/attachments/1384359269570187284/1384948267422584862/Presentacion_de_curso_2.PNG?ex=68544916&is=6852f796&hm=95a686ea4fe468b3c39ee8e024535351b42e15b83e7c9f87331ca3d7abb283f9&=&format=webp&quality=lossless&width=1304&height=859)
+            - [Clase 1. Semana 1. Cuaderno del Profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384943648373997679/Clase_1._Semana_1._Cuaderno_del_Profesor.pdf?ex=685444c8&is=6852f348&hm=faa4577d738049d367d9fa668f8136c3aa20445e4852f9d227658ceb0a88a39e&)
+            - [Clase 2. Semana 1. Cuaderno del Profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384943647987863632/Clase_2._Semana_1._Cuaderno_del_Profesor.pdf?ex=685444c8&is=6852f348&hm=7a40d66d90541c1dc88e8a524063b5a0addbae56ce9c3c4fac8a32bcf20e9233&)
+            - [Sistema Legal de Unidades y Medidas del Perú.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384943647606177948/Sistema_Legal_de_Unidades_y_Medidas_del_Peru.pdf?ex=685444c8&is=6852f348&hm=e9277e20bbef8b0800fa2a8c7314b6c810a9eb44e769b8ec081ee540fbb65449&)
+            - [1 INTRODUCCION FISICA 1.pptx](https://cdn.discordapp.com/attachments/1384359269570187284/1384943707744112752/1_INTRODUCCION_FISICA_1.pptx?ex=685444d6&is=6852f356&hm=9b58c157608b40400e5c0ca42f9ead9056ea1ead3d0ecdafe8ff6aa2ed45ba01&)
+            - [2 Errores.pptx](https://cdn.discordapp.com/attachments/1384359269570187284/1384943707345911849/2_Errores.pptx?ex=685444d6&is=6852f356&hm=8dbca63a7e7ab3f3b87c99b52cda2c329d1db68e3618bfdb873737e769038ff3&)
+            - [Clase 3. Semana 2. Cuaderno del profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384944457811624089/Clase_3._Semana_2._Cuaderno_del_profesor.pdf?ex=68544589&is=6852f409&hm=78bd5089d9a150e14f31f66e550b6103d9e6d4e9a8352be3d585fc5a2ea48b9d&)
+            - [Clase 4. Semana 2. Cuaderno del Profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384944457404780704/Clase_4._Semana_2._Cuaderno_del_Profesor.pdf?ex=68544589&is=6852f409&hm=7f988721643d25558a44b9aa9182b2f8e44eb8a05258dd72dcfa78726e77a1ad&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_clase_huallpa2():
+    embed = discord.Embed(
+        title="Clases PDF's - PPT's Prof. Huallpa",
+        description=textwrap.dedent(f"""\
+            - [Clase 5. Semana 2. Cuaderno del Profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384944457027289229/Clase_5._Semana_2._Cuaderno_del_Profesor.pdf?ex=68544589&is=6852f409&hm=4b3d7279e3fd9a882b051610146a2cea7751ea8e147c4755e5e67fed6c5c7654&)
+            - [Clase 6. Semana 3. Cuaderno del Profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384945344428642475/Clase_6._Semana_3._Cuaderno_del_Profesor.pdf?ex=6854465d&is=6852f4dd&hm=0218061c354d6a294e2921163f47564b9a802bb28eca7f69670111a2fd96a1df&)
+            - [Clase 7. Semana 3. Cuaderno del Profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384945345028554792/Clase_7._Semana_3._Cuaderno_del_Profesor.pdf?ex=6854465d&is=6852f4dd&hm=26b2e79825c3f7cd903c818ddd783113aeb1cbf0d2d2453b9941d8bdd0809c14&)
+            - [Clase Manuscrita 04-12-2020.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384945344739282974/Clase_Manuscrita_04-12-2020.pdf?ex=6854465d&is=6852f4dd&hm=73865052c3d5df79f68f3aece6428c3bf2ce76b253fe89e681428f302d2d2ba4&)
+            - [Clase 8. Semana 4. Cuaderno del Profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384945709454983280/Clase_8._Semana_4._Cuaderno_del_Profesor.pdf?ex=685446b4&is=6852f534&hm=dd4ecb68444379b45c169b307af0bbb3735b67f9bacc90c094b6f271969c8917&)
+            - [Clase 9. Semana 4. Cuaderno del Profesor.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384945710298038352/Clase_9._Semana_4._Cuaderno_del_Profesor.pdf?ex=685446b4&is=6852f534&hm=da9f3c14f009bc3b9c744dc1fc4c7399b62e2de63b6f164d0cd4953ddd6e32d9&)
+            - [Clase manuscrita 11-12-2020 (Semana 4).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384945709840728186/Clase_manuscrita_11-12-2020.pdf?ex=685446b4&is=6852f534&hm=59a51f716e8e86b02577870448f144dc5eedfc6bac48e57897dcff3a50a89e46&)
+            - [Clase manuscrita 18-12-2020 (Semana 5).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384946142386847805/Clase_manuscrita_18-12-2020.pdf?ex=6854471b&is=6852f59b&hm=fc7e003e91c8642631616a7aca0ad102cb27b81e4bd809a4c523d97f8c15122c&)
+            - [Clase 25-12-2020 (Semana 6-7).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384946339665809549/Clase_25-12-2020.pdf?ex=6854474a&is=6852f5ca&hm=8beff9bcbefce3053707fe74843d12b7a16d060b831b2debad9291c4badf6ab5&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_clase_huallpa3():
+    embed = discord.Embed(
+        title="Clases PDF's - PPT's Prof. Huallpa",
+        description=textwrap.dedent(f"""\
+            - [Clase 15-01-2021 (Semana 9).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384946729564115025/Clase_15-01-2021.pdf?ex=685447a7&is=6852f627&hm=72a9d487aba25613610e6cfd94cbf4b4305f5ee7448cbad93d7e408a190b1dce&)
+            - [Clase 22-01-2021 (Semana 10).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384947038889840764/Clase_22-01-2021.pdf?ex=685447f1&is=6852f671&hm=033f940939aaa1e2516465a4117a17f936e2683dfb61cc525abc585f01f3d8ee&)
+            - [Clase 29-01-2021 (Semana 11).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384947413458092032/Clase_29-01-2021.pdf?ex=6854484a&is=6852f6ca&hm=f92baf336b24ba9e51c8fa14638662b57c2ff8211960c7ccdb79ca89718b3234&)
+            - [Clase 05-02-21 (Semana 12).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384947413080346744/Clase_05-02-21.pdf?ex=6854484a&is=6852f6ca&hm=d1fc1568c752c5b07e2394697c92829901da307bd4580f56dcb8fc0aa70df7a7&)
+            - [Clase 12-02-2021 (Semana 13).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384947412782809139/Clase_12-02-2021.pdf?ex=6854484a&is=6852f6ca&hm=657b4de44984845de46b0043cf83d2b38c684fedfa5907a660f9b6a5f64fa7b2&)
+            - [CLASE 19-02-2021 (Semana 14).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384947412409389146/CLASE_19-02-2021.pdf?ex=6854484a&is=6852f6ca&hm=b33fbab398df9ce03bbaeda83bab36caa05065efb5e5f74ffb3284d29bf82104&)
+            - [Clase B 19-02-2021 (Semana 14).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384947411788627978/Clase_B_19-02-2021.pdf?ex=6854484a&is=6852f6ca&hm=d12c53a127ff3670bd4a24c821b57f556e9d81cbd0367a9975856ed48e96cb1e&)
+            - [Clase 26-02-2021 (Semana 15).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384947410865881239/Clase_26-02-2021.pdf?ex=68544849&is=6852f6c9&hm=1fda4867c81de2d735e6f40ddf59b5ed98fe8b860bb8c2130632fd89cdf4a4ed&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 3. Gracias por usar FIEE-BOT.")
     embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
 
     return embed
 
 def get_embed_fisica_1_clase_huallpa():
-    embed = discord.Embed(
-        title="Clases PDF's Prof. Huallpa",
-        description=textwrap.dedent(f"""\
-            - 
-            - 
-            - 
-            - 
-            - 
-            - 
-            - 
-            - 
-            - 
-        """),
-        color=0x701B13)
-    embed.set_footer(text="Gracias por usar FIEE-BOT.")
-    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
 
-    return embed
+    lista = []
+
+    lista.append(get_embed_fisica_1_clase_huallpa1()) # [0]
+    lista.append(get_embed_fisica_1_clase_huallpa2()) # [1]
+    lista.append(get_embed_fisica_1_clase_huallpa3()) # [2]
+
+    return lista
 
 
 def get_embeds_fisica_1_clases():
@@ -8549,7 +8612,7 @@ def get_embeds_fisica_1_clases():
     lista = []
 
     lista.append(get_embed_fisica_1_clase_caro())
-    lista.append(get_embed_fisica_1_clase_huallpa())
+    lista.append(get_embed_fisica_1_clase_huallpa1())
     
     return lista
 
@@ -8642,22 +8705,23 @@ def get_embed_and_view_por_curso(ciclo_seleccionado, curso_seleccionado, lab_pc_
     view = PaginaAnteriorPCS_LABS(ciclo_seleccionado, curso_seleccionado, lab_pc_clase) # default
 
 
-    if lab_pc_clase == 2:
+    if lab_pc_clase == 2: # PC's y exámenes en general.
 
         embed = get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc]
-
+    
 
     if ciclo_seleccionado == 0:  # Primer ciclo
         if curso_seleccionado == 0: # Física 1
             if lab_pc_clase == 1:
                 embed = get_embeds_fisica_1_labos()[periodo_o_pc]
                 if periodo_o_pc == 3:
-                    view = NavegarDosPaginasPCS_LABS(get_embed_fisica_1_laboratorios_2023_I_pag1(), get_embed_fisica_1_laboratorios_2023_I_pag2(), ciclo_seleccionado, curso_seleccionado, lab_pc_clase)
-            if lab_pc_clase == 2:
-                embed = get_embeds_fisica_1_pcs()[periodo_o_pc]
+                    view = NavegarPaginas([get_embed_fisica_1_laboratorios_2023_I_pag1(), get_embed_fisica_1_laboratorios_2023_I_pag2()], ciclo_seleccionado, curso_seleccionado, lab_pc_clase)
             if lab_pc_clase == 3:
                 embed = get_embeds_fisica_1_clases()[periodo_o_pc]
-
+                if periodo_o_pc == 0:  # Clases del prof. Caro
+                    view = NavegarPaginas([get_embed_fisica_1_clase_caro(), get_embed_fisica_1_clase_caro2()], ciclo_seleccionado, curso_seleccionado, lab_pc_clase)
+                else:
+                    view = NavegarPaginas(get_embed_fisica_1_clase_huallpa(), ciclo_seleccionado, curso_seleccionado, lab_pc_clase)
 
 
     return embed, view
@@ -9954,7 +10018,7 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
             view =  NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
 
         if opcion_elegida == 4:  # Cuadernos y libros
-            view =  PaginaAnteriorPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
+            view =  PaginaAnterior(self.ciclo_seleccionado, self.curso_seleccionado)
 
         embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][opcion_elegida-1]
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
@@ -10033,88 +10097,39 @@ class NumeroMenuPCS_LABS_CLASES(discord.ui.View):
 # &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 
-class NavegarDosPaginasPCS_LABS(discord.ui.View):
-
-    def __init__(self, embed1, embed2, ciclo_seleccionado, curso_seleccionado, opcion):
+class NavegarPaginas(discord.ui.View):
+    def __init__(self, embeds: list[discord.Embed], ciclo_seleccionado, curso_seleccionado, opcion):
         super().__init__()
-
+        self.ciclo_seleccionado = ciclo_seleccionado
+        self.curso_seleccionado = curso_seleccionado
+        self.opcion = opcion
+        self.embeds = embeds
         self.pagina_actual = 0
-        self.embed1 = embed1
-        self.embed2 = embed2
 
-        self.ciclo_seleccionado = ciclo_seleccionado
-        self.curso_seleccionado = curso_seleccionado
-        self.opcion = opcion
+    async def update_message(self, interaction: discord.Interaction):
+        # Deshabilita el botón "anterior" si estamos en la primera página
+        self.anterior.disabled = self.pagina_actual == 0
+        # Deshabilita el botón "siguiente" si estamos en la última página
+        self.siguiente.disabled = self.pagina_actual == len(self.embeds) - 1
 
-        # self.embed1.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
-        # self.embed2.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=self)
 
-        self.embeds = [self.embed1, self.embed2]
-
-    @discord.ui.button(label="←", style=discord.ButtonStyle.secondary)
+    @discord.ui.button(label="← Anterior", style=discord.ButtonStyle.secondary, disabled=True)
     async def anterior(self, interaction: discord.Interaction, button: discord.ui.Button):
-        self.pagina_actual = (self.pagina_actual - 1) % len(self.embeds)
-        view = NavegarDosPaginasPCS_LABS_v2(self.embed1, self.embed2, self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
+        self.pagina_actual -= 1
+        await self.update_message(interaction)
 
-        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=view)
-
-    @discord.ui.button(label="→", style=discord.ButtonStyle.primary)
+    @discord.ui.button(label="Siguiente →", style=discord.ButtonStyle.primary)
     async def siguiente(self, interaction: discord.Interaction, button: discord.ui.Button):
-        self.pagina_actual = (self.pagina_actual + 1) % len(self.embeds)
-        view = NavegarDosPaginasPCS_LABS_v2(self.embed1, self.embed2, self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
-            
-        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=view)
+        self.pagina_actual += 1
+        await self.update_message(interaction)
 
     @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
     async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
 
         view = NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
 
-        embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
-        embed.set_footer(text="Gracias por usar FIEE-BOT.")
-        embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
-
-        await interaction.response.edit_message(embed=embed, view=view)
-
-
-class NavegarDosPaginasPCS_LABS_v2(discord.ui.View):
-
-    def __init__(self, embed1, embed2, ciclo_seleccionado, curso_seleccionado, opcion):
-        super().__init__()
-
-        self.pagina_actual = 1
-        self.embed1 = embed1
-        self.embed2 = embed2
-
-        self.ciclo_seleccionado = ciclo_seleccionado
-        self.curso_seleccionado = curso_seleccionado
-        self.opcion = opcion
-
-        # self.embed1.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
-        # self.embed2.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
-
-        self.embeds = [self.embed1, self.embed2]
-
-    @discord.ui.button(label="←", style=discord.ButtonStyle.primary)
-    async def anterior(self, interaction: discord.Interaction, button: discord.ui.Button):
-        self.pagina_actual = (self.pagina_actual - 1) % len(self.embeds)
-        view = NavegarDosPaginasPCS_LABS(self.embed1, self.embed2, self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
-
-        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=view)
-
-    @discord.ui.button(label="→", style=discord.ButtonStyle.secondary)
-    async def siguiente(self, interaction: discord.Interaction, button: discord.ui.Button):
-        self.pagina_actual = (self.pagina_actual + 1) % len(self.embeds)
-        view = NavegarDosPaginasPCS_LABS(self.embed1, self.embed2, self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
-
-        await interaction.response.edit_message(embed=self.embeds[self.pagina_actual], view=view)
-
-    @discord.ui.button(label="↩️ Regresar", style=discord.ButtonStyle.secondary)
-    async def volver(self, interaction: discord.Interaction, button: discord.ui.Button):
-
-        view = NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, self.opcion)
-
-        embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
+        embed = get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][self.opcion-1]
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
         embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
@@ -10139,6 +10154,7 @@ class PaginaAnterior(discord.ui.View):
 
         await interaction.response.edit_message(embed=embed, view=view)
 
+
 class PaginaAnteriorPCS_LABS(discord.ui.View):
     def __init__(self, ciclo_seleccionado, curso_seleccionado, opcion):
         super().__init__()
@@ -10157,6 +10173,10 @@ class PaginaAnteriorPCS_LABS(discord.ui.View):
         embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
         await interaction.response.edit_message(embed=embed, view=view)
+
+
+# ///////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
