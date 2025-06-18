@@ -2679,7 +2679,7 @@ def get_embed_curso_example():
 
 def get_embed_calc_diferencial_pc1():
     embed = discord.Embed(
-        title="1ra PC's - calc_diferencial",
+        title="1ra PC - calc_diferencial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2699,7 +2699,7 @@ def get_embed_calc_diferencial_pc1():
 
 def get_embed_calc_diferencial_pc2():
     embed = discord.Embed(
-        title="2da PC's - calc_diferencial",
+        title="2da PC - calc_diferencial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2718,7 +2718,7 @@ def get_embed_calc_diferencial_pc2():
     return embed
 def get_embed_calc_diferencial_pc3():
     embed = discord.Embed(
-        title="3ra PC's - calc_diferencial",
+        title="3ra PC - calc_diferencial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2738,7 +2738,7 @@ def get_embed_calc_diferencial_pc3():
 
 def get_embed_calc_diferencial_pc4():
     embed = discord.Embed(
-        title="4ta PC's - calc_diferencial",
+        title="4ta PC - calc_diferencial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2758,7 +2758,7 @@ def get_embed_calc_diferencial_pc4():
 
 def get_embed_calc_diferencial_pc5():
     embed = discord.Embed(
-        title="5ta PC's - calc_diferencial",
+        title="5ta PC - calc_diferencial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2877,7 +2877,7 @@ def get_embeds_calc_diferencial_pcs():
 
 def get_embed_algebra_lineal_pc1():
     embed = discord.Embed(
-        title="1ra PC's - algebra_lineal",
+        title="1ra PC - algebra_lineal",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2897,7 +2897,7 @@ def get_embed_algebra_lineal_pc1():
 
 def get_embed_algebra_lineal_pc2():
     embed = discord.Embed(
-        title="2da PC's - algebra_lineal",
+        title="2da PC - algebra_lineal",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2916,7 +2916,7 @@ def get_embed_algebra_lineal_pc2():
     return embed
 def get_embed_algebra_lineal_pc3():
     embed = discord.Embed(
-        title="3ra PC's - algebra_lineal",
+        title="3ra PC - algebra_lineal",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2936,7 +2936,7 @@ def get_embed_algebra_lineal_pc3():
 
 def get_embed_algebra_lineal_pc4():
     embed = discord.Embed(
-        title="4ta PC's - algebra_lineal",
+        title="4ta PC - algebra_lineal",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2956,7 +2956,7 @@ def get_embed_algebra_lineal_pc4():
 
 def get_embed_algebra_lineal_pc5():
     embed = discord.Embed(
-        title="5ta PC's - algebra_lineal",
+        title="5ta PC - algebra_lineal",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3074,7 +3074,7 @@ def get_embeds_algebra_lineal_pcs():
 
 def get_embed_dibujo_tecnico_pc1():
     embed = discord.Embed(
-        title="1ra PC's - dibujo_tecnico",
+        title="1ra PC - dibujo_tecnico",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3094,7 +3094,7 @@ def get_embed_dibujo_tecnico_pc1():
 
 def get_embed_dibujo_tecnico_pc2():
     embed = discord.Embed(
-        title="2da PC's - dibujo_tecnico",
+        title="2da PC - dibujo_tecnico",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3113,7 +3113,7 @@ def get_embed_dibujo_tecnico_pc2():
     return embed
 def get_embed_dibujo_tecnico_pc3():
     embed = discord.Embed(
-        title="3ra PC's - dibujo_tecnico",
+        title="3ra PC - dibujo_tecnico",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3133,7 +3133,7 @@ def get_embed_dibujo_tecnico_pc3():
 
 def get_embed_dibujo_tecnico_pc4():
     embed = discord.Embed(
-        title="4ta PC's - dibujo_tecnico",
+        title="4ta PC - dibujo_tecnico",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3153,7 +3153,7 @@ def get_embed_dibujo_tecnico_pc4():
 
 def get_embed_dibujo_tecnico_pc5():
     embed = discord.Embed(
-        title="5ta PC's - dibujo_tecnico",
+        title="5ta PC - dibujo_tecnico",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3271,7 +3271,7 @@ def get_embeds_dibujo_tecnico_pcs():
 
 def get_embed_intro_computacion_pc1():
     embed = discord.Embed(
-        title="1ra PC's - intro_computacion",
+        title="1ra PC - intro_computacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3291,7 +3291,7 @@ def get_embed_intro_computacion_pc1():
 
 def get_embed_intro_computacion_pc2():
     embed = discord.Embed(
-        title="2da PC's - intro_computacion",
+        title="2da PC - intro_computacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3310,7 +3310,7 @@ def get_embed_intro_computacion_pc2():
     return embed
 def get_embed_intro_computacion_pc3():
     embed = discord.Embed(
-        title="3ra PC's - intro_computacion",
+        title="3ra PC - intro_computacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3330,7 +3330,7 @@ def get_embed_intro_computacion_pc3():
 
 def get_embed_intro_computacion_pc4():
     embed = discord.Embed(
-        title="4ta PC's - intro_computacion",
+        title="4ta PC - intro_computacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3350,7 +3350,7 @@ def get_embed_intro_computacion_pc4():
 
 def get_embed_intro_computacion_pc5():
     embed = discord.Embed(
-        title="5ta PC's - intro_computacion",
+        title="5ta PC - intro_computacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3468,7 +3468,7 @@ def get_embeds_intro_computacion_pcs():
 
 def get_embed_fundamentos_programacion_pc1():
     embed = discord.Embed(
-        title="1ra PC's - fundamentos_programacion",
+        title="1ra PC - fundamentos_programacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3488,7 +3488,7 @@ def get_embed_fundamentos_programacion_pc1():
 
 def get_embed_fundamentos_programacion_pc2():
     embed = discord.Embed(
-        title="2da PC's - fundamentos_programacion",
+        title="2da PC - fundamentos_programacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3507,7 +3507,7 @@ def get_embed_fundamentos_programacion_pc2():
     return embed
 def get_embed_fundamentos_programacion_pc3():
     embed = discord.Embed(
-        title="3ra PC's - fundamentos_programacion",
+        title="3ra PC - fundamentos_programacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3527,7 +3527,7 @@ def get_embed_fundamentos_programacion_pc3():
 
 def get_embed_fundamentos_programacion_pc4():
     embed = discord.Embed(
-        title="4ta PC's - fundamentos_programacion",
+        title="4ta PC - fundamentos_programacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3547,7 +3547,7 @@ def get_embed_fundamentos_programacion_pc4():
 
 def get_embed_fundamentos_programacion_pc5():
     embed = discord.Embed(
-        title="5ta PC's - fundamentos_programacion",
+        title="5ta PC - fundamentos_programacion",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3665,7 +3665,7 @@ def get_embeds_fundamentos_programacion_pcs():
 
 def get_embed_fisica_2_pc1():
     embed = discord.Embed(
-        title="1ra PC's - fisica_2",
+        title="1ra PC - fisica_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3685,7 +3685,7 @@ def get_embed_fisica_2_pc1():
 
 def get_embed_fisica_2_pc2():
     embed = discord.Embed(
-        title="2da PC's - fisica_2",
+        title="2da PC - fisica_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3704,7 +3704,7 @@ def get_embed_fisica_2_pc2():
     return embed
 def get_embed_fisica_2_pc3():
     embed = discord.Embed(
-        title="3ra PC's - fisica_2",
+        title="3ra PC - fisica_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3724,7 +3724,7 @@ def get_embed_fisica_2_pc3():
 
 def get_embed_fisica_2_pc4():
     embed = discord.Embed(
-        title="4ta PC's - fisica_2",
+        title="4ta PC - fisica_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3744,7 +3744,7 @@ def get_embed_fisica_2_pc4():
 
 def get_embed_fisica_2_pc5():
     embed = discord.Embed(
-        title="5ta PC's - fisica_2",
+        title="5ta PC - fisica_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3862,7 +3862,7 @@ def get_embeds_fisica_2_pcs():
 
 def get_embed_calculo_integral_pc1():
     embed = discord.Embed(
-        title="1ra PC's - calculo_integral",
+        title="1ra PC - calculo_integral",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3882,7 +3882,7 @@ def get_embed_calculo_integral_pc1():
 
 def get_embed_calculo_integral_pc2():
     embed = discord.Embed(
-        title="2da PC's - calculo_integral",
+        title="2da PC - calculo_integral",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3901,7 +3901,7 @@ def get_embed_calculo_integral_pc2():
     return embed
 def get_embed_calculo_integral_pc3():
     embed = discord.Embed(
-        title="3ra PC's - calculo_integral",
+        title="3ra PC - calculo_integral",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3921,7 +3921,7 @@ def get_embed_calculo_integral_pc3():
 
 def get_embed_calculo_integral_pc4():
     embed = discord.Embed(
-        title="4ta PC's - calculo_integral",
+        title="4ta PC - calculo_integral",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3941,7 +3941,7 @@ def get_embed_calculo_integral_pc4():
 
 def get_embed_calculo_integral_pc5():
     embed = discord.Embed(
-        title="5ta PC's - calculo_integral",
+        title="5ta PC - calculo_integral",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4059,7 +4059,7 @@ def get_embeds_calculo_integral_pcs():
 
 def get_embed_algoritmos_1_pc1():
     embed = discord.Embed(
-        title="1ra PC's - algoritmos_1",
+        title="1ra PC - algoritmos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4079,7 +4079,7 @@ def get_embed_algoritmos_1_pc1():
 
 def get_embed_algoritmos_1_pc2():
     embed = discord.Embed(
-        title="2da PC's - algoritmos_1",
+        title="2da PC - algoritmos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4098,7 +4098,7 @@ def get_embed_algoritmos_1_pc2():
     return embed
 def get_embed_algoritmos_1_pc3():
     embed = discord.Embed(
-        title="3ra PC's - algoritmos_1",
+        title="3ra PC - algoritmos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4118,7 +4118,7 @@ def get_embed_algoritmos_1_pc3():
 
 def get_embed_algoritmos_1_pc4():
     embed = discord.Embed(
-        title="4ta PC's - algoritmos_1",
+        title="4ta PC - algoritmos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4138,7 +4138,7 @@ def get_embed_algoritmos_1_pc4():
 
 def get_embed_algoritmos_1_pc5():
     embed = discord.Embed(
-        title="5ta PC's - algoritmos_1",
+        title="5ta PC - algoritmos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4257,7 +4257,7 @@ def get_embeds_algoritmos_1_pcs():
 
 def get_embed_quimica_1_pc1():
     embed = discord.Embed(
-        title="1ra PC's - quimica_1",
+        title="1ra PC - quimica_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4277,7 +4277,7 @@ def get_embed_quimica_1_pc1():
 
 def get_embed_quimica_1_pc2():
     embed = discord.Embed(
-        title="2da PC's - quimica_1",
+        title="2da PC - quimica_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4296,7 +4296,7 @@ def get_embed_quimica_1_pc2():
     return embed
 def get_embed_quimica_1_pc3():
     embed = discord.Embed(
-        title="3ra PC's - quimica_1",
+        title="3ra PC - quimica_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4316,7 +4316,7 @@ def get_embed_quimica_1_pc3():
 
 def get_embed_quimica_1_pc4():
     embed = discord.Embed(
-        title="4ta PC's - quimica_1",
+        title="4ta PC - quimica_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4336,7 +4336,7 @@ def get_embed_quimica_1_pc4():
 
 def get_embed_quimica_1_pc5():
     embed = discord.Embed(
-        title="5ta PC's - quimica_1",
+        title="5ta PC - quimica_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4456,7 +4456,7 @@ def get_embeds_quimica_1_pcs():
 
 def get_embed_fundamentos_computador_pc1():
     embed = discord.Embed(
-        title="1ra PC's - fundamentos_computador",
+        title="1ra PC - fundamentos_computador",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4476,7 +4476,7 @@ def get_embed_fundamentos_computador_pc1():
 
 def get_embed_fundamentos_computador_pc2():
     embed = discord.Embed(
-        title="2da PC's - fundamentos_computador",
+        title="2da PC - fundamentos_computador",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4495,7 +4495,7 @@ def get_embed_fundamentos_computador_pc2():
     return embed
 def get_embed_fundamentos_computador_pc3():
     embed = discord.Embed(
-        title="3ra PC's - fundamentos_computador",
+        title="3ra PC - fundamentos_computador",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4515,7 +4515,7 @@ def get_embed_fundamentos_computador_pc3():
 
 def get_embed_fundamentos_computador_pc4():
     embed = discord.Embed(
-        title="4ta PC's - fundamentos_computador",
+        title="4ta PC - fundamentos_computador",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4535,7 +4535,7 @@ def get_embed_fundamentos_computador_pc4():
 
 def get_embed_fundamentos_computador_pc5():
     embed = discord.Embed(
-        title="5ta PC's - fundamentos_computador",
+        title="5ta PC - fundamentos_computador",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4653,7 +4653,7 @@ def get_embeds_fundamentos_computador_pcs():
 
 def get_embed_redes_1_pc1():
     embed = discord.Embed(
-        title="1ra PC's - redes_1",
+        title="1ra PC - redes_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4673,7 +4673,7 @@ def get_embed_redes_1_pc1():
 
 def get_embed_redes_1_pc2():
     embed = discord.Embed(
-        title="2da PC's - redes_1",
+        title="2da PC - redes_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4692,7 +4692,7 @@ def get_embed_redes_1_pc2():
     return embed
 def get_embed_redes_1_pc3():
     embed = discord.Embed(
-        title="3ra PC's - redes_1",
+        title="3ra PC - redes_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4712,7 +4712,7 @@ def get_embed_redes_1_pc3():
 
 def get_embed_redes_1_pc4():
     embed = discord.Embed(
-        title="4ta PC's - redes_1",
+        title="4ta PC - redes_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4732,7 +4732,7 @@ def get_embed_redes_1_pc4():
 
 def get_embed_redes_1_pc5():
     embed = discord.Embed(
-        title="5ta PC's - redes_1",
+        title="5ta PC - redes_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4851,7 +4851,7 @@ def get_embeds_redes_1_pcs():
 
 def get_embed_fund_electricidad_magnetismo_pc1():
     embed = discord.Embed(
-        title="1ra PC's - fund_electricidad_magnetismo",
+        title="1ra PC - fund_electricidad_magnetismo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4871,7 +4871,7 @@ def get_embed_fund_electricidad_magnetismo_pc1():
 
 def get_embed_fund_electricidad_magnetismo_pc2():
     embed = discord.Embed(
-        title="2da PC's - fund_electricidad_magnetismo",
+        title="2da PC - fund_electricidad_magnetismo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4890,7 +4890,7 @@ def get_embed_fund_electricidad_magnetismo_pc2():
     return embed
 def get_embed_fund_electricidad_magnetismo_pc3():
     embed = discord.Embed(
-        title="3ra PC's - fund_electricidad_magnetismo",
+        title="3ra PC - fund_electricidad_magnetismo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4910,7 +4910,7 @@ def get_embed_fund_electricidad_magnetismo_pc3():
 
 def get_embed_fund_electricidad_magnetismo_pc4():
     embed = discord.Embed(
-        title="4ta PC's - fund_electricidad_magnetismo",
+        title="4ta PC - fund_electricidad_magnetismo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -4930,7 +4930,7 @@ def get_embed_fund_electricidad_magnetismo_pc4():
 
 def get_embed_fund_electricidad_magnetismo_pc5():
     embed = discord.Embed(
-        title="5ta PC's - fund_electricidad_magnetismo",
+        title="5ta PC - fund_electricidad_magnetismo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5050,7 +5050,7 @@ def get_embeds_fund_electricidad_magnetismo_pcs():
 
 def get_embed_ecuaciones_diferenciales_pc1():
     embed = discord.Embed(
-        title="1ra PC's - ecuaciones_diferenciales",
+        title="1ra PC - ecuaciones_diferenciales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5070,7 +5070,7 @@ def get_embed_ecuaciones_diferenciales_pc1():
 
 def get_embed_ecuaciones_diferenciales_pc2():
     embed = discord.Embed(
-        title="2da PC's - ecuaciones_diferenciales",
+        title="2da PC - ecuaciones_diferenciales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5089,7 +5089,7 @@ def get_embed_ecuaciones_diferenciales_pc2():
     return embed
 def get_embed_ecuaciones_diferenciales_pc3():
     embed = discord.Embed(
-        title="3ra PC's - ecuaciones_diferenciales",
+        title="3ra PC - ecuaciones_diferenciales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5109,7 +5109,7 @@ def get_embed_ecuaciones_diferenciales_pc3():
 
 def get_embed_ecuaciones_diferenciales_pc4():
     embed = discord.Embed(
-        title="4ta PC's - ecuaciones_diferenciales",
+        title="4ta PC - ecuaciones_diferenciales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5129,7 +5129,7 @@ def get_embed_ecuaciones_diferenciales_pc4():
 
 def get_embed_ecuaciones_diferenciales_pc5():
     embed = discord.Embed(
-        title="5ta PC's - ecuaciones_diferenciales",
+        title="5ta PC - ecuaciones_diferenciales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5248,7 +5248,7 @@ def get_embeds_ecuaciones_diferenciales_pcs():
 
 def get_embed_probabilidades_pc1():
     embed = discord.Embed(
-        title="1ra PC's - probabilidades",
+        title="1ra PC - probabilidades",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5268,7 +5268,7 @@ def get_embed_probabilidades_pc1():
 
 def get_embed_probabilidades_pc2():
     embed = discord.Embed(
-        title="2da PC's - probabilidades",
+        title="2da PC - probabilidades",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5287,7 +5287,7 @@ def get_embed_probabilidades_pc2():
     return embed
 def get_embed_probabilidades_pc3():
     embed = discord.Embed(
-        title="3ra PC's - probabilidades",
+        title="3ra PC - probabilidades",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5307,7 +5307,7 @@ def get_embed_probabilidades_pc3():
 
 def get_embed_probabilidades_pc4():
     embed = discord.Embed(
-        title="4ta PC's - probabilidades",
+        title="4ta PC - probabilidades",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5327,7 +5327,7 @@ def get_embed_probabilidades_pc4():
 
 def get_embed_probabilidades_pc5():
     embed = discord.Embed(
-        title="5ta PC's - probabilidades",
+        title="5ta PC - probabilidades",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5446,7 +5446,7 @@ def get_embeds_probabilidades_pcs():
 
 def get_embed_poo_pc1():
     embed = discord.Embed(
-        title="1ra PC's - poo",
+        title="1ra PC - poo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5466,7 +5466,7 @@ def get_embed_poo_pc1():
 
 def get_embed_poo_pc2():
     embed = discord.Embed(
-        title="2da PC's - poo",
+        title="2da PC - poo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5485,7 +5485,7 @@ def get_embed_poo_pc2():
     return embed
 def get_embed_poo_pc3():
     embed = discord.Embed(
-        title="3ra PC's - poo",
+        title="3ra PC - poo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5505,7 +5505,7 @@ def get_embed_poo_pc3():
 
 def get_embed_poo_pc4():
     embed = discord.Embed(
-        title="4ta PC's - poo",
+        title="4ta PC - poo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5525,7 +5525,7 @@ def get_embed_poo_pc4():
 
 def get_embed_poo_pc5():
     embed = discord.Embed(
-        title="5ta PC's - poo",
+        title="5ta PC - poo",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5644,7 +5644,7 @@ def get_embeds_poo_pcs():
 
 def get_embed_economia_pc1():
     embed = discord.Embed(
-        title="1ra PC's - economia",
+        title="1ra PC - economia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5664,7 +5664,7 @@ def get_embed_economia_pc1():
 
 def get_embed_economia_pc2():
     embed = discord.Embed(
-        title="2da PC's - economia",
+        title="2da PC - economia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5683,7 +5683,7 @@ def get_embed_economia_pc2():
     return embed
 def get_embed_economia_pc3():
     embed = discord.Embed(
-        title="3ra PC's - economia",
+        title="3ra PC - economia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5703,7 +5703,7 @@ def get_embed_economia_pc3():
 
 def get_embed_economia_pc4():
     embed = discord.Embed(
-        title="4ta PC's - economia",
+        title="4ta PC - economia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5723,7 +5723,7 @@ def get_embed_economia_pc4():
 
 def get_embed_economia_pc5():
     embed = discord.Embed(
-        title="5ta PC's - economia",
+        title="5ta PC - economia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5843,7 +5843,7 @@ def get_embeds_economia_pcs():
 
 def get_embed_redes_2_pc1():
     embed = discord.Embed(
-        title="1ra PC's - redes_2",
+        title="1ra PC - redes_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5863,7 +5863,7 @@ def get_embed_redes_2_pc1():
 
 def get_embed_redes_2_pc2():
     embed = discord.Embed(
-        title="2da PC's - redes_2",
+        title="2da PC - redes_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5882,7 +5882,7 @@ def get_embed_redes_2_pc2():
     return embed
 def get_embed_redes_2_pc3():
     embed = discord.Embed(
-        title="3ra PC's - redes_2",
+        title="3ra PC - redes_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5902,7 +5902,7 @@ def get_embed_redes_2_pc3():
 
 def get_embed_redes_2_pc4():
     embed = discord.Embed(
-        title="4ta PC's - redes_2",
+        title="4ta PC - redes_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -5922,7 +5922,7 @@ def get_embed_redes_2_pc4():
 
 def get_embed_redes_2_pc5():
     embed = discord.Embed(
-        title="5ta PC's - redes_2",
+        title="5ta PC - redes_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6040,7 +6040,7 @@ def get_embeds_redes_2_pcs():
 
 def get_embed_electrotecnia_pc1():
     embed = discord.Embed(
-        title="1ra PC's - electrotecnia",
+        title="1ra PC - electrotecnia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6060,7 +6060,7 @@ def get_embed_electrotecnia_pc1():
 
 def get_embed_electrotecnia_pc2():
     embed = discord.Embed(
-        title="2da PC's - electrotecnia",
+        title="2da PC - electrotecnia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6079,7 +6079,7 @@ def get_embed_electrotecnia_pc2():
     return embed
 def get_embed_electrotecnia_pc3():
     embed = discord.Embed(
-        title="3ra PC's - electrotecnia",
+        title="3ra PC - electrotecnia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6099,7 +6099,7 @@ def get_embed_electrotecnia_pc3():
 
 def get_embed_electrotecnia_pc4():
     embed = discord.Embed(
-        title="4ta PC's - electrotecnia",
+        title="4ta PC - electrotecnia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6119,7 +6119,7 @@ def get_embed_electrotecnia_pc4():
 
 def get_embed_electrotecnia_pc5():
     embed = discord.Embed(
-        title="5ta PC's - electrotecnia",
+        title="5ta PC - electrotecnia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6237,7 +6237,7 @@ def get_embeds_electrotecnia_pcs():
 
 def get_embed_intro_moderna_pc1():
     embed = discord.Embed(
-        title="1ra PC's - intro_moderna",
+        title="1ra PC - intro_moderna",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6257,7 +6257,7 @@ def get_embed_intro_moderna_pc1():
 
 def get_embed_intro_moderna_pc2():
     embed = discord.Embed(
-        title="2da PC's - intro_moderna",
+        title="2da PC - intro_moderna",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6276,7 +6276,7 @@ def get_embed_intro_moderna_pc2():
     return embed
 def get_embed_intro_moderna_pc3():
     embed = discord.Embed(
-        title="3ra PC's - intro_moderna",
+        title="3ra PC - intro_moderna",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6296,7 +6296,7 @@ def get_embed_intro_moderna_pc3():
 
 def get_embed_intro_moderna_pc4():
     embed = discord.Embed(
-        title="4ta PC's - intro_moderna",
+        title="4ta PC - intro_moderna",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6316,7 +6316,7 @@ def get_embed_intro_moderna_pc4():
 
 def get_embed_intro_moderna_pc5():
     embed = discord.Embed(
-        title="5ta PC's - intro_moderna",
+        title="5ta PC - intro_moderna",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6435,7 +6435,7 @@ def get_embeds_intro_moderna_pcs():
 
 def get_embed_analisis_senales_pc1():
     embed = discord.Embed(
-        title="1ra PC's - analisis_senales",
+        title="1ra PC - analisis_senales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6455,7 +6455,7 @@ def get_embed_analisis_senales_pc1():
 
 def get_embed_analisis_senales_pc2():
     embed = discord.Embed(
-        title="2da PC's - analisis_senales",
+        title="2da PC - analisis_senales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6474,7 +6474,7 @@ def get_embed_analisis_senales_pc2():
     return embed
 def get_embed_analisis_senales_pc3():
     embed = discord.Embed(
-        title="3ra PC's - analisis_senales",
+        title="3ra PC - analisis_senales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6494,7 +6494,7 @@ def get_embed_analisis_senales_pc3():
 
 def get_embed_analisis_senales_pc4():
     embed = discord.Embed(
-        title="4ta PC's - analisis_senales",
+        title="4ta PC - analisis_senales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6514,7 +6514,7 @@ def get_embed_analisis_senales_pc4():
 
 def get_embed_analisis_senales_pc5():
     embed = discord.Embed(
-        title="5ta PC's - analisis_senales",
+        title="5ta PC - analisis_senales",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6633,7 +6633,7 @@ def get_embeds_analisis_senales_pcs():
 
 def get_embed_calculo_vectorial_pc1():
     embed = discord.Embed(
-        title="1ra PC's - calculo_vectorial",
+        title="1ra PC - calculo_vectorial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6653,7 +6653,7 @@ def get_embed_calculo_vectorial_pc1():
 
 def get_embed_calculo_vectorial_pc2():
     embed = discord.Embed(
-        title="2da PC's - calculo_vectorial",
+        title="2da PC - calculo_vectorial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6672,7 +6672,7 @@ def get_embed_calculo_vectorial_pc2():
     return embed
 def get_embed_calculo_vectorial_pc3():
     embed = discord.Embed(
-        title="3ra PC's - calculo_vectorial",
+        title="3ra PC - calculo_vectorial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6692,7 +6692,7 @@ def get_embed_calculo_vectorial_pc3():
 
 def get_embed_calculo_vectorial_pc4():
     embed = discord.Embed(
-        title="4ta PC's - calculo_vectorial",
+        title="4ta PC - calculo_vectorial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6712,7 +6712,7 @@ def get_embed_calculo_vectorial_pc4():
 
 def get_embed_calculo_vectorial_pc5():
     embed = discord.Embed(
-        title="5ta PC's - calculo_vectorial",
+        title="5ta PC - calculo_vectorial",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6831,7 +6831,7 @@ def get_embeds_calculo_vectorial_pcs():
 
 def get_embed_circuitos_1_pc1():
     embed = discord.Embed(
-        title="1ra PC's - circuitos_1",
+        title="1ra PC - circuitos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6851,7 +6851,7 @@ def get_embed_circuitos_1_pc1():
 
 def get_embed_circuitos_1_pc2():
     embed = discord.Embed(
-        title="2da PC's - circuitos_1",
+        title="2da PC - circuitos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6870,7 +6870,7 @@ def get_embed_circuitos_1_pc2():
     return embed
 def get_embed_circuitos_1_pc3():
     embed = discord.Embed(
-        title="3ra PC's - circuitos_1",
+        title="3ra PC - circuitos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6890,7 +6890,7 @@ def get_embed_circuitos_1_pc3():
 
 def get_embed_circuitos_1_pc4():
     embed = discord.Embed(
-        title="4ta PC's - circuitos_1",
+        title="4ta PC - circuitos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -6910,7 +6910,7 @@ def get_embed_circuitos_1_pc4():
 
 def get_embed_circuitos_1_pc5():
     embed = discord.Embed(
-        title="5ta PC's - circuitos_1",
+        title="5ta PC - circuitos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7028,7 +7028,7 @@ def get_embeds_circuitos_1_pcs():
 
 def get_embed_metodos_numericos_pc1():
     embed = discord.Embed(
-        title="1ra PC's - metodos_numericos",
+        title="1ra PC - metodos_numericos",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7048,7 +7048,7 @@ def get_embed_metodos_numericos_pc1():
 
 def get_embed_metodos_numericos_pc2():
     embed = discord.Embed(
-        title="2da PC's - metodos_numericos",
+        title="2da PC - metodos_numericos",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7067,7 +7067,7 @@ def get_embed_metodos_numericos_pc2():
     return embed
 def get_embed_metodos_numericos_pc3():
     embed = discord.Embed(
-        title="3ra PC's - metodos_numericos",
+        title="3ra PC - metodos_numericos",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7087,7 +7087,7 @@ def get_embed_metodos_numericos_pc3():
 
 def get_embed_metodos_numericos_pc4():
     embed = discord.Embed(
-        title="4ta PC's - metodos_numericos",
+        title="4ta PC - metodos_numericos",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7107,7 +7107,7 @@ def get_embed_metodos_numericos_pc4():
 
 def get_embed_metodos_numericos_pc5():
     embed = discord.Embed(
-        title="5ta PC's - metodos_numericos",
+        title="5ta PC - metodos_numericos",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7226,7 +7226,7 @@ def get_embeds_metodos_numericos_pcs():
 
 def get_embed_etica_filosofia_pc1():
     embed = discord.Embed(
-        title="1ra PC's - etica_filosofia",
+        title="1ra PC - etica_filosofia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7246,7 +7246,7 @@ def get_embed_etica_filosofia_pc1():
 
 def get_embed_etica_filosofia_pc2():
     embed = discord.Embed(
-        title="2da PC's - etica_filosofia",
+        title="2da PC - etica_filosofia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7265,7 +7265,7 @@ def get_embed_etica_filosofia_pc2():
     return embed
 def get_embed_etica_filosofia_pc3():
     embed = discord.Embed(
-        title="3ra PC's - etica_filosofia",
+        title="3ra PC - etica_filosofia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7285,7 +7285,7 @@ def get_embed_etica_filosofia_pc3():
 
 def get_embed_etica_filosofia_pc4():
     embed = discord.Embed(
-        title="4ta PC's - etica_filosofia",
+        title="4ta PC - etica_filosofia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7305,7 +7305,7 @@ def get_embed_etica_filosofia_pc4():
 
 def get_embed_etica_filosofia_pc5():
     embed = discord.Embed(
-        title="5ta PC's - etica_filosofia",
+        title="5ta PC - etica_filosofia",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7424,7 +7424,7 @@ def get_embeds_etica_filosofia_pcs():
 
 def get_embed_sistemas_operativos_2_pc1():
     embed = discord.Embed(
-        title="1ra PC's - sistemas_operativos_2",
+        title="1ra PC - sistemas_operativos_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7444,7 +7444,7 @@ def get_embed_sistemas_operativos_2_pc1():
 
 def get_embed_sistemas_operativos_2_pc2():
     embed = discord.Embed(
-        title="2da PC's - sistemas_operativos_2",
+        title="2da PC - sistemas_operativos_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7463,7 +7463,7 @@ def get_embed_sistemas_operativos_2_pc2():
     return embed
 def get_embed_sistemas_operativos_2_pc3():
     embed = discord.Embed(
-        title="3ra PC's - sistemas_operativos_2",
+        title="3ra PC - sistemas_operativos_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7483,7 +7483,7 @@ def get_embed_sistemas_operativos_2_pc3():
 
 def get_embed_sistemas_operativos_2_pc4():
     embed = discord.Embed(
-        title="4ta PC's - sistemas_operativos_2",
+        title="4ta PC - sistemas_operativos_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7503,7 +7503,7 @@ def get_embed_sistemas_operativos_2_pc4():
 
 def get_embed_sistemas_operativos_2_pc5():
     embed = discord.Embed(
-        title="5ta PC's - sistemas_operativos_2",
+        title="5ta PC - sistemas_operativos_2",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7621,7 +7621,7 @@ def get_embeds_sistemas_operativos_2_pcs():
 
 def get_embed_sistemas_operativos_1_pc1():
     embed = discord.Embed(
-        title="1ra PC's - sistemas_operativos_1",
+        title="1ra PC - sistemas_operativos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7641,7 +7641,7 @@ def get_embed_sistemas_operativos_1_pc1():
 
 def get_embed_sistemas_operativos_1_pc2():
     embed = discord.Embed(
-        title="2da PC's - sistemas_operativos_1",
+        title="2da PC - sistemas_operativos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7660,7 +7660,7 @@ def get_embed_sistemas_operativos_1_pc2():
     return embed
 def get_embed_sistemas_operativos_1_pc3():
     embed = discord.Embed(
-        title="3ra PC's - sistemas_operativos_1",
+        title="3ra PC - sistemas_operativos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7680,7 +7680,7 @@ def get_embed_sistemas_operativos_1_pc3():
 
 def get_embed_sistemas_operativos_1_pc4():
     embed = discord.Embed(
-        title="4ta PC's - sistemas_operativos_1",
+        title="4ta PC - sistemas_operativos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7700,7 +7700,7 @@ def get_embed_sistemas_operativos_1_pc4():
 
 def get_embed_sistemas_operativos_1_pc5():
     embed = discord.Embed(
-        title="5ta PC's - sistemas_operativos_1",
+        title="5ta PC - sistemas_operativos_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7819,7 +7819,7 @@ def get_embeds_sistemas_operativos_1_pcs():
 
 def get_embed_electromagnetismo_1_pc1():
     embed = discord.Embed(
-        title="1ra PC's - electromagnetismo_1",
+        title="1ra PC - electromagnetismo_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7839,7 +7839,7 @@ def get_embed_electromagnetismo_1_pc1():
 
 def get_embed_electromagnetismo_1_pc2():
     embed = discord.Embed(
-        title="2da PC's - electromagnetismo_1",
+        title="2da PC - electromagnetismo_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7858,7 +7858,7 @@ def get_embed_electromagnetismo_1_pc2():
     return embed
 def get_embed_electromagnetismo_1_pc3():
     embed = discord.Embed(
-        title="3ra PC's - electromagnetismo_1",
+        title="3ra PC - electromagnetismo_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7878,7 +7878,7 @@ def get_embed_electromagnetismo_1_pc3():
 
 def get_embed_electromagnetismo_1_pc4():
     embed = discord.Embed(
-        title="4ta PC's - electromagnetismo_1",
+        title="4ta PC - electromagnetismo_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -7898,7 +7898,7 @@ def get_embed_electromagnetismo_1_pc4():
 
 def get_embed_electromagnetismo_1_pc5():
     embed = discord.Embed(
-        title="5ta PC's - electromagnetismo_1",
+        title="5ta PC - electromagnetismo_1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8020,7 +8020,7 @@ def get_embeds_electromagnetismo_1_pcs():
 
 def get_embed_cursobase_pc1():
     embed = discord.Embed(
-        title="1ra PC's - cursobase",
+        title="1ra PC - cursobase",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8040,7 +8040,7 @@ def get_embed_cursobase_pc1():
 
 def get_embed_cursobase_pc2():
     embed = discord.Embed(
-        title="2da PC's - cursobase",
+        title="2da PC - cursobase",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8059,7 +8059,7 @@ def get_embed_cursobase_pc2():
     return embed
 def get_embed_cursobase_pc3():
     embed = discord.Embed(
-        title="3ra PC's - cursobase",
+        title="3ra PC - cursobase",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8079,7 +8079,7 @@ def get_embed_cursobase_pc3():
 
 def get_embed_cursobase_pc4():
     embed = discord.Embed(
-        title="4ta PC's - cursobase",
+        title="4ta PC - cursobase",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8099,7 +8099,7 @@ def get_embed_cursobase_pc4():
 
 def get_embed_cursobase_pc5():
     embed = discord.Embed(
-        title="5ta PC's - cursobase",
+        title="5ta PC - cursobase",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8327,9 +8327,9 @@ def get_embeds_fisica_1_labos():
 
     return lista
 
-def get_embed_fisica_1_pc1():
+def get_embed_fisica_1_pc1_1():
     embed = discord.Embed(
-        title="1ra PC's - Física 1",
+        title="1ra PC - Física 1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8342,14 +8342,83 @@ def get_embed_fisica_1_pc1():
             - 
         """),
         color=0x701B13)
-    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
     embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
 
     return embed
 
+def get_embed_fisica_1_pc1_2():
+    embed = discord.Embed(
+        title="1ra PC - Física 1",
+        description=textwrap.dedent(f"""\
+            - [PC-1 24-3.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384974935256072224/PC-1_24-3.pdf?ex=685461ec&is=6853106c&hm=99912f8d615daeed34a72f7dba408e72a55193d6c4ff8292e60f5aa9ce80134d&)
+            - [PC-1 24-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384974935679832064/PC-1_24-2.pdf?ex=685461ec&is=6853106c&hm=1c6420dc8e214cd9cfd88ef1857528ec4349b484ce27700d0a63b2b8c9d0b066&)
+            - [PC1 BF101 M 23-3.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384975794941726750/PC1_BF101_M_23-3.pdf?ex=685462b9&is=68531139&hm=432d377d91be920c233b7bdfe3182791822495d3ffaefe0af13a1cd43f03983a&)
+            - [PC1 BFI01 N 23-3.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384975974902403204/PC1_BFI01_N_23-3.pdf?ex=685462e4&is=68531164&hm=7603daf8b8dd223f82771647ab5f4712071302de9b56bd6e8b75e70a1b80c2b6&)
+            - [PC1 BFI01 23-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384975794664771614/PC1_BFI01_23-2.pdf?ex=685462b9&is=68531139&hm=c1808d00337cf93cb88dad06449df6d92204b6f542bdc94a1911b469e3d8c91f&)
+            - [PC-1 23-1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384974936220766318/PC-1_23-1.pdf?ex=685461ec&is=6853106c&hm=cbc06f3b75493c4ddec87edb0f99901b866f3d4d6b6275de0c2c31203be66fe5&)
+            - [PC-1 22-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384974936841388083/PC-1_22-2.pdf?ex=685461ec&is=6853106c&hm=3a11d7373bc3306b076ed2113501f0a20d4d708a3cb16bfefdee936b407d073c&)
+            - [PC-1 22-1 MNO.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384974937294377072/PC-1_22-1_MNO.pdf?ex=685461ec&is=6853106c&hm=67d953d583219fdd01565638807fe6ed949e8973f44c2cfcb569d77078c92e53&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_pc1_3():
+    embed = discord.Embed(
+        title="1ra PC - Física 1",
+        description=textwrap.dedent(f"""\
+            - [PC-1 21-2 L3 Sol Prob 1,2,3,4 (Prof. Huallpa) Fisica 1.xlsx](https://cdn.discordapp.com/attachments/1384359269570187284/1384973545641214123/PC-1_21-2_L3_Sol_Prob_1234_Prof._Huallpa_Fisica_1.xlsx?ex=685460a0&is=68530f20&hm=7aa983aa0f3474db237eb539d3119fda0e2988e945e0416a6aac97d7fb40cd77&)
+            - [PC-1 21-2 L3 (Prof. Huallpa) Fisica 1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384973517883441212/PC-1_21-2_L2_Sol_Prof._Caro__Fisica_1.pdf?ex=6854609a&is=68530f1a&hm=d7d2a950f5e70fed445a3f57fb5c27d61e4eb0b7af1b79026593c1cc13e1eba9&)
+            - [PC-1 21-2 L2 Sol (Prof. Caro) Fisica 1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384973517883441212/PC-1_21-2_L2_Sol_Prof._Caro__Fisica_1.pdf?ex=6854609a&is=68530f1a&hm=d7d2a950f5e70fed445a3f57fb5c27d61e4eb0b7af1b79026593c1cc13e1eba9&)
+            - [PC-1 21-2 L2 (Prof. Caro) Fisica 1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384973518193688728/PC-1_21-2_L2_Prof._Caro__Fisica_1.pdf?ex=6854609a&is=68530f1a&hm=63e4177fd54521dc134d024887c206c3aa696f3be4e18a9689a7b533710104b2&)
+            - [PC-1 21-2 L1 (Prof. Luis Durand) Fisica 1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384973518499741817/PC-1_21-2_L1_Prof._Luis_Durand__Fisica_1.pdf?ex=6854609a&is=68530f1a&hm=dc5aab4824cb9797e1fe8ada78d497c20b905baace7646685435f0b21af11e37&)
+            - [PC-1 21-1 L3 (Prof. Huallpa) Fisica 1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384973518864908388/PC-1_21-1_L3_Prof._Huallpa_.Fisica_1.pdf?ex=6854609a&is=68530f1a&hm=778a1415adc680e3bc7958995614b1000c09b7af9df1a5ee838927b83f8114f8&)
+            - [PC-1 21-1 L2 (Prof. Durand) Física I.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384973519300853760/PC-1_21-1_L2_Prof._Durand_Fisica_I.pdf?ex=6854609a&is=68530f1a&hm=e59087a9c1ec58be2a642d70e4b7b044a5a1ad961044a9df42ad891c3a563c9d&)
+            - [PC-1 21-1 L1 (Prof. Luis Durand) Fisica 1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384973519649243237/PC-1_21-1_L1_Prof._Luis_Durand__.Fisica_1.pdf?ex=6854609a&is=68530f1a&hm=80afd79b0114175ea7b0b0c87b3eeabd1466913519759761fbf078cf3993b798&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+def get_embed_fisica_1_pc1_4():
+    embed = discord.Embed(
+        title="1ra PC - Física 1",
+        description=textwrap.dedent(f"""\
+            - [PC-1 20-2 (Prof. Llamoja).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384972709720621166/PC-1_20-2_Prof._Llamoja.pdf?ex=68545fd9&is=68530e59&hm=1fa0302ea46fce5e7feea771ac2a8d08272cb3466b9c0d71f8f50dc169751ae8&)
+            - [PC-1 20-1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384972710043717703/PC-1_20-1.pdf?ex=68545fd9&is=68530e59&hm=a2d661282a1729c29503bdc3d4ee985233cb394a9fcd70f6dc1b3fa41f2e3190&)
+            - [PC-1 19-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384972710400229516/PC-1_19-2.pdf?ex=68545fd9&is=68530e59&hm=c23102cb1e6cc13f9b71e1bfbc2440ab0eacb8e051380228310075a7a2c47fac&)
+            - [PC-1 19-1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384972710710345801/PC-1_19-1.pdf?ex=68545fd9&is=68530e59&hm=a8be766eb26d6907dd8998ccd67948244b3157509a65b503d3cd9427bf6b1078&)
+            - [PC-1 18-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384972710991630489/PC-1_18-2.pdf?ex=68545fd9&is=68530e59&hm=2cb5e169de0239c9d87ddc36b69fa31d6d69229050c532efc365cce47d4334b1&)
+            - [PC-1 18-1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384972711314329670/PC-1_18-1.pdf?ex=68545fd9&is=68530e59&hm=6972890a13ee28310b0419f5860f3cf09ca213245d83a63efd9bf01b19d6951b&)
+            - [PC-1 17-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384972711696142440/PC-1_17-2.pdf?ex=68545fda&is=68530e5a&hm=d36e3ce9fea0149ea813f311a88478ec309c7a754f22fbcc8d7695ee5da9afd1&)
+            - [PC-1 17-1.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384972712061173890/PC-1_17-1.pdf?ex=68545fda&is=68530e5a&hm=307aca3c0f4db749601f5b89317a118fd753ef4610fdc5a9e35d6552c3750b65&)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 3. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_1_pc1():
+    
+    lista = []
+
+    # lista.append(get_embed_fisica_1_pc1_1()) # [0]
+    lista.append(get_embed_fisica_1_pc1_2()) # [1]
+    lista.append(get_embed_fisica_1_pc1_3()) # [2]
+    lista.append(get_embed_fisica_1_pc1_4()) # [3]
+
+    return lista
+
 def get_embed_fisica_1_pc2():
     embed = discord.Embed(
-        title="2da PC's - Física 1",
+        title="2da PC - Física 1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8368,7 +8437,7 @@ def get_embed_fisica_1_pc2():
     return embed
 def get_embed_fisica_1_pc3():
     embed = discord.Embed(
-        title="3ra PC's - Física 1",
+        title="3ra PC - Física 1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8387,7 +8456,7 @@ def get_embed_fisica_1_pc3():
     return embed
 def get_embed_fisica_1_pc4():
     embed = discord.Embed(
-        title="4ta PC's - Física 1",
+        title="4ta PC - Física 1",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -8502,6 +8571,7 @@ def get_embeds_fisica_1_pcs():
     lista.append(get_embed_fisica_1_entrada()) # [8]
 
     return lista
+
 
 def get_embed_fisica_1_clase_caro():
     embed = discord.Embed(
@@ -8705,10 +8775,14 @@ def get_embed_and_view_por_curso(ciclo_seleccionado, curso_seleccionado, lab_pc_
     view = PaginaAnteriorPCS_LABS(ciclo_seleccionado, curso_seleccionado, lab_pc_clase) # default
 
 
-    if lab_pc_clase == 2: # PC's y exámenes en general.
+    if lab_pc_clase == 2: # PC y exámenes en general.
 
-        embed = get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc]
-    
+        if isinstance(get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc], list):
+            embed = get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc][0]
+            view = NavegarPaginas(get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc], ciclo_seleccionado, curso_seleccionado, lab_pc_clase)
+        else:
+            embed = get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc]
+
 
     if ciclo_seleccionado == 0:  # Primer ciclo
         if curso_seleccionado == 0: # Física 1
