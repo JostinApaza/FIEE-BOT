@@ -10,7 +10,7 @@ intents.presences = False         # Ver estados de usuarios (online, offline)
 intents.guilds = False            # Ver información del servidor
 
 
-prefix = "f!"  # Define el prefijo que se usará para los comandos del bot
+prefix = "!"  # Define el prefijo que se usará para los comandos del bot
 
 bot = commands.Bot(command_prefix = prefix, intents=intents, help_command=None) # Define el prefijo de los comandos y las "intenciones" (permisos internos) del bot
 
@@ -238,50 +238,58 @@ def get_ciclos_cursos_embeds():
 
 # ////////////////////////////////////////////////////////////////////////
 
+def agregar_pcs_clases_campos(embed: discord.Embed) -> discord.Embed:
+
+    embed.add_field(name="▸  Prácticas", value="Prácticas y exámenes.", inline=False)
+    embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+    embed.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+
+    return embed
+
+def agregar_labs_pcs_clases_campos(embed: discord.Embed) -> discord.Embed:
+
+    embed.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
+    embed.add_field(name="▸  Prácticas", value="Prácticas y exámenes.", inline=False)
+    embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+    embed.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+
+    return embed
+
+
 def get_primer_ciclo_embeds():
     embeds = []
 
     embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes del curso.", inline=False)
-    embed1.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos y libros del curso.", inline=False)
+    embed1 = agregar_labs_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://cdn.discordapp.com/attachments/1384359269570187284/1384616543538774246/Syllabus_BFI01_Fisica_1.pdf?ex=68531424&is=6851c2a4&hm=6e6106be23cab05db5f85fc8991dd6d80a2b4f862f14f81820c4c6e992d889d0&)", inline=False)
     embeds.append(embed1)
 
     embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
     embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
     embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
-    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embed4 = agregar_pcs_clases_campos(embed4)
     embeds.append(embed4)
 
     embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
     embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
     embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
 
@@ -292,286 +300,253 @@ def get_segundo_ciclo_embeds():
     embeds = []
 
     embed1 = discord.Embed(title="📚 Fundamentos de Ing. térmica y de fluidos", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
     embed2 = discord.Embed(title="📚 Cálculo integral", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
     embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
     embed4 = discord.Embed(title="📚 Química I", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
     embed5 = discord.Embed(title="📚 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
     embed6 = discord.Embed(title="📚 Redacción y comunicación", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
     embed7 = discord.Embed(title="📚 Redes de datos I", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
+
+    embed8 = discord.Embed(title="📚 Sistemas operativos I", description="", color=discord.Color.green())
+    embed8 = agregar_pcs_clases_campos(embed7)
+    embed8.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed8)
 
     return embeds
 
 def get_tercer_ciclo_embeds():
+
     embeds = []
 
-    embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = discord.Embed(title="📚 Fundamentos de electricidad y magnetismo", description="", color=discord.Color.dark_green())
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = discord.Embed(title="📚 Ecuaciones diferenciales", description="", color=discord.Color.orange())
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = discord.Embed(title="📚 Probabilidades y estadística", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = discord.Embed(title="📚 Programación Orientada a Objetos", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = discord.Embed(title="📚 Economía General", description="", color=discord.Color.green())
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = discord.Embed(title="📚 Redes de datos II", description="", color=discord.Color.green())
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = discord.Embed(title="📚 Redes de datos I", description="", color=discord.Color.green())
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
 
     return embeds
 
 def get_cuarto_ciclo_embeds():
+
     embeds = []
 
-    embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = discord.Embed(title="📚 Introducción a la física moderna", description="", color=discord.Color.dark_green())
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = discord.Embed(title="📚 Análisis de señales y sistemas", description="", color=discord.Color.orange())
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = discord.Embed(title="📚 Cálculo vectorial", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = discord.Embed(title="📚 Circuitos eléctricos I", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = discord.Embed(title="📚 Métodos numéricos", description="", color=discord.Color.green())
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = discord.Embed(title="📚 Ética y filosofía", description="", color=discord.Color.green())
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = discord.Embed(title="📚 Electrotecnia e instalación de redes", description="", color=discord.Color.green())
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
+
+    embed8 = discord.Embed(title="📚 Sistemas operativos II", description="", color=discord.Color.green())
+    embed8 = agregar_pcs_clases_campos(embed7)
+    embed8.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed8)
 
     return embeds
 
 
 def get_quinto_ciclo_embeds():
+
     embeds = []
 
-    embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = discord.Embed(title="📚 Mecánica de fluidos y termodinámica I", description="", color=discord.Color.dark_green())
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = discord.Embed(title="📚 Cálculo integral", description="", color=discord.Color.orange())
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = discord.Embed(title="📚 Química I", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = discord.Embed(title="📚 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = discord.Embed(title="📚 Redacción y comunicación", description="", color=discord.Color.green())
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = discord.Embed(title="📚 Redes de datos I", description="", color=discord.Color.green())
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
 
     return embeds
 
 def get_sexto_ciclo_embeds():
+
     embeds = []
 
-    embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = discord.Embed(title="📚 Fundamentos de Ing. térmica y de fluidos", description="", color=discord.Color.dark_green())
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = discord.Embed(title="📚 Cálculo integral", description="", color=discord.Color.orange())
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = discord.Embed(title="📚 Química I", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = discord.Embed(title="📚 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = discord.Embed(title="📚 Redacción y comunicación", description="", color=discord.Color.green())
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = discord.Embed(title="📚 Redes de datos I", description="", color=discord.Color.green())
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
 
     return embeds
 
 def get_septimo_ciclo_embeds():
+
     embeds = []
 
-    embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = discord.Embed(title="📚 Fundamentos de Ing. térmica y de fluidos", description="", color=discord.Color.dark_green())
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = discord.Embed(title="📚 Cálculo integral", description="", color=discord.Color.orange())
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = discord.Embed(title="📚 Química I", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = discord.Embed(title="📚 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = discord.Embed(title="📚 Redacción y comunicación", description="", color=discord.Color.green())
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = discord.Embed(title="📚 Redes de datos I", description="", color=discord.Color.green())
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
 
@@ -579,48 +554,41 @@ def get_septimo_ciclo_embeds():
 
 
 def get_octavo_ciclo_embeds():
+
     embeds = []
 
-    embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = discord.Embed(title="📚 Fundamentos de Ing. térmica y de fluidos", description="", color=discord.Color.dark_green())
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = discord.Embed(title="📚 Cálculo integral", description="", color=discord.Color.orange())
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = discord.Embed(title="📚 Química I", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = discord.Embed(title="📚 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = discord.Embed(title="📚 Redacción y comunicación", description="", color=discord.Color.green())
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = discord.Embed(title="📚 Redes de datos I", description="", color=discord.Color.green())
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
 
@@ -628,48 +596,41 @@ def get_octavo_ciclo_embeds():
 
 
 def get_noveno_ciclo_embeds():
+
     embeds = []
 
-    embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = discord.Embed(title="📚 Fundamentos de Ing. térmica y de fluidos", description="", color=discord.Color.dark_green())
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = discord.Embed(title="📚 Cálculo integral", description="", color=discord.Color.orange())
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = discord.Embed(title="📚 Química I", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = discord.Embed(title="📚 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = discord.Embed(title="📚 Redacción y comunicación", description="", color=discord.Color.green())
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = discord.Embed(title="📚 Redes de datos I", description="", color=discord.Color.green())
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
 
@@ -677,48 +638,41 @@ def get_noveno_ciclo_embeds():
 
 
 def get_cursos_electivos_embeds():
+
     embeds = []
 
-    embed1 = discord.Embed(title="📚 Física 1", description="", color=discord.Color.dark_green())
-    embed1.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed1.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed1.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed1 = discord.Embed(title="📚 Fundamentos de Ing. térmica y de fluidos", description="", color=discord.Color.dark_green())
+    embed1 = agregar_pcs_clases_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed1)
 
-    embed2 = discord.Embed(title="📚 Cálculo diferencial", description="", color=discord.Color.orange())
-    embed2.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed2.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed2 = discord.Embed(title="📚 Cálculo integral", description="", color=discord.Color.orange())
+    embed2 = agregar_pcs_clases_campos(embed2)
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Álgebra lineal", description="", color=discord.Color.green())
-    embed3.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed3.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Dibujo técnico", description="", color=discord.Color.green())
-    embed4.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed4.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed4 = discord.Embed(title="📚 Química I", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
 
-    embed5 = discord.Embed(title="📚 Introducción a la computación", description="", color=discord.Color.green())
-    embed5.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed5.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed5 = discord.Embed(title="📚 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
+    embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed6.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed6 = discord.Embed(title="📚 Redacción y comunicación", description="", color=discord.Color.green())
+    embed6 = agregar_pcs_clases_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed6)
 
-    embed7 = discord.Embed(title="📚 Fundamentos de programación", description="", color=discord.Color.green())
-    embed7.add_field(name="▸  Prácticas", value="Prácticas y exámenes desde el ciclo 2017-1.", inline=False)
-    embed7.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed7 = discord.Embed(title="📚 Redes de datos I", description="", color=discord.Color.green())
+    embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
 
@@ -811,8 +765,8 @@ def get_calc_diferencial_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
-def get_calc_diferencial_examenes_embed():
 
+def get_calc_diferencial_examenes_embed():
 
     embed = discord.Embed(
         title="Practicas y exámenes de cálculo diferencial:",
@@ -2026,7 +1980,7 @@ def get_calc_vectorial_examenes_embed():
 
     return embed
 
-def get_calc_vectorial_cuadernos_embed():
+def get_calculo_vectorial_cuadernos_embed():
 
     embed = discord.Embed(
         title="Cuadernos y libros de calc_vectorial:",
@@ -2369,12 +2323,12 @@ def get_procesos_estocasticos_cuadernos_embed():
     return embed
 
 
-# /////////////////////////////////////////////////////////////////////////////////////
+# %&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-def get_example_clases_embed():
+def get_electromagnetismo_1_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de example.",
+        title="Clases de Electromagnetismo I.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -2386,10 +2340,10 @@ def get_example_clases_embed():
 
     return embed
 
-def get_example_examenes_embed():
+def get_electromagnetismo_1_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de example:",
+        title="Practicas y exámenes de electromagnetismo_1:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -2397,9 +2351,10 @@ def get_example_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
+            - PC 5
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -2407,10 +2362,10 @@ def get_example_examenes_embed():
 
     return embed
 
-def get_example_cuadernos_embed():
+def get_electromagnetismo_1_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de example:",
+        title="Cuadernos y libros de electromagnetismo_1:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -2422,6 +2377,278 @@ def get_example_cuadernos_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
+
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+def get_dispositivos_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de dispositivos_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_dispositivos_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de dispositivos_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - PC 5
+            - Examen Parcial
+            - Examen Final
+            - Examen Sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_dispositivos_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de dispositivos_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+def get_mecanica_fluidos_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de mecanica_fluidos_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_mecanica_fluidos_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de mecanica_fluidos_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - PC 5
+            - Examen Parcial
+            - Examen Final
+            - Examen Sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_mecanica_fluidos_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de mecanica_fluidos_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
+def get_laboratorio_electronica_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de laboratorio_electronica_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_laboratorio_electronica_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de laboratorio_electronica_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - PC 5
+            - Examen Parcial
+            - Examen Final
+            - Examen Sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_laboratorio_electronica_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de laboratorio_electronica_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_sistemas_control_1_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de sistemas_control_1.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_sistemas_control_1_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de sistemas_control_1:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - PC 5
+            - Examen Parcial
+            - Examen Final
+            - Examen Sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_sistemas_control_1_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de sistemas_control_1:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_circuitos_2_clases_embed():
+
+    embed = discord.Embed(
+        title="Clases de circuitos_2.",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - -
+            - -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_circuitos_2_examenes_embed():
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de circuitos_2:",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista.\n
+            - Prueba de entrada
+            - PC 1
+            - PC 2
+            - PC 3
+            - PC 4
+            - PC 5
+            - Examen Parcial
+            - Examen Final
+            - Examen Sustitutorio
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+def get_circuitos_2_cuadernos_embed():
+
+    embed = discord.Embed(
+        title="Cuadernos y libros de circuitos_2:",
+        description=textwrap.dedent(f"""\
+            \n
+            - Prueba
+            -
+            -
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
 
 
 # ///////////////////////////////////////////////////////////////////////////////////////
@@ -2448,6 +2675,5347 @@ def get_embed_curso_example():
     return embed
 
 # ////////////////////////////////////////////////////////////////////////////////////////
+
+
+def get_embed_calc_diferencial_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calc_diferencial_pc2():
+    embed = discord.Embed(
+        title="2da PC's - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_calc_diferencial_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calc_diferencial_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calc_diferencial_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calc_diferencial_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calc_diferencial_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calc_diferencial_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calc_diferencial_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - calc_diferencial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_calc_diferencial_pcs():
+
+    lista = []
+
+    lista.append(get_embed_calc_diferencial_pc1())
+    lista.append(get_embed_calc_diferencial_pc2())
+    lista.append(get_embed_calc_diferencial_pc3())
+    lista.append(get_embed_calc_diferencial_pc4())
+    lista.append(get_embed_calc_diferencial_pc5())
+    lista.append(get_embed_calc_diferencial_exparcial())
+    lista.append(get_embed_calc_diferencial_exfinal())
+    lista.append(get_embed_calc_diferencial_exsusti())
+    lista.append(get_embed_calc_diferencial_entrada())
+
+    return lista
+
+
+def get_embed_algebra_lineal_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algebra_lineal_pc2():
+    embed = discord.Embed(
+        title="2da PC's - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_algebra_lineal_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algebra_lineal_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algebra_lineal_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algebra_lineal_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algebra_lineal_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algebra_lineal_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algebra_lineal_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - algebra_lineal",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_algebra_lineal_pcs():
+
+    lista = []
+
+    lista.append(get_embed_algebra_lineal_pc1())
+    lista.append(get_embed_algebra_lineal_pc2())
+    lista.append(get_embed_algebra_lineal_pc3())
+    lista.append(get_embed_algebra_lineal_pc4())
+    lista.append(get_embed_algebra_lineal_pc5())
+    lista.append(get_embed_algebra_lineal_exparcial())
+    lista.append(get_embed_algebra_lineal_exfinal())
+    lista.append(get_embed_algebra_lineal_exsusti())
+    lista.append(get_embed_algebra_lineal_entrada())
+
+    return lista
+
+def get_embed_dibujo_tecnico_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_dibujo_tecnico_pc2():
+    embed = discord.Embed(
+        title="2da PC's - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_dibujo_tecnico_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_dibujo_tecnico_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_dibujo_tecnico_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_dibujo_tecnico_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_dibujo_tecnico_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_dibujo_tecnico_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_dibujo_tecnico_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - dibujo_tecnico",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_dibujo_tecnico_pcs():
+
+    lista = []
+
+    lista.append(get_embed_dibujo_tecnico_pc1())
+    lista.append(get_embed_dibujo_tecnico_pc2())
+    lista.append(get_embed_dibujo_tecnico_pc3())
+    lista.append(get_embed_dibujo_tecnico_pc4())
+    lista.append(get_embed_dibujo_tecnico_pc5())
+    lista.append(get_embed_dibujo_tecnico_exparcial())
+    lista.append(get_embed_dibujo_tecnico_exfinal())
+    lista.append(get_embed_dibujo_tecnico_exsusti())
+    lista.append(get_embed_dibujo_tecnico_entrada())
+
+    return lista
+
+def get_embed_intro_computacion_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_computacion_pc2():
+    embed = discord.Embed(
+        title="2da PC's - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_intro_computacion_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_computacion_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_computacion_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_computacion_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_computacion_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_computacion_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_computacion_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - intro_computacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_intro_computacion_pcs():
+
+    lista = []
+
+    lista.append(get_embed_intro_computacion_pc1())
+    lista.append(get_embed_intro_computacion_pc2())
+    lista.append(get_embed_intro_computacion_pc3())
+    lista.append(get_embed_intro_computacion_pc4())
+    lista.append(get_embed_intro_computacion_pc5())
+    lista.append(get_embed_intro_computacion_exparcial())
+    lista.append(get_embed_intro_computacion_exfinal())
+    lista.append(get_embed_intro_computacion_exsusti())
+    lista.append(get_embed_intro_computacion_entrada())
+
+    return lista
+
+def get_embed_fundamentos_programacion_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_programacion_pc2():
+    embed = discord.Embed(
+        title="2da PC's - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_fundamentos_programacion_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_programacion_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_programacion_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_programacion_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_programacion_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_programacion_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_programacion_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - fundamentos_programacion",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_fundamentos_programacion_pcs():
+
+    lista = []
+
+    lista.append(get_embed_fundamentos_programacion_pc1())
+    lista.append(get_embed_fundamentos_programacion_pc2())
+    lista.append(get_embed_fundamentos_programacion_pc3())
+    lista.append(get_embed_fundamentos_programacion_pc4())
+    lista.append(get_embed_fundamentos_programacion_pc5())
+    lista.append(get_embed_fundamentos_programacion_exparcial())
+    lista.append(get_embed_fundamentos_programacion_exfinal())
+    lista.append(get_embed_fundamentos_programacion_exsusti())
+    lista.append(get_embed_fundamentos_programacion_entrada())
+
+    return lista
+
+def get_embed_fisica_2_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_2_pc2():
+    embed = discord.Embed(
+        title="2da PC's - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_fisica_2_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_2_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_2_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_2_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_2_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_2_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_2_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - fisica_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_fisica_2_pcs():
+
+    lista = []
+
+    lista.append(get_embed_fisica_2_pc1())
+    lista.append(get_embed_fisica_2_pc2())
+    lista.append(get_embed_fisica_2_pc3())
+    lista.append(get_embed_fisica_2_pc4())
+    lista.append("get_embed_fisica_2_pc5()")
+    lista.append(get_embed_fisica_2_exparcial())
+    lista.append(get_embed_fisica_2_exfinal())
+    lista.append(get_embed_fisica_2_exsusti())
+    lista.append(get_embed_fisica_2_entrada())
+
+    return lista
+
+def get_embed_calculo_integral_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_integral_pc2():
+    embed = discord.Embed(
+        title="2da PC's - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_calculo_integral_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_integral_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_integral_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_integral_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_integral_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_integral_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_integral_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - calculo_integral",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_calculo_integral_pcs():
+
+    lista = []
+
+    lista.append(get_embed_calculo_integral_pc1())
+    lista.append(get_embed_calculo_integral_pc2())
+    lista.append(get_embed_calculo_integral_pc3())
+    lista.append(get_embed_calculo_integral_pc4())
+    lista.append(get_embed_calculo_integral_pc5())
+    lista.append(get_embed_calculo_integral_exparcial())
+    lista.append(get_embed_calculo_integral_exfinal())
+    lista.append(get_embed_calculo_integral_exsusti())
+    lista.append(get_embed_calculo_integral_entrada())
+
+    return lista
+
+def get_embed_algoritmos_1_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algoritmos_1_pc2():
+    embed = discord.Embed(
+        title="2da PC's - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_algoritmos_1_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algoritmos_1_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algoritmos_1_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algoritmos_1_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algoritmos_1_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algoritmos_1_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_algoritmos_1_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - algoritmos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_algoritmos_1_pcs():
+
+    lista = []
+
+    lista.append(get_embed_algoritmos_1_pc1())
+    lista.append(get_embed_algoritmos_1_pc2())
+    lista.append(get_embed_algoritmos_1_pc3())
+    lista.append(get_embed_algoritmos_1_pc4())
+    lista.append("get_embed_algoritmos_1_pc5()")
+    lista.append(get_embed_algoritmos_1_exparcial())
+    lista.append(get_embed_algoritmos_1_exfinal())
+    lista.append(get_embed_algoritmos_1_exsusti())
+    lista.append(get_embed_algoritmos_1_entrada())
+
+    return lista
+
+
+def get_embed_quimica_1_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_quimica_1_pc2():
+    embed = discord.Embed(
+        title="2da PC's - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_quimica_1_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_quimica_1_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_quimica_1_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_quimica_1_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_quimica_1_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_quimica_1_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_quimica_1_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - quimica_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_quimica_1_pcs():
+
+    lista = []
+
+    lista.append(get_embed_quimica_1_pc1())
+    lista.append(get_embed_quimica_1_pc2())
+    lista.append(get_embed_quimica_1_pc3())
+    lista.append(get_embed_quimica_1_pc4())
+    lista.append("get_embed_quimica_1_pc5()")
+    lista.append(get_embed_quimica_1_exparcial())
+    lista.append(get_embed_quimica_1_exfinal())
+    lista.append(get_embed_quimica_1_exsusti())
+    lista.append(get_embed_quimica_1_entrada())
+
+    return lista
+
+
+
+def get_embed_fundamentos_computador_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_computador_pc2():
+    embed = discord.Embed(
+        title="2da PC's - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_fundamentos_computador_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_computador_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_computador_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_computador_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_computador_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_computador_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fundamentos_computador_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - fundamentos_computador",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_fundamentos_computador_pcs():
+
+    lista = []
+
+    lista.append(get_embed_fundamentos_computador_pc1())
+    lista.append(get_embed_fundamentos_computador_pc2())
+    lista.append(get_embed_fundamentos_computador_pc3())
+    lista.append(get_embed_fundamentos_computador_pc4())
+    lista.append(get_embed_fundamentos_computador_pc5())
+    lista.append(get_embed_fundamentos_computador_exparcial())
+    lista.append(get_embed_fundamentos_computador_exfinal())
+    lista.append(get_embed_fundamentos_computador_exsusti())
+    lista.append("get_embed_fundamentos_computador_entrada()")
+
+    return lista
+
+def get_embed_redes_1_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_1_pc2():
+    embed = discord.Embed(
+        title="2da PC's - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_redes_1_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_1_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_1_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_1_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_1_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_1_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_1_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - redes_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_redes_1_pcs():
+
+    lista = []
+
+    lista.append(get_embed_redes_1_pc1())
+    lista.append(get_embed_redes_1_pc2())
+    lista.append(get_embed_redes_1_pc3())
+    lista.append(get_embed_redes_1_pc4())
+    lista.append(get_embed_redes_1_pc5())
+    lista.append(get_embed_redes_1_exparcial())
+    lista.append(get_embed_redes_1_exfinal())
+    lista.append(get_embed_redes_1_exsusti())
+    lista.append(get_embed_redes_1_entrada())
+
+    return lista
+
+
+def get_embed_fund_electricidad_magnetismo_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fund_electricidad_magnetismo_pc2():
+    embed = discord.Embed(
+        title="2da PC's - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_fund_electricidad_magnetismo_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fund_electricidad_magnetismo_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fund_electricidad_magnetismo_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fund_electricidad_magnetismo_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fund_electricidad_magnetismo_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fund_electricidad_magnetismo_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fund_electricidad_magnetismo_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - fund_electricidad_magnetismo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_fund_electricidad_magnetismo_pcs():
+
+    lista = []
+
+    lista.append(get_embed_fund_electricidad_magnetismo_pc1())
+    lista.append(get_embed_fund_electricidad_magnetismo_pc2())
+    lista.append(get_embed_fund_electricidad_magnetismo_pc3())
+    lista.append(get_embed_fund_electricidad_magnetismo_pc4())
+    lista.append("get_embed_fund_electricidad_magnetismo_pc5()")
+    lista.append(get_embed_fund_electricidad_magnetismo_exparcial())
+    lista.append(get_embed_fund_electricidad_magnetismo_exfinal())
+    lista.append(get_embed_fund_electricidad_magnetismo_exsusti())
+    lista.append(get_embed_fund_electricidad_magnetismo_entrada())
+
+    return lista
+
+
+
+def get_embed_ecuaciones_diferenciales_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_ecuaciones_diferenciales_pc2():
+    embed = discord.Embed(
+        title="2da PC's - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_ecuaciones_diferenciales_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_ecuaciones_diferenciales_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_ecuaciones_diferenciales_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_ecuaciones_diferenciales_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_ecuaciones_diferenciales_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_ecuaciones_diferenciales_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_ecuaciones_diferenciales_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - ecuaciones_diferenciales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_ecuaciones_diferenciales_pcs():
+
+    lista = []
+
+    lista.append(get_embed_ecuaciones_diferenciales_pc1())
+    lista.append(get_embed_ecuaciones_diferenciales_pc2())
+    lista.append(get_embed_ecuaciones_diferenciales_pc3())
+    lista.append(get_embed_ecuaciones_diferenciales_pc4())
+    lista.append(get_embed_ecuaciones_diferenciales_pc5())
+    lista.append(get_embed_ecuaciones_diferenciales_exparcial())
+    lista.append(get_embed_ecuaciones_diferenciales_exfinal())
+    lista.append(get_embed_ecuaciones_diferenciales_exsusti())
+    lista.append(get_embed_ecuaciones_diferenciales_entrada())
+
+    return lista
+
+
+def get_embed_probabilidades_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_probabilidades_pc2():
+    embed = discord.Embed(
+        title="2da PC's - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_probabilidades_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_probabilidades_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_probabilidades_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_probabilidades_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_probabilidades_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_probabilidades_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_probabilidades_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - probabilidades",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_probabilidades_pcs():
+
+    lista = []
+
+    lista.append(get_embed_probabilidades_pc1())
+    lista.append(get_embed_probabilidades_pc2())
+    lista.append(get_embed_probabilidades_pc3())
+    lista.append(get_embed_probabilidades_pc4())
+    lista.append("get_embed_probabilidades_pc5()")
+    lista.append(get_embed_probabilidades_exparcial())
+    lista.append(get_embed_probabilidades_exfinal())
+    lista.append(get_embed_probabilidades_exsusti())
+    lista.append(get_embed_probabilidades_entrada())
+
+    return lista
+
+
+def get_embed_poo_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_poo_pc2():
+    embed = discord.Embed(
+        title="2da PC's - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_poo_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_poo_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_poo_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_poo_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_poo_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_poo_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_poo_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - poo",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_poo_pcs():
+
+    lista = []
+
+    lista.append(get_embed_poo_pc1())
+    lista.append(get_embed_poo_pc2())
+    lista.append(get_embed_poo_pc3())
+    lista.append(get_embed_poo_pc4())
+    lista.append("get_embed_poo_pc5()")
+    lista.append(get_embed_poo_exparcial())
+    lista.append(get_embed_poo_exfinal())
+    lista.append(get_embed_poo_exsusti())
+    lista.append(get_embed_poo_entrada())
+
+    return lista
+
+
+def get_embed_economia_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_economia_pc2():
+    embed = discord.Embed(
+        title="2da PC's - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_economia_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_economia_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_economia_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_economia_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_economia_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_economia_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_economia_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - economia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_economia_pcs():
+
+    lista = []
+
+    lista.append(get_embed_economia_pc1())
+    lista.append(get_embed_economia_pc2())
+    lista.append(get_embed_economia_pc3())
+    lista.append(get_embed_economia_pc4())
+    lista.append(get_embed_economia_pc5())
+    lista.append(get_embed_economia_exparcial())
+    lista.append(get_embed_economia_exfinal())
+    lista.append(get_embed_economia_exsusti())
+    lista.append(get_embed_economia_entrada())
+
+    return lista
+
+
+
+def get_embed_redes_2_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_2_pc2():
+    embed = discord.Embed(
+        title="2da PC's - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_redes_2_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_2_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_2_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_2_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_2_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_2_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_redes_2_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - redes_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_redes_2_pcs():
+
+    lista = []
+
+    lista.append(get_embed_redes_2_pc1())
+    lista.append(get_embed_redes_2_pc2())
+    lista.append(get_embed_redes_2_pc3())
+    lista.append(get_embed_redes_2_pc4())
+    # lista.append(get_embed_redes_2_pc5())
+    # lista.append(get_embed_redes_2_exparcial())
+    # lista.append(get_embed_redes_2_exfinal())
+    # lista.append(get_embed_redes_2_exsusti())
+    # lista.append(get_embed_redes_2_entrada())
+
+    return lista
+
+def get_embed_electrotecnia_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electrotecnia_pc2():
+    embed = discord.Embed(
+        title="2da PC's - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_electrotecnia_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electrotecnia_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electrotecnia_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electrotecnia_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electrotecnia_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electrotecnia_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electrotecnia_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - electrotecnia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_electrotecnia_pcs():
+
+    lista = []
+
+    lista.append(get_embed_electrotecnia_pc1())
+    lista.append(get_embed_electrotecnia_pc2())
+    lista.append(get_embed_electrotecnia_pc3())
+    lista.append(get_embed_electrotecnia_pc4())
+    lista.append(get_embed_electrotecnia_pc5())
+    lista.append(get_embed_electrotecnia_exparcial())
+    lista.append(get_embed_electrotecnia_exfinal())
+    lista.append(get_embed_electrotecnia_exsusti())
+    lista.append(get_embed_electrotecnia_entrada())
+
+    return lista
+
+def get_embed_intro_moderna_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_moderna_pc2():
+    embed = discord.Embed(
+        title="2da PC's - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_intro_moderna_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_moderna_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_moderna_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_moderna_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_moderna_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_moderna_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_intro_moderna_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - intro_moderna",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_intro_moderna_pcs():
+
+    lista = []
+
+    lista.append(get_embed_intro_moderna_pc1())
+    lista.append(get_embed_intro_moderna_pc2())
+    lista.append(get_embed_intro_moderna_pc3())
+    lista.append(get_embed_intro_moderna_pc4())
+    lista.append("get_embed_intro_moderna_pc5()")
+    lista.append(get_embed_intro_moderna_exparcial())
+    lista.append(get_embed_intro_moderna_exfinal())
+    lista.append(get_embed_intro_moderna_exsusti())
+    lista.append(get_embed_intro_moderna_entrada())
+
+    return lista
+
+
+def get_embed_analisis_senales_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_analisis_senales_pc2():
+    embed = discord.Embed(
+        title="2da PC's - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_analisis_senales_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_analisis_senales_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_analisis_senales_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_analisis_senales_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_analisis_senales_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_analisis_senales_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_analisis_senales_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - analisis_senales",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_analisis_senales_pcs():
+
+    lista = []
+
+    lista.append(get_embed_analisis_senales_pc1())
+    lista.append(get_embed_analisis_senales_pc2())
+    lista.append(get_embed_analisis_senales_pc3())
+    lista.append(get_embed_analisis_senales_pc4())
+    lista.append(get_embed_analisis_senales_pc5())
+    lista.append(get_embed_analisis_senales_exparcial())
+    lista.append(get_embed_analisis_senales_exfinal())
+    lista.append(get_embed_analisis_senales_exsusti())
+    lista.append(get_embed_analisis_senales_entrada())
+
+    return lista
+
+
+def get_embed_calculo_vectorial_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_vectorial_pc2():
+    embed = discord.Embed(
+        title="2da PC's - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_calculo_vectorial_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_vectorial_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_vectorial_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_vectorial_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_vectorial_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_vectorial_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_calculo_vectorial_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - calculo_vectorial",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_calculo_vectorial_pcs():
+
+    lista = []
+
+    lista.append(get_embed_calculo_vectorial_pc1())
+    lista.append(get_embed_calculo_vectorial_pc2())
+    lista.append(get_embed_calculo_vectorial_pc3())
+    lista.append(get_embed_calculo_vectorial_pc4())
+    lista.append(get_embed_calculo_vectorial_pc5())
+    lista.append(get_embed_calculo_vectorial_exparcial())
+    lista.append(get_embed_calculo_vectorial_exfinal())
+    lista.append(get_embed_calculo_vectorial_exsusti())
+    lista.append(get_embed_calculo_vectorial_entrada())
+
+    return lista
+
+
+def get_embed_circuitos_1_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_circuitos_1_pc2():
+    embed = discord.Embed(
+        title="2da PC's - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_circuitos_1_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_circuitos_1_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_circuitos_1_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_circuitos_1_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_circuitos_1_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_circuitos_1_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_circuitos_1_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - circuitos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_circuitos_1_pcs():
+
+    lista = []
+
+    lista.append(get_embed_circuitos_1_pc1())
+    lista.append(get_embed_circuitos_1_pc2())
+    lista.append(get_embed_circuitos_1_pc3())
+    lista.append(get_embed_circuitos_1_pc4())
+    lista.append(get_embed_circuitos_1_pc5())
+    lista.append(get_embed_circuitos_1_exparcial())
+    lista.append(get_embed_circuitos_1_exfinal())
+    lista.append(get_embed_circuitos_1_exsusti())
+    lista.append(get_embed_circuitos_1_entrada())
+
+    return lista
+
+def get_embed_metodos_numericos_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_metodos_numericos_pc2():
+    embed = discord.Embed(
+        title="2da PC's - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_metodos_numericos_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_metodos_numericos_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_metodos_numericos_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_metodos_numericos_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_metodos_numericos_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_metodos_numericos_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_metodos_numericos_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - metodos_numericos",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_metodos_numericos_pcs():
+
+    lista = []
+
+    lista.append(get_embed_metodos_numericos_pc1())
+    lista.append(get_embed_metodos_numericos_pc2())
+    lista.append(get_embed_metodos_numericos_pc3())
+    lista.append(get_embed_metodos_numericos_pc4())
+    lista.append(get_embed_metodos_numericos_pc5())
+    lista.append(get_embed_metodos_numericos_exparcial())
+    lista.append(get_embed_metodos_numericos_exfinal())
+    lista.append(get_embed_metodos_numericos_exsusti())
+    lista.append(get_embed_metodos_numericos_entrada())
+
+    return lista
+
+
+def get_embed_etica_filosofia_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_etica_filosofia_pc2():
+    embed = discord.Embed(
+        title="2da PC's - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_etica_filosofia_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_etica_filosofia_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_etica_filosofia_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_etica_filosofia_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_etica_filosofia_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_etica_filosofia_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_etica_filosofia_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - etica_filosofia",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_etica_filosofia_pcs():
+
+    lista = []
+
+    lista.append(get_embed_etica_filosofia_pc1())
+    lista.append(get_embed_etica_filosofia_pc2())
+    lista.append(get_embed_etica_filosofia_pc3())
+    lista.append(get_embed_etica_filosofia_pc4())
+    lista.append(get_embed_etica_filosofia_pc5())
+    lista.append(get_embed_etica_filosofia_exparcial())
+    lista.append(get_embed_etica_filosofia_exfinal())
+    lista.append(get_embed_etica_filosofia_exsusti())
+    lista.append(get_embed_etica_filosofia_entrada())
+
+    return lista
+
+
+def get_embed_sistemas_operativos_2_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_2_pc2():
+    embed = discord.Embed(
+        title="2da PC's - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_sistemas_operativos_2_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_2_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_2_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_2_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_2_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_2_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_2_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - sistemas_operativos_2",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_sistemas_operativos_2_pcs():
+
+    lista = []
+
+    lista.append(get_embed_sistemas_operativos_2_pc1())
+    lista.append(get_embed_sistemas_operativos_2_pc2())
+    lista.append(get_embed_sistemas_operativos_2_pc3())
+    lista.append(get_embed_sistemas_operativos_2_pc4())
+    lista.append(get_embed_sistemas_operativos_2_pc5())
+    lista.append(get_embed_sistemas_operativos_2_exparcial())
+    lista.append(get_embed_sistemas_operativos_2_exfinal())
+    lista.append(get_embed_sistemas_operativos_2_exsusti())
+    lista.append(get_embed_sistemas_operativos_2_entrada())
+
+    return lista
+
+def get_embed_sistemas_operativos_1_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_1_pc2():
+    embed = discord.Embed(
+        title="2da PC's - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_sistemas_operativos_1_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_1_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_1_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_1_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_1_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_1_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_sistemas_operativos_1_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - sistemas_operativos_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_sistemas_operativos_1_pcs():
+
+    lista = []
+
+    lista.append(get_embed_sistemas_operativos_1_pc1())
+    lista.append(get_embed_sistemas_operativos_1_pc2())
+    lista.append(get_embed_sistemas_operativos_1_pc3())
+    lista.append(get_embed_sistemas_operativos_1_pc4())
+    lista.append(get_embed_sistemas_operativos_1_pc5())
+    lista.append(get_embed_sistemas_operativos_1_exparcial())
+    lista.append(get_embed_sistemas_operativos_1_exfinal())
+    lista.append(get_embed_sistemas_operativos_1_exsusti())
+    lista.append(get_embed_sistemas_operativos_1_entrada())
+
+    return lista
+
+
+def get_embed_electromagnetismo_1_pc1():
+    embed = discord.Embed(
+        title="1ra PC's - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electromagnetismo_1_pc2():
+    embed = discord.Embed(
+        title="2da PC's - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+def get_embed_electromagnetismo_1_pc3():
+    embed = discord.Embed(
+        title="3ra PC's - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electromagnetismo_1_pc4():
+    embed = discord.Embed(
+        title="4ta PC's - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electromagnetismo_1_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electromagnetismo_1_exparcial():
+    embed = discord.Embed(
+        title="Ex. Parciales - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electromagnetismo_1_exfinal():
+    embed = discord.Embed(
+        title="Ex. finales - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electromagnetismo_1_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_electromagnetismo_1_entrada():
+    embed = discord.Embed(
+        title="Pruebas de entrada - electromagnetismo_1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
+
+def get_embeds_electromagnetismo_1_pcs():
+
+    lista = []
+
+    lista.append(get_embed_electromagnetismo_1_pc1())
+    lista.append(get_embed_electromagnetismo_1_pc2())
+    lista.append(get_embed_electromagnetismo_1_pc3())
+    lista.append(get_embed_electromagnetismo_1_pc4())
+    lista.append(get_embed_electromagnetismo_1_pc5())
+    lista.append(get_embed_electromagnetismo_1_exparcial())
+    lista.append(get_embed_electromagnetismo_1_exfinal())
+    lista.append(get_embed_electromagnetismo_1_exsusti())
+    lista.append(get_embed_electromagnetismo_1_entrada())
+
+    return lista
+
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 def get_embed_cursobase_pc1():
@@ -2508,9 +8076,30 @@ def get_embed_cursobase_pc3():
     embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
 
     return embed
+
 def get_embed_cursobase_pc4():
     embed = discord.Embed(
         title="4ta PC's - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_cursobase_pc5():
+    embed = discord.Embed(
+        title="5ta PC's - cursobase",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -2568,6 +8157,26 @@ def get_embed_cursobase_exfinal():
 
     return embed
 
+def get_embed_cursobase_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorio - cursobase",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
 def get_embed_cursobase_entrada():
     embed = discord.Embed(
         title="Pruebas de entrada - cursobase",
@@ -2590,7 +8199,7 @@ def get_embed_cursobase_entrada():
 
 
 
-def get_embeds_fisica_1_pcs():
+def get_embeds_cursobase_pcs():
 
     lista = []
 
@@ -2598,11 +8207,16 @@ def get_embeds_fisica_1_pcs():
     lista.append(get_embed_cursobase_pc2())
     lista.append(get_embed_cursobase_pc3())
     lista.append(get_embed_cursobase_pc4())
+    lista.append(get_embed_cursobase_pc5())
     lista.append(get_embed_cursobase_exparcial())
     lista.append(get_embed_cursobase_exfinal())
+    lista.append(get_embed_cursobase_exsusti())
     lista.append(get_embed_cursobase_entrada())
 
     return lista
+
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 # ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -2831,6 +8445,26 @@ def get_embed_fisica_1_exfinal():
 
     return embed
 
+def get_embed_fisica_1_exsusti():
+    embed = discord.Embed(
+        title="Ex. sustitutorios - Física 1",
+        description=textwrap.dedent(f"""\
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+            - 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
 def get_embed_fisica_1_entrada():
     embed = discord.Embed(
         title="Pruebas de entrada - Física 1",
@@ -2864,7 +8498,8 @@ def get_embeds_fisica_1_pcs():
     lista.append("get_embed_fisica_1_pc5()")
     lista.append(get_embed_fisica_1_exparcial()) # [5]
     lista.append(get_embed_fisica_1_exfinal()) # [6]
-    lista.append(get_embed_fisica_1_entrada()) # [7]
+    lista.append(get_embed_fisica_1_exsusti()) # [7]
+    lista.append(get_embed_fisica_1_entrada()) # [8]
 
     return lista
 
@@ -2919,19 +8554,98 @@ def get_embeds_fisica_1_clases():
     return lista
 
 
+def get_embeds_cursos_pcs_primer_ciclo():
+
+    lista = []
+
+    lista.append(get_embeds_fisica_1_pcs())
+    lista.append(get_embeds_calc_diferencial_pcs())
+    lista.append(get_embeds_algebra_lineal_pcs())
+    lista.append(get_embeds_dibujo_tecnico_pcs())
+    lista.append(get_embeds_intro_computacion_pcs())
+    lista.append(get_embeds_fundamentos_programacion_pcs())
+
+    return lista
+
+
+def get_embeds_cursos_pcs_segundo_ciclo():
+
+    lista = []
+
+    lista.append(get_embeds_fisica_2_pcs())
+    lista.append(get_embeds_calculo_integral_pcs())
+    lista.append(get_embeds_algoritmos_1_pcs())
+    lista.append(get_embeds_quimica_1_pcs())
+    lista.append(get_embeds_fundamentos_computador_pcs())
+    lista.append(get_embeds_redes_1_pcs())
+    lista.append(get_embeds_sistemas_operativos_1_pcs())
+
+    return lista
+
+def get_embeds_cursos_pcs_tercer_ciclo():
+
+    lista = []
+
+    lista.append(get_embeds_fund_electricidad_magnetismo_pcs())
+    lista.append(get_embeds_ecuaciones_diferenciales_pcs())
+    lista.append(get_embeds_probabilidades_pcs())
+    lista.append(get_embeds_poo_pcs())
+    lista.append(get_embeds_economia_pcs())
+    lista.append(get_embeds_redes_2_pcs())
+
+    return lista
+
+def get_embeds_cursos_pcs_cuarto_ciclo():
+
+    lista = []
+
+    lista.append(get_embeds_intro_moderna_pcs())
+    lista.append(get_embeds_analisis_senales_pcs())
+    lista.append(get_embeds_calculo_vectorial_pcs())
+    lista.append(get_embeds_circuitos_1_pcs())
+    lista.append(get_embeds_metodos_numericos_pcs())
+    lista.append(get_embeds_etica_filosofia_pcs())
+    lista.append(get_embeds_sistemas_operativos_2_pcs())
+
+    return lista
+
+def get_embeds_cursos_pcs_quinto_ciclo():
+
+    lista = []
+
+    lista.append(get_embeds_electromagnetismo_1_pcs())
+
+
+    return lista
+
+
+def get_pcs_embeds_todos_los_ciclos():
+
+    lista_de_listas = []
+
+    lista_de_listas.append(get_embeds_cursos_pcs_primer_ciclo())
+    lista_de_listas.append(get_embeds_cursos_pcs_segundo_ciclo())
+    lista_de_listas.append(get_embeds_cursos_pcs_tercer_ciclo())
+    lista_de_listas.append(get_embeds_cursos_pcs_cuarto_ciclo())
+    lista_de_listas.append(get_embeds_cursos_pcs_quinto_ciclo())
+
+    return lista_de_listas
 
 
 
-
-
-
-
-
+# ///////////////////////////////////////////////////////////////////////////////////////////////////
+# ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 def get_embed_and_view_por_curso(ciclo_seleccionado, curso_seleccionado, lab_pc_clase, periodo_o_pc):
 
     view = PaginaAnteriorPCS_LABS(ciclo_seleccionado, curso_seleccionado, lab_pc_clase) # default
+
+
+    if lab_pc_clase == 2:
+
+        embed = get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][curso_seleccionado][periodo_o_pc]
+
 
     if ciclo_seleccionado == 0:  # Primer ciclo
         if curso_seleccionado == 0: # Física 1
@@ -2944,222 +8658,6 @@ def get_embed_and_view_por_curso(ciclo_seleccionado, curso_seleccionado, lab_pc_
             if lab_pc_clase == 3:
                 embed = get_embeds_fisica_1_clases()[periodo_o_pc]
 
-        if curso_seleccionado == 1: # Cálculo diferencial
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: # Álgebra lineal
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: # Dibujo técnico
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: # Introducción a la computación
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 5: # Realidad Nac. Constitución y DD.HH
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6: # Fundamentos de programación
-                opciones = despliegue_lista_opciones_LAB()
-            
-    if ciclo_seleccionado == 1:  # Segundo ciclo
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
-            
-
-    if ciclo_seleccionado == 2:  # Tercer ciclo
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-                
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-    if ciclo_seleccionado == 3:  # Cuarto ciclo
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-                
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-    if ciclo_seleccionado == 4:  # Quinto ciclo
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-                
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-    if ciclo_seleccionado == 5:  # Sexto ciclo
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-                
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-    if ciclo_seleccionado == 6:  # Séptimo ciclo
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-                
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-    if ciclo_seleccionado == 7:  # Octavo ciclo
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-                
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-    if ciclo_seleccionado == 8:  # Noveno ciclo
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-                
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-    if ciclo_seleccionado == 9:  # Cursos electivos
-        if curso_seleccionado == 0: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 1: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 2: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 3: 
-                opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
-
-        if curso_seleccionado == 4: 
-                opciones = despliegue_lista_opciones_NO_LAB()
-
-        if curso_seleccionado == 6:
-                opciones = despliegue_lista_opciones_LAB()
-                
-        if curso_seleccionado == 7:
-                opciones = despliegue_lista_opciones_NO_LAB()
 
 
     return embed, view
@@ -3325,6 +8823,156 @@ def opciones_fundamentos_electricidad_magnetismo_embeds():
 
     return embeds
 
+def opciones_ecuaciones_diferenciales_embeds():
+    embeds = []
+
+    embeds.append("get_ecuaciones_diferenciales_laboratorios_embed()")  # [0]
+    embeds.append(get_ecuaciones_diferenciales_examenes_embed())      # [1]
+    embeds.append(get_ecuaciones_diferenciales_clases_embed())        # [2]
+    embeds.append(get_ecuaciones_diferenciales_cuadernos_embed())     # [3]
+
+    return embeds
+
+
+def opciones_probabilidades_embeds():
+    embeds = []
+
+    embeds.append("get_probabilidades_laboratorios_embed()")  # [0]
+    embeds.append(get_probabilidades_examenes_embed())      # [1]
+    embeds.append(get_probabilidades_clases_embed())        # [2]
+    embeds.append(get_probabilidades_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_poo_embeds():
+    embeds = []
+
+    embeds.append("get_poo_laboratorios_embed()")  # [0]
+    embeds.append(get_poo_examenes_embed())      # [1]
+    embeds.append(get_poo_clases_embed())        # [2]
+    embeds.append(get_poo_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_economia_embeds():
+    embeds = []
+
+    embeds.append("get_economia_laboratorios_embed()")  # [0]
+    embeds.append(get_economia_examenes_embed())      # [1]
+    embeds.append(get_economia_clases_embed())        # [2]
+    embeds.append(get_economia_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_redes_2_embeds():
+    embeds = []
+
+    embeds.append("get_redes_2_laboratorios_embed()")  # [0]
+    embeds.append(get_redes_2_examenes_embed())      # [1]
+    embeds.append(get_redes_2_clases_embed())        # [2]
+    embeds.append(get_redes_2_cuadernos_embed())     # [3]
+
+    return embeds
+
+# //////////////////////////////////////////////////////////////////
+
+def opciones_electrotecnia_embeds():
+    embeds = []
+
+    embeds.append("get_electrotecnia_laboratorios_embed()")  # [0]
+    embeds.append(get_electrotecnia_examenes_embed())      # [1]
+    embeds.append(get_electrotecnia_clases_embed())        # [2]
+    embeds.append(get_electrotecnia_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_intro_moderna_embeds():
+    embeds = []
+
+    embeds.append("get_intro_moderna_laboratorios_embed()")  # [0]
+    embeds.append(get_intro_moderna_examenes_embed())      # [1]
+    embeds.append(get_intro_moderna_clases_embed())        # [2]
+    embeds.append(get_intro_moderna_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_analisis_senales_embeds():
+    embeds = []
+
+    embeds.append("get_analisis_senales_laboratorios_embed()")  # [0]
+    embeds.append(get_analisis_senales_examenes_embed())      # [1]
+    embeds.append(get_analisis_senales_clases_embed())        # [2]
+    embeds.append(get_analisis_senales_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_calculo_vectorial_embeds():
+    embeds = []
+
+    embeds.append("get_calculo_vectorial_laboratorios_embed()")  # [0]
+    embeds.append(get_calc_vectorial_examenes_embed())      # [1]
+    embeds.append(get_calc_vectorial_clases_embed())        # [2]
+    embeds.append(get_calculo_vectorial_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_circuitos_1_embeds():
+    embeds = []
+
+    embeds.append("get_circuitos_1_laboratorios_embed()")  # [0]
+    embeds.append(get_circuitos_1_examenes_embed())      # [1]
+    embeds.append(get_circuitos_1_clases_embed())        # [2]
+    embeds.append(get_circuitos_1_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_etica_filosofia_embeds():
+    embeds = []
+
+    embeds.append("get_etica_filosofia_laboratorios_embed()")  # [0]
+    embeds.append(get_etica_filosofia_examenes_embed())      # [1]
+    embeds.append(get_etica_filosofia_clases_embed())        # [2]
+    embeds.append(get_etica_filosofia_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_operativos_2_embeds():
+    embeds = []
+
+    embeds.append("get_operativos_2_laboratorios_embed()")  # [0]
+    embeds.append(get_operativos_2_examenes_embed())      # [1]
+    embeds.append(get_operativos_2_clases_embed())        # [2]
+    embeds.append(get_operativos_2_cuadernos_embed())     # [3]
+
+    return embeds
+
+def opciones_metodos_numericos_embeds():
+    embeds = []
+
+    embeds.append("get_metodos_numericos_laboratorios_embed()")  # [0]
+    embeds.append(get_metodos_numericos_examenes_embed())      # [1]
+    embeds.append(get_metodos_numericos_clases_embed())        # [2]
+    embeds.append(get_metodos_numericos_cuadernos_embed())     # [3]
+
+    return embeds
+
+
+# /////////////////////////////////////////////////////////////////////////////////////
+
+
+
+def opciones_electromagnetismo_1_embeds():
+    embeds = []
+
+    embeds.append("get_electromagnetismo_1_laboratorios_embed()")  # [0]
+    embeds.append(get_electromagnetismo_1_examenes_embed())      # [1]
+    embeds.append(get_electromagnetismo_1_clases_embed())        # [2]
+    embeds.append(get_electromagnetismo_1_cuadernos_embed())     # [3]
+
+    return embeds
+
+
+
 # /////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -3356,13 +9004,41 @@ def get_opciones_segundo_ciclo_embeds():
 
     return embeds
 
+def get_opciones_tercer_ciclo_embeds():
+    embeds = []
+
+    embeds.append(opciones_fundamentos_electricidad_magnetismo_embeds())
+    embeds.append(opciones_ecuaciones_diferenciales_embeds())
+    embeds.append(opciones_probabilidades_embeds())
+    embeds.append(opciones_poo_embeds())
+    embeds.append(opciones_economia_embeds())
+    embeds.append(opciones_redes_2_embeds())
+
+    return embeds
+
+
+def get_opciones_cuarto_ciclo_embeds():
+    embeds = []
+
+    embeds.append(opciones_intro_moderna_embeds())
+    embeds.append(opciones_analisis_senales_embeds())
+    embeds.append(opciones_calculo_vectorial_embeds())
+    embeds.append(opciones_circuitos_1_embeds())
+    embeds.append(opciones_metodos_numericos_embeds())
+    embeds.append(opciones_etica_filosofia_embeds())
+    embeds.append(opciones_operativos_2_embeds())
+
+    return embeds
+
 
 def get_opciones_todos_los_ciclos_embeds():
 
     embeds = []
 
     embeds.append(get_opciones_primer_ciclo_embeds())  # [0]
-    embeds.append(get_opciones_segundo_ciclo_embeds())  # [2]
+    embeds.append(get_opciones_segundo_ciclo_embeds())  # [1]
+    embeds.append(get_opciones_tercer_ciclo_embeds())
+    embeds.append(get_opciones_cuarto_ciclo_embeds())
 
     return embeds
 
@@ -3528,7 +9204,8 @@ def despliegue_lista_4PCS():
     opciones.append(discord.SelectOption(label="PC-4", value=4))
     opciones.append(discord.SelectOption(label="Ex. Parcial", value=6))
     opciones.append(discord.SelectOption(label="Ex. Final", value=7))
-    opciones.append(discord.SelectOption(label="Prueba de entrada", value=8))
+    opciones.append(discord.SelectOption(label="Ex. Sustitutorio", value=8))
+    opciones.append(discord.SelectOption(label="Prueba de entrada", value=9))
 
     return opciones
 
@@ -3543,7 +9220,8 @@ def despliegue_lista_5PCS():
     opciones.append(discord.SelectOption(label="PC-5", value=5))
     opciones.append(discord.SelectOption(label="Ex. Parcial", value=6))
     opciones.append(discord.SelectOption(label="Ex. Final", value=7))
-    opciones.append(discord.SelectOption(label="Prueba de entrada", value=8))
+    opciones.append(discord.SelectOption(label="Ex. Sustitutorio", value=8))
+    opciones.append(discord.SelectOption(label="Prueba de entrada", value=9))
 
     return opciones
 
@@ -3652,7 +9330,7 @@ def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opc
             despliegue_lista_pcs = despliegue_lista_5PCS()
         if curso_seleccionado == 2: # Cálculo vectorial
             despliegue_lista_pcs = despliegue_lista_5PCS()
-        if curso_seleccionado == 3: #  Métodos numéricos
+        if curso_seleccionado == 3: # Métodos numéricos
             despliegue_lista_pcs = despliegue_lista_5PCS()
         if curso_seleccionado == 4: # Circuitos eléctricos I
             despliegue_lista_pcs = despliegue_lista_4PCS() # -------------------- DUDA xd ----------------
@@ -3662,6 +9340,109 @@ def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opc
             despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
         if curso_seleccionado == 7: # Sistemas operativos II
             despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+    if ciclo_seleccionado == 4: 
+        if curso_seleccionado == 0: 
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1:
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # 
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 3: #  
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 4: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() # 
+        if curso_seleccionado == 5: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() #
+        if curso_seleccionado == 6: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 7: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+    if ciclo_seleccionado == 5: 
+        if curso_seleccionado == 0: 
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1:
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # 
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 3: #  
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 4: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() # 
+        if curso_seleccionado == 5: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() #
+        if curso_seleccionado == 6: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 7: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+    if ciclo_seleccionado == 6: 
+        if curso_seleccionado == 0: 
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1:
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # 
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 3: #  
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 4: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() # 
+        if curso_seleccionado == 5: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() #
+        if curso_seleccionado == 6: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 7: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+    if ciclo_seleccionado == 7: 
+        if curso_seleccionado == 0: 
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1:
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # 
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 3: #  
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 4: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() # 
+        if curso_seleccionado == 5: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() #
+        if curso_seleccionado == 6: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 7: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+    if ciclo_seleccionado == 8: 
+        if curso_seleccionado == 0: 
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1:
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # 
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 3: #  
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 4: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() # 
+        if curso_seleccionado == 5: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() #
+        if curso_seleccionado == 6: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 7: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+    if ciclo_seleccionado == 9: # Electivos
+        if curso_seleccionado == 0: 
+            despliegue_lista_pcs = despliegue_lista_4PCS()
+        if curso_seleccionado == 1:
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 2: # 
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 3: #  
+            despliegue_lista_pcs = despliegue_lista_5PCS()
+        if curso_seleccionado == 4: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() # 
+        if curso_seleccionado == 5: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS() #
+        if curso_seleccionado == 6: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+        if curso_seleccionado == 7: # 
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+    
 
     if opcion_elegida == 1:
         devolver = despliegue_lista_labs
@@ -4173,7 +9954,7 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
             view =  NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
 
         if opcion_elegida == 4:  # Cuadernos y libros
-            view =  PaginaAnteriorPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado)
+            view =  PaginaAnteriorPCS_LABS(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
 
         embed =  get_opciones_todos_los_ciclos_embeds()[self.ciclo_seleccionado][self.curso_seleccionado][opcion_elegida-1]
         embed.set_footer(text="Gracias por usar FIEE-BOT.")
