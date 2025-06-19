@@ -24,3 +24,12 @@ Un bot de Discord creado con el fin de servir como repositorio académico de la 
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/JostinApaza/FIEE-BOT/
+2. Instala las dependencias (discord.py):
+   ```bash
+   pip install -U discord.py
+3. Edita el archivo main.py en su ultima línea, y posteriormente incluye el token de tu aplicación de Discord:
+   ```bash
+   bot.run("<Inserta tu token aquí>")
+4. Ejecuta la aplicación.
+   ```bash
+   python main.py
