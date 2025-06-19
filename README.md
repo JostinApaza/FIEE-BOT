@@ -1,4 +1,4 @@
-# 🏫 FIEE-BOT
+# 🏫 FIEE-BOT 🏫
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://python.org)
 [![Discord.py Version](https://img.shields.io/badge/discord.py-2.0%2B-blue)](https://github.com/Rapptz/discord.py)
@@ -16,9 +16,9 @@ Un bot de Discord creado con el fin de servir como repositorio académico de la 
 ## 🛠️ Requisitos e instalación
 
 ### Prerrequisitos
-- Python 3.8 o superior
-- Una cuenta de Discord, propietaria de una aplicación/bot de Discord
-- Token de tu aplicación de Discord (<insertar link a discord.developers>)
+- Python 3.8 o superior ([Python.org](https://www.python.org/downloads/release/python-3135/)).
+- Una cuenta de Discord, propietaria de una aplicación/bot de Discord.
+- Token de tu aplicación de Discord (disponible en [Discord Developers Portal](https://discord.com/developers/)).
 
 ### Instalación
 1. Clona este repositorio:
