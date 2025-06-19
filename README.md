@@ -1,4 +1,4 @@
-# FIEE-BOT 🤖
+# 🏫 FIEE-BOT
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://python.org)
 [![Discord.py Version](https://img.shields.io/badge/discord.py-2.0%2B-blue)](https://github.com/Rapptz/discord.py)
