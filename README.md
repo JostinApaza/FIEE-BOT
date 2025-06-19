@@ -4,9 +4,7 @@
 [![Discord.py Version](https://img.shields.io/badge/discord.py-2.0%2B-blue)](https://github.com/Rapptz/discord.py)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-🔹 Un bot de Discord como repositorio académico de la FIEE-UNI, creado con discord.py
-🔹 Sin necesidad de preconfigurar
-🔹 Con comandos intuitivos, muestra menús de navegación con listas desplegables y botones de interacción.
+Un bot de Discord creado con el fin de servir como repositorio académico de la FIEE-UNI, transparente y de libre disponibilidad utilizando la API de Discord.
 
 ![Preview del Bot](url_de_imagen_preview.png)
 
