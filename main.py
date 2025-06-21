@@ -198,10 +198,6 @@ def get_ciclos_cursos_embeds():
             - **BEG06** - Formulación y evaluación de proyectos
             - **EE498** - Laboratorio de radiocomunicaciones
             - **EE592** - Microondas
-            - **CODE5** - blank
-            - **CODE6** - blank
-            - **CODE7** - blank
-            - **CODE8** - blank
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -3173,7 +3169,7 @@ def get_embed_dibujo_tecnico_pc5():
 
 def get_embed_dibujo_tecnico_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - dibujo_tecnico",
+        title="Ex. Parciales - Dibujo_tecco",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -3262,7 +3258,7 @@ def get_embeds_dibujo_tecnico_pcs():
     lista.append(get_embed_dibujo_tecnico_pc3())
     lista.append(get_embed_dibujo_tecnico_pc4())
     lista.append(get_embed_dibujo_tecnico_pc5())
-    lista.append(get_embed_dibujo_tecnico_exparcial())
+    lista.append("get_embed_dibujo_tecnico_exparcial()")
     lista.append(get_embed_dibujo_tecnico_exfinal())
     lista.append(get_embed_dibujo_tecnico_exsusti())
     lista.append(get_embed_dibujo_tecnico_entrada())
@@ -8225,10 +8221,10 @@ def get_embed_fisica_1_laboratorios_2019_II():
     embed = discord.Embed(
         title="Laboratorios de Física 1 - 2019-II",
         description=textwrap.dedent(f"""\
-            - [LAB N°1_ MEDICIÓN Y ERROR EXPERIMENTAL.docx](https://cdn.discordapp.com/attachments/1384359269570187284/1384359292563357848/Lab_N1__MEDICION_Y_ERROR_EXPERIMENTAL.docx?ex=6852248f&is=6850d30f&hm=70ab2e162258ffcc04430aaf2d9fc5b86c554d3e371bdf816ab03430bf0fcfa4&)
-            - [LAB N°2 FIA UNI_ VELOCIDAD INSTANTÁNEA Y ACELERACIÓN.doc](https://cdn.discordapp.com/attachments/1384359269570187284/1384359441343709194/Lab_N2_FIA_UNI__VELOCIDAD_INSTANTANEA_Y_ACELERACION.doc?ex=685224b2&is=6850d332&hm=ef2b96fa937317e7ed0744cfbfcb23e0d4687a2a08d0bdf0866ffcd143ae87ac&)
-            - [LAB N°2_ VELOCIDAD INSTANTÁNEA Y ACELERACIÓN.docx](https://cdn.discordapp.com/attachments/1384359269570187284/1384359450520981544/Lab_N2__VELOCIDAD_INSTANTANEA_Y_ACELERACION.docx?ex=685224b5&is=6850d335&hm=483629508bf29b0fef5dca464ab7761e221b0c65a3970292514463091733f70a&)
-            - [LAB N°4_ TRABAJO Y ENERGÍA.docx](https://cdn.discordapp.com/attachments/1384359269570187284/1384359467419828245/Lab_N4__TRABAJO_Y_ENERGIA.docx?ex=685224b9&is=6850d339&hm=582a7e3cffbd5e924c2f7258fe9081c99ca94351842da738123b3d60af238191&)
+            - [LAB N°1_ MEDICIÓN Y ERROR EXPERIMENTAL.docx](https://docs.google.com/document/d/1Uu_0vjs0P0PCp49yryVkiokXANTOjOG_/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [LAB N°2 FIA UNI_ VELOCIDAD INSTANTÁNEA Y ACELERACIÓN.doc](https://docs.google.com/document/d/15AYrAz7mSzwN-LOLi0Rgd5BPuVZTSDjr/edit?usp=sharing&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [LAB N°2_ VELOCIDAD INSTANTÁNEA Y ACELERACIÓN.docx](https://docs.google.com/document/d/1VfoAJ6bgVrcb5L5IZ7t2JV8RNIDSHsHd/edit?usp=sharing&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [LAB N°4_ TRABAJO Y ENERGÍA.docx](https://docs.google.com/document/d/1VARCMnAg5Ey4NAXmx3cuYpT_Dv8lYD11/edit?usp=sharing&ouid=117048018312182294097&rtpof=true&sd=true)
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")
@@ -8240,14 +8236,14 @@ def get_embed_fisica_1_laboratorios_2020_II():
     embed = discord.Embed(
         title="Laboratorios de Física 1 - 2020-II",
         description=textwrap.dedent(f"""\
-            - [Guía de Laboratorio 1 ciclo 2020-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384370133379711066/Guia_de_Laboratorio_1_ciclo_2020-2.pdf?ex=68522ea8&is=6850dd28&hm=13c6c4cbfb94155de7761a8558864c849249f0a3af667cbac5066458b3814ad7&)
-            - [GUIA LABORATORIO 2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384371196820328539/GUIA_LABORATORIO_2.pdf?ex=68522fa5&is=6850de25&hm=89185fe2638b3ac4083596f38b15187c69caf68db48606f9c02bd49d2415bde4&)
-            - [Test N°2 Ajuste de datos.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384371226939490304/Test_N2_Ajuste_de_datos.pdf?ex=68522fac&is=6850de2c&hm=9c683cb274bca40420424b46bb639688cf96a66451d0973687d8d7686c010344&)
-            - [Guia Laboratorio 3.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384371523678376006/Guia_Laboratorio_3.pdf?ex=68522ff3&is=6850de73&hm=0cffcda31e54a8117fe5fbb9194d230f5c881d95f1feaf23e5775b55784d6f5b&)
-            - [Laboratorio 4 Movimiento de un proyectil.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384372361524150312/Laboratorio_4_Movimiento_de_un_proyectil.pdf?ex=685230bb&is=6850df3b&hm=f21584ef798abd62a750c111036b700457d921eb91114864c79e679e039ad979&)
-            - [Laboratorio 5 Principio de Conservación de la Energía.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384372361163444265/Laboratorio_5_Principio_de_Conservacion_de_la_Energia.pdf?ex=685230bb&is=6850df3b&hm=f56dfeccf6d400d1cb1cd1705379ef458f8e5c8d48430aad073891e88ce64eef&)
-            - [Laboratorio 06 10-02-2021.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384372360706134026/Laboratorio_06_10-02-2021.pdf?ex=685230bb&is=6850df3b&hm=4d5aeff8a9a17759cba5f6845a603a71d2ca2d5a597f1370e63ddb381d4095a5&)
-            - [Indicaciones de Laboratorio N°1 BFI01 (Prof. Huallpa).mp4](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjunior%5Fveli%5Fm%5Funi%5Fpe%2FDocuments%2FTODOS%20LOS%20DRIVES%20FIEE%20UNI%2FDrive%201er%20Ciclo%2FBFI01%20F%C3%ADsica%201%2FLaboratorios%202020%2DI%2DII%20%28Virtuales%29%2FLaboratorio%20N%C2%B01%20%28Mediciones%20y%20Propagaci%C3%B3n%20de%20Errores%29%2FIndicaciones%20de%20Laboratorio%20N%C2%B01%20BFI01%20%28Prof%2E%20Huallpa%29%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9f1ef0c0%2D8f1e%2D461a%2Da151%2Dc208840cbcb6)
+            - [Guía de Laboratorio 1 ciclo 2020-2.pdf]()
+            - [GUIA LABORATORIO 2.pdf]()
+            - [Test N°2 Ajuste de datos.pdf]()
+            - [Guia Laboratorio 3.pdf]()
+            - [Laboratorio 4 Movimiento de un proyectil.pdf]()
+            - [Laboratorio 5 Principio de Conservación de la Energía.pdf]()
+            - [Laboratorio 06 10-02-2021.pdf]()
+            - [Indicaciones de Laboratorio N°1 BFI01 (Prof. Huallpa).mp4]()
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")
@@ -8351,7 +8347,7 @@ def get_embed_fisica_1_pc1_2():
     embed = discord.Embed(
         title="1ra PC - Física 1",
         description=textwrap.dedent(f"""\
-            - [PC-1 24-3.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384974935256072224/PC-1_24-3.pdf?ex=685461ec&is=6853106c&hm=99912f8d615daeed34a72f7dba408e72a55193d6c4ff8292e60f5aa9ce80134d&)
+            - [PC-1 24-3.pdf](
             - [PC-1 24-2.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384974935679832064/PC-1_24-2.pdf?ex=685461ec&is=6853106c&hm=1c6420dc8e214cd9cfd88ef1857528ec4349b484ce27700d0a63b2b8c9d0b066&)
             - [PC1 BF101 M 23-3.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384975794941726750/PC1_BF101_M_23-3.pdf?ex=685462b9&is=68531139&hm=432d377d91be920c233b7bdfe3182791822495d3ffaefe0af13a1cd43f03983a&)
             - [PC1 BFI01 N 23-3.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384975974902403204/PC1_BFI01_N_23-3.pdf?ex=685462e4&is=68531164&hm=7603daf8b8dd223f82771647ab5f4712071302de9b56bd6e8b75e70a1b80c2b6&)
@@ -8416,7 +8412,7 @@ def get_embed_fisica_1_pc1():
 
     return lista
 
-def get_embed_fisica_1_pc2():
+def get_embed_fisica_1_pc2_1():
     embed = discord.Embed(
         title="2da PC - Física 1",
         description=textwrap.dedent(f"""\
@@ -10263,4 +10259,4 @@ class PaginaAnteriorPCS_LABS(discord.ui.View):
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
 
-bot.run("MTM3OTg5MDYyMjQ1Nzk3NDc5NA.G6HXNR.ig6eSs1pb0nKKCaxDoAN46UES8-xrIhF-MxNNA")
+bot.run("MTM3OTg5MDYyMjQ1Nzk3NDc5NA.GImQaj.DtnWgE3UF2m9wyTtqBeWGchyCRfROuHbD2pofM")
