@@ -33,7 +33,7 @@ def get_ciclos_cursos_embeds():
         title="Primer ciclo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
-            - **BFI01** - Física 1
+            - **BFI01** - Física I
             - **BMA01** - Cálculo diferencial
             - **BMA03** - Álgebra lineal
             - **EE250** - Dibujo técnico
