@@ -121,6 +121,9 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
         if curso_seleccionado == 4: 
             opciones = despliegue_lista_opciones_NO_LAB()
 
+        if curso_seleccionado == 5:
+            opciones = despliegue_lista_opciones_NO_LAB()
+
         if curso_seleccionado == 6:
             opciones = despliegue_lista_opciones_LAB()
 
@@ -144,11 +147,15 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
         if curso_seleccionado == 4: 
             opciones = despliegue_lista_opciones_NO_LAB()
 
+        if curso_seleccionado == 5:
+            opciones = despliegue_lista_opciones_NO_LAB()
+
         if curso_seleccionado == 6:
             opciones = despliegue_lista_opciones_LAB()
             
         if curso_seleccionado == 7:
             opciones = despliegue_lista_opciones_NO_LAB()
+        
 
     if ciclo_seleccionado == 3:  # Cuarto ciclo
         if curso_seleccionado == 0: 
@@ -164,6 +171,9 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
             opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
 
         if curso_seleccionado == 4: 
+            opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 5:
             opciones = despliegue_lista_opciones_NO_LAB()
 
         if curso_seleccionado == 6:
@@ -188,6 +198,9 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
         if curso_seleccionado == 4: 
             opciones = despliegue_lista_opciones_NO_LAB()
 
+        if curso_seleccionado == 5:
+            opciones = despliegue_lista_opciones_NO_LAB()
+
         if curso_seleccionado == 6:
             opciones = despliegue_lista_opciones_LAB()
             
@@ -208,6 +221,9 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
             opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
 
         if curso_seleccionado == 4: 
+            opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 5:
             opciones = despliegue_lista_opciones_NO_LAB()
 
         if curso_seleccionado == 6:
@@ -232,6 +248,9 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
         if curso_seleccionado == 4: 
             opciones = despliegue_lista_opciones_NO_LAB()
 
+        if curso_seleccionado == 5:
+            opciones = despliegue_lista_opciones_NO_LAB()
+
         if curso_seleccionado == 6:
             opciones = despliegue_lista_opciones_LAB()
             
@@ -252,6 +271,9 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
             opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
 
         if curso_seleccionado == 4: 
+            opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 5:
             opciones = despliegue_lista_opciones_NO_LAB()
 
         if curso_seleccionado == 6:
@@ -276,6 +298,9 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
         if curso_seleccionado == 4: 
             opciones = despliegue_lista_opciones_NO_LAB()
 
+        if curso_seleccionado == 5:
+            opciones = despliegue_lista_opciones_NO_LAB()
+
         if curso_seleccionado == 6:
             opciones = despliegue_lista_opciones_LAB()
             
@@ -296,6 +321,9 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
             opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
 
         if curso_seleccionado == 4: 
+            opciones = despliegue_lista_opciones_NO_LAB()
+
+        if curso_seleccionado == 5:
             opciones = despliegue_lista_opciones_NO_LAB()
 
         if curso_seleccionado == 6:

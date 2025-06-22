@@ -97,7 +97,7 @@ def get_segundo_ciclo_embeds():
     embeds.append(embed7)
 
     embed8 = discord.Embed(title="📚 Sistemas operativos I", description="", color=discord.Color.green())
-    embed8 = agregar_pcs_clases_campos(embed7)
+    embed8 = agregar_pcs_clases_campos(embed8)
     embed8.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed8)
 
@@ -205,15 +205,15 @@ def get_quinto_ciclo_embeds():
     embed2.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed2)
 
-    embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
-    embed3 = agregar_pcs_clases_campos(embed3)
-    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
-    embeds.append(embed3)
-
     embed4 = discord.Embed(title="📚 Química I", description="", color=discord.Color.green())
     embed4 = agregar_labs_pcs_clases_campos(embed4)
     embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed4)
+
+    embed3 = discord.Embed(title="📚 Algoritmos y estructuras de datos I", description="", color=discord.Color.green())
+    embed3 = agregar_pcs_clases_campos(embed3)
+    embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
+    embeds.append(embed3)
 
     embed5 = discord.Embed(title="📚 Fundamentos de ingeniería del computador", description="", color=discord.Color.green())
     embed5 = agregar_pcs_clases_campos(embed5)
@@ -229,6 +229,7 @@ def get_quinto_ciclo_embeds():
     embed7 = agregar_pcs_clases_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01](https://unipe-my.sharepoint.com/personal/junior_veli_m_uni_pe/Documents/TODOS%20LOS%20DRIVES%20FIEE%20UNI/Drive%201er%20Ciclo/BFI01%20F%C3%ADsica%201/Syllabus%20BFI01%20(F%C3%ADsica%201).pdf)", inline=False)
     embeds.append(embed7)
+
 
     return embeds
 
