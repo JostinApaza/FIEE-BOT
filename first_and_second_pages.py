@@ -128,7 +128,7 @@ def get_ciclos_cursos_embeds():
             Selecciona una opción de la lista desplegable para seleccionar el curso.\n
             - **EE430** - Sistemas de comunicaciones I
             - **EE438** - Dispositivos y circuitos electrónicos II
-            - **EE458** - Laboratorio de electrónica
+            - **EE458** - Laboratorio de electrónica II
             - **EE588** - Electromagnetismo II
             - **EE604** - Microcontroladores
             - **EE648** - Sistemas de control II
