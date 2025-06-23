@@ -2117,6 +2117,16 @@ def opciones_redaccion_embeds():
 
     return embeds
 
+def opciones_sistemas_operativos_1_embeds():
+    embeds = []
+
+    embeds.append("get_sistemas_operativos_1_laboratorios_embed()")  # [0]
+    embeds.append(get_operativos_1_examenes_embed())      # [1]
+    embeds.append(get_operativos_1_clases_embed())        # [2]
+    embeds.append(get_operativos_1_cuadernos_embed())     # [3]
+
+    return embeds
+
 # /////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -2302,12 +2312,13 @@ def get_opciones_segundo_ciclo_embeds():
     embeds = []
 
     embeds.append(opciones_fisica_2_embeds())  # [0]
-    embeds.append(opciones_calculo_integral_embeds())  # [2]
-    embeds.append(opciones_algoritmos_1_embeds())  # [1]
-    embeds.append(opciones_fundamentos_computador_embeds())  # [3]
-    embeds.append(opciones_quimica_1_embeds())  # [4]
-    embeds.append(opciones_redes_1_embeds())  # [1]
-    embeds.append(opciones_redaccion_embeds())  # [6]
+    embeds.append(opciones_calculo_integral_embeds()) 
+    embeds.append(opciones_algoritmos_1_embeds())  
+    embeds.append(opciones_quimica_1_embeds()) 
+    embeds.append(opciones_fundamentos_computador_embeds())
+    embeds.append(opciones_redaccion_embeds())
+    embeds.append(opciones_redes_1_embeds())
+    embeds.append(opciones_sistemas_operativos_1_embeds())
 
     return embeds
 

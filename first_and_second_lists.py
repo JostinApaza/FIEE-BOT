@@ -37,8 +37,8 @@ def despliegue_lista_cursos():
     opciones1 = [
         discord.SelectOption(label="Fundamentos de Ing. térmica y de fluidos", value=1),
         discord.SelectOption(label="Cálculo integral", value=2),
-        discord.SelectOption(label="Química", value=3),
-        discord.SelectOption(label="Algoritmos y estructuras de datos I", value=4),
+        discord.SelectOption(label="Algoritmos y estructuras de datos I", value=3),
+        discord.SelectOption(label="Química", value=4),
         discord.SelectOption(label="Fund. de ingeniería del computador", value=5),
         discord.SelectOption(label="Redacción y comunicación", value=6),
         discord.SelectOption(label="Redes de datos I", value=7),

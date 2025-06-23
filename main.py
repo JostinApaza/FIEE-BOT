@@ -535,7 +535,6 @@ def despliegue_lista_4PCS_NO_EXAMEN():
     opciones.append(discord.SelectOption(label="PC-2", value=2))
     opciones.append(discord.SelectOption(label="PC-3", value=3))
     opciones.append(discord.SelectOption(label="PC-4", value=4))
-    # opciones.append(discord.SelectOption(label="Prueba de entrada", value=8))
     opciones.append(discord.SelectOption(label="Prueba de entrada", value=9))
 
     return opciones

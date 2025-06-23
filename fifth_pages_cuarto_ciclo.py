@@ -6,7 +6,7 @@ def get_embed_intro_moderna_pc1():
     embed = discord.Embed(
         title="1ra PC - intro_moderna",
         description=textwrap.dedent(f"""\
-            - 
+            - [PC1 23-2](link)
             - 
             - 
             - 

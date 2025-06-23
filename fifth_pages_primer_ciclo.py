@@ -40,10 +40,10 @@ def get_embed_fisica_1_laboratorios_2021_II():
     embed = discord.Embed(
         title="Laboratorios de Física 1 - 2021-II",
         description=textwrap.dedent(f"""\
-            - [Exp01Errores.docx (1).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375018586378240/Exp01Errores.docx_1.pdf?ex=68523334&is=6850e1b4&hm=4aef33bda669a26a09536bc3f9c4d0bac40b953dde75e7b12c5fc0bfcd913d5a&)
-            - [Exp02 Estadistica (4).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375018032599040/Exp02_Estadistica_4.pdf?ex=68523334&is=6850e1b4&hm=b6079af3e4710bae5fc303d77ead999cd461f75884c3cdd7bdfdbbc357f40620&)
-            - [EXp3 Pendulo (2).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375017726283796/EXp3_Pendulo_2.pdf?ex=68523334&is=6850e1b4&hm=cd85cb3954fffe4160f79149c320baacee9be8d65747da79801a67cd1e10244d&)
-            - [EXp04 Movimiento Rectilíneo Trucker OK (1).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375016874840104/EXp04_Movimiento_Rectilineo_Trucker_OK_1.pdf?ex=68523334&is=6850e1b4&hm=2f82048e87cfca0b7f1cbc9dae3c1819f92afb8042a624e2bd2c13386ab3036a&)
+            - [Exp01Errores.docx (1).pdf]()
+            - [Exp02 Estadistica (4).pdf]()
+            - [EXp3 Pendulo (2).pdf]()
+            - [EXp04 Movimiento Rectilíneo Trucker OK (1).pdf]()
             - [Exp5 Centro de masa Tracker (1).pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375016572981248/Exp5_Centro_de_masa_Tracker_1.pdf?ex=68523334&is=6850e1b4&hm=829a55b0a68f55cc65512820aa0df79e492f36cf7a28c25e69e069594244f849&)
             - [Exp6 Colisiones Tracker.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375015926927360/Exp6_Colisiones_Tracker.pdf?ex=68523334&is=6850e1b4&hm=3d663303efc97dba7e501cc1871fe4652deef38e25c2c90ea7ab9882216f81c6&)
             - [EXp7 Colisiones 2 Tracker.pdf](https://cdn.discordapp.com/attachments/1384359269570187284/1384375015591641148/EXp7_Coliciones_2_Trucker.pdf?ex=68523334&is=6850e1b4&hm=41b1832da785f6dffdbeb081ddc38d1b45befffcd54044b66d2b88baa8ea2d38&)
