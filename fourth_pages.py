@@ -1550,8 +1550,7 @@ def get_etica_filosofia_clases_embed():
         title="Clases de etica_filosofia.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
-            - -
-            - -
+            - Clases PPT's Prof. Arenales 2021-1
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -2324,7 +2323,7 @@ def get_opciones_segundo_ciclo_embeds():
     embeds.append(opciones_quimica_1_embeds()) 
     embeds.append(opciones_fundamentos_computador_embeds())
     embeds.append(opciones_redaccion_embeds())
-    embeds.append(opciones_redes_1_embeds())
+    embeds.append("opciones_redes_1_embeds()")
     embeds.append(opciones_sistemas_operativos_1_embeds())
 
     return embeds
@@ -2348,8 +2347,9 @@ def get_opciones_cuarto_ciclo_embeds():
     embeds.append(opciones_intro_moderna_embeds())
     embeds.append(opciones_analisis_senales_embeds())
     embeds.append(opciones_calculo_vectorial_embeds())
-    embeds.append(opciones_circuitos_1_embeds())
     embeds.append(opciones_metodos_numericos_embeds())
+    embeds.append(opciones_circuitos_1_embeds())
+    embeds.append(opciones_electrotecnia_embeds())
     embeds.append(opciones_etica_filosofia_embeds())
     embeds.append(opciones_operativos_2_embeds())
 

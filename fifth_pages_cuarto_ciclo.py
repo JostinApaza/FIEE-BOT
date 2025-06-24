@@ -833,6 +833,42 @@ def get_embed_metodos_numericos_entrada():
 
     return embed
 
+def get_embed_etica_filosofia_clase1():
+    embed = discord.Embed(
+        title="Clases PPT's Prof. Arenales 2021-I BEF01",
+        description=textwrap.dedent(f"""\
+            - [Semana 1. La ética. Conceptos y tipos.pdf](https://drive.google.com/file/d/1Eb8S0MGbPTk1B9BAgbHcD57h2zRz2D3y/view?usp=drive_link)
+            - [Semana 2. Moral y moralidad.pdf](https://drive.google.com/file/d/1LWfFaLQXfuoHvw-5abtXZVBMBaK7D2GF/view?usp=drive_link)
+            - [Semana 3. Concepciones de política.pdf](https://drive.google.com/file/d/1rA79M69IvCo_vjSoo3nelU3UL-I0nCyj/view?usp=drive_link)
+            - [Semana 4. Política, Estado y ciudadanía.pdf](https://drive.google.com/file/d/1pm3JJEyWwv4i8re89RHBS2vlSD7C--Sq/view?usp=drive_link)
+            - [Semana 5. La Ética Socrática.pdf](https://drive.google.com/file/d/177vErv4d_5ZmkqMAmjJnIPyWwBnkIFGL/view?usp=drive_link)
+            - [Semana 6. El Relativismo ético.pdf](https://drive.google.com/file/d/1OepqU2owI9QiQQsbnBRkZvXuGwe8gs20/view?usp=drive_link)
+            - [Semana 7. La ética de la virtud de Aristóteles.pdf](https://drive.google.com/file/d/1JpPezVu6Au1aPa2iDIiDglOQZBXObFYH/view?usp=drive_link)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_etica_filosofia_clase2():
+    embed = discord.Embed(
+        title="Clases PPT's Prof. Arenales 2021-I BEF01",
+        description=textwrap.dedent(f"""\
+            - [Semana 9. Ética del deber de Kant.pdf](https://drive.google.com/file/d/17IaNXHZLZ_xCGfU2dC4kzPnif-qcaSCX/view?usp=drive_link)
+            - [Semana 10. Utilitarismo.pdf](https://drive.google.com/file/d/12rGCFPb968v5snsK3pCcrIGTg691Vp1l/view?usp=drive_link)
+            - [Semana 11. Liberalismo.pdf](https://drive.google.com/file/d/1TRdIg7pdT00oZpk0kLHUPcQx5CtdWzXx/view?usp=drive_link)
+            - [Semana 12. Comunitarismo de Taylor.pdf](https://drive.google.com/file/d/1g2eiW4ZNjkdMybJ1sYYS_SDlp8c1PogL/view?usp=drive_link)
+            - [Semana 13. Liberalismo de Mill.pdf](https://drive.google.com/file/d/1Bg-t7rKy8fZziwu3smPw4rB3-MfDe1SP/view?usp=drive_link)
+            - [Semana 14. Teoría de la justicia de John Rawls.pdf](https://drive.google.com/file/d/15viIdeONThkcPKE6NlneR3qjOvOx6ABg/view?usp=drive_link)
+            - [Semana 15. Teoría de la acción comunicativa de Jürgen Habermas.pdf](https://drive.google.com/file/d/1j3ir6rwew1iziZoHmrqHsMqrEuGC1bts/view?usp=drive_link)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
 
 def get_embed_etica_filosofia_pc1():
     embed = discord.Embed(
@@ -1502,15 +1538,21 @@ def get_embeds_cursos_labs_pcs_clases_cuarto_ciclo():
     lista2.append(get_embeds_intro_moderna_pcs())
     lista2.append(get_embeds_analisis_senales_pcs())
     lista2.append(get_embeds_calculo_vectorial_pcs())
-    lista2.append(get_embeds_circuitos_1_pcs())
     lista2.append(get_embeds_metodos_numericos_pcs())
-    lista2.append(get_embeds_etica_filosofia_pcs())
+    lista2.append(get_embeds_circuitos_1_pcs())
     lista2.append(get_embeds_electrotecnia_pcs())
+    lista2.append(get_embeds_etica_filosofia_pcs())
     lista2.append(get_embeds_sistemas_operativos_2_pcs())
 
     lista3 = [] # Clases
 
     lista3.append("blank")
+    lista3.append("blank")
+    lista3.append("blank")
+    lista3.append("blank")
+    lista3.append("blank")
+    lista3.append("blank")
+    lista3.append([[get_embed_etica_filosofia_clase1(), get_embed_etica_filosofia_clase2()]]) # Clases de Etica y Filosofia Politica
 
     lista = [] # Laboratorios, PC's y clases unidas
 

@@ -40,6 +40,12 @@ def agregar_pcs_cuadernos_campos(embed: discord.Embed) -> discord.Embed:
 
     return embed
 
+def agregar_clases_campos(embed: discord.Embed) -> discord.Embed:
+
+    embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+
+    return embed
+
 def get_primer_ciclo_embeds():
     embeds = []
 
@@ -131,7 +137,7 @@ def get_tercer_ciclo_embeds():
     embeds = []
 
     embed1 = discord.Embed(title="📚 Fundamentos de Electricidad y Magnetismo", description="", color=discord.Color.dark_green())
-    embed1 = agregar_pcs_clases_2_campos(embed1)
+    embed1 = agregar_labs_pcs_clases_2_campos(embed1)
     embed1.add_field(name="▸  Sílabo", value="[Sílabo de Fund. Electicidad y Magnetismo BFI03]()", inline=False)
     embeds.append(embed1)
 
@@ -181,25 +187,25 @@ def get_cuarto_ciclo_embeds():
     embed3.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01]()", inline=False)
     embeds.append(embed3)
 
-    embed4 = discord.Embed(title="📚 Circuitos Eléctricos I", description="", color=discord.Color.green())
-    embed4 = agregar_labs_pcs_clases_campos(embed4)
-    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01]()", inline=False)
-    embeds.append(embed4)
-
     embed5 = discord.Embed(title="📚 Métodos Numéricos", description="", color=discord.Color.green())
     embed5 = agregar_pcs_clases_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01]()", inline=False)
     embeds.append(embed5)
 
-    embed6 = discord.Embed(title="📚 Ética y Filosofía", description="", color=discord.Color.green())
-    embed6 = agregar_pcs_cuadernos_campos(embed6)
-    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01]()", inline=False)
-    embeds.append(embed6)
+    embed4 = discord.Embed(title="📚 Circuitos Eléctricos I", description="", color=discord.Color.green())
+    embed4 = agregar_labs_pcs_clases_campos(embed4)
+    embed4.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01]()", inline=False)
+    embeds.append(embed4)
 
     embed7 = discord.Embed(title="📚 Electrotecnia e instalación de redes", description="", color=discord.Color.green())
     embed7 = agregar_pcs_clases_2_campos(embed7)
     embed7.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01]()", inline=False)
     embeds.append(embed7)
+
+    embed6 = discord.Embed(title="📚 Ética y Filosofía política", description="", color=discord.Color.green())
+    embed6 = agregar_clases_campos(embed6)
+    embed6.add_field(name="▸  Sílabo", value="[Sílabo de Ética y Filosofía BEF01](https://drive.google.com/file/d/1W2d6B2mmQikuE0Qz-UEUrtavrYF_9fwE/view?usp=drive_link)", inline=False)
+    embeds.append(embed6)
 
     embed8 = discord.Embed(title="📚 Sistemas Operativos II", description="", color=discord.Color.green())
     embed8 = agregar_pcs_clases_campos(embed8)

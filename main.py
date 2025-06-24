@@ -71,7 +71,7 @@ def get_embed_and_view_por_curso(ciclo_seleccionado, curso_seleccionado, lab_pc_
         view = NavegarPaginas(get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][lab_pc_clase-1][curso_seleccionado][periodo_o_pc], ciclo_seleccionado, curso_seleccionado, lab_pc_clase)
     else:
         embed = get_pcs_embeds_todos_los_ciclos()[ciclo_seleccionado][lab_pc_clase-1][curso_seleccionado][periodo_o_pc]
-    
+
 
     return embed, view
 
@@ -201,6 +201,14 @@ def despliegue_lista_CLASES_fisica_1():
 
     return opciones
 
+def despliegue_lista_CLASES_etica():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="Clases PPT's Prof. Arenales", value=1))
+
+    return opciones
+
 
 def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opcion_elegida):
 
@@ -262,11 +270,12 @@ def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opc
         if curso_seleccionado == 3: # Métodos numéricos
             despliegue_lista_pcs = despliegue_lista_5PCS()
         if curso_seleccionado == 4: # Circuitos eléctricos I
-            despliegue_lista_pcs = despliegue_lista_4PCS() # -------------------- DUDA xd ----------------
+            despliegue_lista_pcs = despliegue_lista_4PCS() #
         if curso_seleccionado == 5: # Electrotecnia e instalación de redes
-            despliegue_lista_pcs = despliegue_lista_4PCS() # -------------------- otra duda --------------
+            despliegue_lista_pcs = despliegue_lista_4PCS() 
         if curso_seleccionado == 6: # Ética y filosofía
             despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
+            despliegue_lista_clases = despliegue_lista_CLASES_etica()
         if curso_seleccionado == 7: # Sistemas operativos II
             despliegue_lista_pcs = despliegue_lista_4PCS_NO_EXAMEN()
     if ciclo_seleccionado == 4: 
@@ -533,7 +542,10 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
             view =  NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
         
         if opcion_elegida == 3:  # Clases
-            view =  NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
+            if self.ciclo_seleccionado != 7 and self.curso_seleccionado != 7:
+                view =  NumeroMenuPCS_LABS_CLASES(self.ciclo_seleccionado, self.curso_seleccionado, opcion_elegida)
+            else:
+                view = PaginaAnterior(self.ciclo_seleccionado, self.curso_seleccionado)
 
         if opcion_elegida == 4:  # Cuadernos y libros
             view =  PaginaAnterior(self.ciclo_seleccionado, self.curso_seleccionado)

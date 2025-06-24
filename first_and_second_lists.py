@@ -29,7 +29,7 @@ def despliegue_lista_cursos():
         discord.SelectOption(label="Dibujo técnico", value=4),
         discord.SelectOption(label="Introducción a la computación", value=5),
         discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
-        discord.SelectOption(label="Fundamentos de programación", value=7),
+        # discord.SelectOption(label="Fundamentos de programación", value=7),
         # discord.SelectOption(label="Asesorías 1er ciclo", value=8),
     ]
     lista_cursos.append(opciones0)
@@ -41,7 +41,7 @@ def despliegue_lista_cursos():
         discord.SelectOption(label="Química", value=4),
         discord.SelectOption(label="Fund. de ingeniería del computador", value=5),
         discord.SelectOption(label="Redacción y comunicación", value=6),
-        discord.SelectOption(label="Redes de datos I", value=7),
+        # discord.SelectOption(label="Redes de datos I", value=7),
         discord.SelectOption(label="Sistemas operativos I", value=8),
     ]
     lista_cursos.append(opciones1)
@@ -64,7 +64,7 @@ def despliegue_lista_cursos():
         discord.SelectOption(label="Circuitos eléctricos I", value=5),
         discord.SelectOption(label="Electrotecnia e instalación de redes", value=6),
         discord.SelectOption(label="Ética y filosofía", value=7),
-        discord.SelectOption(label="Sistemas operativos II", value=8),
+        # discord.SelectOption(label="Sistemas operativos II", value=8),
     ]
     lista_cursos.append(opciones3)
 

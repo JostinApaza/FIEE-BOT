@@ -33,7 +33,6 @@ def get_ciclos_cursos_embeds():
             - **EE250** - Dibujo técnico
             - **BIC01** - Introducción a la computación
             - **BRN01** - Realidad Nac. Constitución y DD.HH
-            - **CBS01** - Fundamentos de programación
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
@@ -52,7 +51,6 @@ def get_ciclos_cursos_embeds():
             - **BQU01** - Química I
             - **EE152** - Fund. de ingeniería del computador
             - **BRC01** - Redacción y comunicación
-            - **CBN01** - Redes de datos I
             - **CBS02** - Sistemas operativos I
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
@@ -90,7 +88,6 @@ def get_ciclos_cursos_embeds():
             - **EE320** - Circuitos eléctricos I
             - **EE306** - Electrotecnia e instalación de redes
             - **BEF01** - Ética y filosofía política
-            - **CBS03** - Sistemas operativos II
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )
