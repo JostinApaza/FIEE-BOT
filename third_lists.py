@@ -100,7 +100,7 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
             opciones = despliegue_lista_opciones_NO_LAB()
 
         if curso_seleccionado == 5: # Realidad Nac. Constitución y DD.HH
-            opciones = despliegue_lista_opciones_NO_LAB()
+            opciones = despliegue_lista_opciones_NO_LAB_NO_PC_NO_CLASE()
 
         if curso_seleccionado == 6: # Fundamentos de programación
             opciones = despliegue_lista_opciones_LAB()
@@ -119,10 +119,10 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
             opciones = despliegue_lista_opciones_LAB_NO_CUADERNO()
 
         if curso_seleccionado == 4: 
-            opciones = despliegue_lista_opciones_NO_LAB()
+            opciones = despliegue_lista_opciones_NO_LAB_NO_PC_NO_CLASE()
 
         if curso_seleccionado == 5:
-            opciones = despliegue_lista_opciones_NO_LAB()
+            opciones = despliegue_lista_opciones_NO_LAB_NO_PC_NO_CLASE()
 
         if curso_seleccionado == 6:
             opciones = despliegue_lista_opciones_LAB()

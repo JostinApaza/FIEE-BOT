@@ -33,6 +33,13 @@ def agregar_pcs_clases_2_campos(embed: discord.Embed) -> discord.Embed:
 
     return embed
 
+def agregar_pcs_cuadernos_campos(embed: discord.Embed) -> discord.Embed:
+
+    # embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+    embed.add_field(name="▸  Cuadernos y libros", value="Material del curso.", inline=False)
+
+    return embed
+
 def get_primer_ciclo_embeds():
     embeds = []
 
@@ -62,7 +69,7 @@ def get_primer_ciclo_embeds():
     embeds.append(embed5)
 
     embed6 = discord.Embed(title="📚 Realidad Nac. Constitución y DD.HH", description="", color=discord.Color.green())
-    embed6 = agregar_pcs_clases_2_campos(embed6)
+    embed6 = agregar_pcs_cuadernos_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Realidad Nac. C. y DD.HH BRN01]()", inline=False)
     embeds.append(embed6)
 
@@ -98,12 +105,12 @@ def get_segundo_ciclo_embeds():
     embeds.append(embed4)
 
     embed5 = discord.Embed(title="📚 Fundamentos de Ingeniería del computador", description="", color=discord.Color.green())
-    embed5 = agregar_pcs_clases_2_campos(embed5)
+    embed5 = agregar_pcs_cuadernos_campos(embed5)
     embed5.add_field(name="▸  Sílabo", value="[Sílabo de Fundamentos De Ing. del computador EE152]()", inline=False)
     embeds.append(embed5)
 
     embed6 = discord.Embed(title="📚 Redacción y comunicación", description="", color=discord.Color.green())
-    embed6 = agregar_pcs_clases_2_campos(embed6)
+    embed6 = agregar_pcs_cuadernos_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Redacción y comunicación BRC01]()", inline=False)
     embeds.append(embed6)
 
@@ -185,7 +192,7 @@ def get_cuarto_ciclo_embeds():
     embeds.append(embed5)
 
     embed6 = discord.Embed(title="📚 Ética y Filosofía", description="", color=discord.Color.green())
-    embed6 = agregar_pcs_clases_2_campos(embed6)
+    embed6 = agregar_pcs_cuadernos_campos(embed6)
     embed6.add_field(name="▸  Sílabo", value="[Sílabo de Física BFI01]()", inline=False)
     embeds.append(embed6)
 

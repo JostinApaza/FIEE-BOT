@@ -18,6 +18,22 @@ def get_fisica_1_laboratorios_embed():
 
     return embed
 
+def get_quimica_1_laboratorios_embed():
+
+    embed = discord.Embed(
+        title="Laboratorios de Química 1",
+        description=textwrap.dedent(f"""\
+            Selecciona una opción de la lista desplegable para seleccionar el periodo.\n
+            - Test de laboratorios 2021-II
+        """),
+        color=0x701B13)
+    embed.add_field(name="▸  Guía de Laboratorio de Química 23-1", value="[Guia de Laboratorio de Quimica 23-1.pdf](https://drive.google.com/file/d/1IBXxo0x2exb5xbcizQ1rCsCkFG-PvwW5/view?usp=drive_link)", inline=False)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
+
 def get_fisica_1_clases_embed():
 
     embed = discord.Embed(
@@ -582,7 +598,6 @@ def get_quimica_1_examenes_embed():
         title="Practicas y exámenes de quimica_1:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
-            - Prueba de entrada
             - PC 1
             - PC 2
             - PC 3
@@ -2083,7 +2098,7 @@ def opciones_fundamentos_computador_embeds():
 def opciones_quimica_1_embeds():
     embeds = []
 
-    embeds.append("get_quimica_1_laboratorios_embed()")  # [0]
+    embeds.append(get_quimica_1_laboratorios_embed())  # [0]
     embeds.append(get_quimica_1_examenes_embed())      # [1]
     embeds.append(get_quimica_1_clases_embed())        # [2]
     embeds.append(get_quimica_1_cuadernos_embed())     # [3]

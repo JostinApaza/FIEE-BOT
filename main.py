@@ -100,6 +100,20 @@ def despliegue_lista_4PCS():
 
     return opciones
 
+def despliegue_lista_4PCS_NO_ENTRADA():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="PC-1", value=1))
+    opciones.append(discord.SelectOption(label="PC-2", value=2))
+    opciones.append(discord.SelectOption(label="PC-3", value=3))
+    opciones.append(discord.SelectOption(label="PC-4", value=4))
+    opciones.append(discord.SelectOption(label="Ex. Parcial", value=6))
+    opciones.append(discord.SelectOption(label="Ex. Final", value=7))
+    opciones.append(discord.SelectOption(label="Ex. Sustitutorio", value=8))
+
+    return opciones
+
 def despliegue_lista_5PCS():
 
     opciones = []
@@ -116,6 +130,21 @@ def despliegue_lista_5PCS():
 
     return opciones
 
+def despliegue_lista_5PCS_NO_ENTRADA():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="PC-1", value=1))
+    opciones.append(discord.SelectOption(label="PC-2", value=2))
+    opciones.append(discord.SelectOption(label="PC-3", value=3))
+    opciones.append(discord.SelectOption(label="PC-4", value=4))
+    opciones.append(discord.SelectOption(label="PC-5", value=5))
+    opciones.append(discord.SelectOption(label="Ex. Parcial", value=6))
+    opciones.append(discord.SelectOption(label="Ex. Final", value=7))
+    opciones.append(discord.SelectOption(label="Ex. Sustitutorio", value=8))
+
+    return opciones
+
 def despliegue_lista_4PCS_NO_EXAMEN():
 
     opciones = []
@@ -124,7 +153,7 @@ def despliegue_lista_4PCS_NO_EXAMEN():
     opciones.append(discord.SelectOption(label="PC-2", value=2))
     opciones.append(discord.SelectOption(label="PC-3", value=3))
     opciones.append(discord.SelectOption(label="PC-4", value=4))
-    opciones.append(discord.SelectOption(label="Prueba de entrada", value=9))
+    # opciones.append(discord.SelectOption(label="Prueba de entrada", value=9))
 
     return opciones
 
@@ -152,6 +181,14 @@ def despliegue_lista_LABS_fisica_1():
     opciones.append(discord.SelectOption(label="Laboratorios 2020-II", value=2))
     opciones.append(discord.SelectOption(label="Laboratorios 2021-II", value=3))
     opciones.append(discord.SelectOption(label="Laboratorios 2023-I", value=4))
+
+    return opciones
+
+def despliegue_lista_LABS_quimica_1():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="Test de Laboratorios 21-II", value=1))
 
     return opciones
 
@@ -192,7 +229,8 @@ def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opc
         if curso_seleccionado == 2: # Algoritmos y estructuras de datos I
             despliegue_lista_pcs = despliegue_lista_4PCS()
         if curso_seleccionado == 3: # Química
-            despliegue_lista_pcs = despliegue_lista_4PCS()
+            despliegue_lista_pcs = despliegue_lista_4PCS_NO_ENTRADA()
+            despliegue_lista_labs = despliegue_lista_LABS_quimica_1()
         if curso_seleccionado == 4: # Fundamentos de ingeniería del computador
             despliegue_lista_pcs = despliegue_lista_5PCS_NO_EXAMEN()
         if curso_seleccionado == 5: # Redacción y comunicación

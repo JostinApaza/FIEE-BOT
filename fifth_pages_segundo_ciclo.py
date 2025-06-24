@@ -37,6 +37,22 @@ def get_embed_fisica_2_exfinal():
 
     return lista
 
+def get_embed_quimica_1_laboratorios_2021_II():
+    embed = discord.Embed(
+        title="Test de Laboratorios de Química - 2021-II",
+        description=textwrap.dedent(f"""\
+            - [1°TEST DE LABORATORIO 2021-2.pdf](https://drive.google.com/file/d/1MB8K7cfiY_ggvqlO6q3Xq-qi-aUNYdr7/view?usp=drive_link) 
+            - [2°TEST DE LABORATORIO 2021-2.pdf](https://drive.google.com/file/d/1YWuy5lt9Q6-YvzHZ5b8hK4bqwMHmY3qP/view?usp=drive_link)
+            - [3°TEST DE LABORATORIO 2021-2.pdf](https://drive.google.com/file/d/19ogYekGFiiEVl7qRTu_gjqZoXhGzRBek/view?usp=drive_link)
+            - [4°TEST DE LABORATORIO 2021-2.pdf](https://drive.google.com/file/d/1MEoENWN5NBB70WBe-NLrSP3n6j1KGPfz/view?usp=drive_link)
+            - [5°TEST DE LABORATORIO 2021-2.png](https://drive.google.com/file/d/1YcUPfwo-wU_hrsum1Tk7fBAY77CHrCo5/view?usp=drive_link)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
 
 def get_embed_fisica_2_pc1_1():
     embed = discord.Embed(
@@ -1450,6 +1466,13 @@ def get_embeds_sistemas_operativos_1_pcs():
 
     return lista
 
+def get_embeds_quimica_1_labos():
+
+    lista = []
+
+    lista.append(get_embed_quimica_1_laboratorios_2021_II())
+    
+    return lista
 
 # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
@@ -1458,6 +1481,9 @@ def get_embeds_cursos_labs_pcs_clases_segundo_ciclo():
     lista1 = [] # Laboratorios
 
     lista1.append("blank")
+    lista1.append("blank")
+    lista1.append("blank")
+    lista1.append(get_embeds_quimica_1_labos()) # Química 1 Laboratorios
 
     lista2 = [] # PC's, exámenes
 
