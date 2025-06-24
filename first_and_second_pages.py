@@ -11,12 +11,6 @@ def get_ciclos_embeds():
             - **Segundo ciclo**
             - **Tercer ciclo**
             - **Cuarto ciclo**
-            - **Quinto ciclo**
-            - **Sexto ciclo**
-            - **Séptimo ciclo**
-            - **Octavo ciclo**
-            - **Noveno ciclo**
-            - **Electivos**
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )

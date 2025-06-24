@@ -2,34 +2,34 @@ import discord
 
 def agregar_pcs_clases_campos(embed: discord.Embed) -> discord.Embed:
 
-    embed.add_field(name="▸  Prácticas", value="Prácticas y exámenes.", inline=False)
-    embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
-    embed.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed.add_field(name="▸  Prácticas/exámenes", value="Prácticas y exámenes.", inline=False)
+    # embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+    embed.add_field(name="▸  Cuadernos y libros", value="Material del curso.", inline=False)
 
     return embed
 
 def agregar_labs_pcs_clases_campos(embed: discord.Embed) -> discord.Embed:
 
     embed.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed.add_field(name="▸  Prácticas", value="Prácticas y exámenes.", inline=False)
-    embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
-    embed.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed.add_field(name="▸  Prácticas/exámenes", value="Prácticas y exámenes.", inline=False)
+    # embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+    embed.add_field(name="▸  Cuadernos y libros", value="Material del curso.", inline=False)
 
     return embed
 
 def agregar_labs_pcs_clases_2_campos(embed: discord.Embed) -> discord.Embed:
 
     embed.add_field(name="▸  Laboratorios", value="Laboratorios de distintos ciclos.", inline=False)
-    embed.add_field(name="▸  Prácticas", value="Prácticas y exámenes.", inline=False)
-    embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+    embed.add_field(name="▸  Prácticas/exámenes", value="Prácticas y exámenes.", inline=False)
+    # embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
 
     return embed
 
 def agregar_pcs_clases_2_campos(embed: discord.Embed) -> discord.Embed:
 
-    embed.add_field(name="▸  Prácticas", value="Prácticas y exámenes.", inline=False)
-    embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
-    embed.add_field(name="▸  Cuadernos", value="Cuadernos del curso.", inline=False)
+    embed.add_field(name="▸  Prácticas/exámenes", value="Prácticas y exámenes.", inline=False)
+    # embed.add_field(name="▸  Clases", value="Clases del curso PDF's/PPT.", inline=False)
+    embed.add_field(name="▸  Cuadernos y libros", value="Material del curso.", inline=False)
 
     return embed
 

@@ -7,7 +7,7 @@ def despliegue_lista_opciones_LAB():
 
     opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
-    opciones.append(discord.SelectOption(label="Clases", value=3))
+    # opciones.append(discord.SelectOption(label="Clases", value=3))
     opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
@@ -18,7 +18,7 @@ def despliegue_lista_opciones_LAB_NO_CUADERNO():
 
     opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
-    opciones.append(discord.SelectOption(label="Clases", value=3))
+    # opciones.append(discord.SelectOption(label="Clases", value=3))
     # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
@@ -29,7 +29,7 @@ def despliegue_lista_opciones_NO_LAB():
 
     # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
-    opciones.append(discord.SelectOption(label="Clases", value=3))
+    # opciones.append(discord.SelectOption(label="Clases", value=3))
     opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
@@ -40,7 +40,7 @@ def despliegue_lista_opciones_NO_LAB_NO_PC():
 
     # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     # opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
-    opciones.append(discord.SelectOption(label="Clases", value=3))
+    # opciones.append(discord.SelectOption(label="Clases", value=3))
     opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
@@ -71,7 +71,7 @@ def despliegue_lista_opciones_NO_LAB_NO_CUADERNO():
 
     # opciones.append(discord.SelectOption(label="Laboratorios", value=1))
     opciones.append(discord.SelectOption(label="Prácticas y exámenes", value=2))
-    opciones.append(discord.SelectOption(label="Clases", value=3))
+    # opciones.append(discord.SelectOption(label="Clases", value=3))
     # opciones.append(discord.SelectOption(label="Cuadernos y libros", value=4))
 
     return opciones
@@ -116,7 +116,7 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
             opciones = despliegue_lista_opciones_NO_LAB()
 
         if curso_seleccionado == 3: 
-            opciones = despliegue_lista_opciones_NO_LAB_NO_CUADERNO()
+            opciones = despliegue_lista_opciones_LAB_NO_CUADERNO()
 
         if curso_seleccionado == 4: 
             opciones = despliegue_lista_opciones_NO_LAB()

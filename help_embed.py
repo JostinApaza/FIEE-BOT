@@ -12,7 +12,6 @@ def get_ayuda_embed(prefix):
             - {prefix}menu: Muestra el menú de navegación principal, de todo el material disponible.
             - {prefix}creditos: Muestra los créditos y agradecimientos de FIEE-BOT.
             - {prefix}aportar: Muestra información de contacto para aportar material académico al proyecto.
-            - {prefix}setprefix: Cambia el prefijo del bot en este servidor (requiere permisos de administrador).
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )

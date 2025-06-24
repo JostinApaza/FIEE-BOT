@@ -8,12 +8,12 @@ def despliegue_lista_ciclos():
     opciones.append(discord.SelectOption(label="2do ciclo", value=2))
     opciones.append(discord.SelectOption(label="3er ciclo", value=3))
     opciones.append(discord.SelectOption(label="4to ciclo", value=4))
-    opciones.append(discord.SelectOption(label="5to ciclo", value=5))
-    opciones.append(discord.SelectOption(label="6to ciclo", value=6))
-    opciones.append(discord.SelectOption(label="7mo ciclo", value=7))
-    opciones.append(discord.SelectOption(label="8vo ciclo", value=8))
-    opciones.append(discord.SelectOption(label="9no ciclo", value=9))
-    opciones.append(discord.SelectOption(label="Electivos", value=10))
+    # opciones.append(discord.SelectOption(label="5to ciclo", value=5))
+    # opciones.append(discord.SelectOption(label="6to ciclo", value=6))
+    # opciones.append(discord.SelectOption(label="7mo ciclo", value=7))
+    # opciones.append(discord.SelectOption(label="8vo ciclo", value=8))
+    # opciones.append(discord.SelectOption(label="9no ciclo", value=9))
+    # opciones.append(discord.SelectOption(label="Electivos", value=10))
 
     return opciones
 
@@ -30,7 +30,7 @@ def despliegue_lista_cursos():
         discord.SelectOption(label="Introducción a la computación", value=5),
         discord.SelectOption(label="Realidad Nac. Constitución y DD.HH", value=6),
         discord.SelectOption(label="Fundamentos de programación", value=7),
-        discord.SelectOption(label="Asesorías 1er ciclo", value=8),
+        # discord.SelectOption(label="Asesorías 1er ciclo", value=8),
     ]
     lista_cursos.append(opciones0)
 

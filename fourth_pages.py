@@ -46,7 +46,7 @@ def get_fisica_1_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -101,7 +101,7 @@ def get_calc_diferencial_examenes_embed():
             - PC 5
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -156,7 +156,7 @@ def get_algebra_lineal_examenes_embed():
             - PC 5
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -264,7 +264,7 @@ def get_intro_computacion_examenes_embed():
             - PC 5
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -401,8 +401,8 @@ def get_fisica_2_clases_embed():
         title="Clases de fisica_2.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
-            - -
-            - -
+            - 
+            - 
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -423,7 +423,7 @@ def get_fisica_2_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -477,9 +477,10 @@ def get_calculo_integral_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
+            - PC 5
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -527,14 +528,13 @@ def get_algoritmos_1_examenes_embed():
         title="Practicas y exámenes de algoritmos_1:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
-            - Prueba de entrada
             - PC 1
             - PC 2
             - PC 3
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -589,7 +589,7 @@ def get_quimica_1_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -637,14 +637,10 @@ def get_fundamentos_computador_examenes_embed():
         title="Practicas y exámenes de fundamentos_computador:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
-            - Prueba de entrada
             - PC 1
             - PC 2
             - PC 3
             - PC 4
-            - Examen Parcial
-            - Examen Final
-            - Examen sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -698,7 +694,7 @@ def get_redaccion_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -752,7 +748,7 @@ def get_redes_1_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -799,14 +795,10 @@ def get_operativos_1_examenes_embed():
         title="Practicas y exámenes de operativos_1:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
-            - Prueba de entrada
             - PC 1
             - PC 2
             - PC 3
             - PC 4
-            - Examen Parcial
-            - Examen Final
-            - Examen sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -820,9 +812,7 @@ def get_operativos_1_cuadernos_embed():
         title="Cuadernos y libros de operativos_1:",
         description=textwrap.dedent(f"""\
             \n
-            - Prueba
-            -
-            -
+            - [Sistemas operativos 1.pdf](https://drive.google.com/file/d/1w_a106iLivyMDykHIlhjRL6q7D7TXmvS/view?usp=drive_link)
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -860,7 +850,7 @@ def get_fundamentos_electricidad_magnetismo_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -913,9 +903,10 @@ def get_ecuaciones_diferenciales_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
+            - PC 5
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -970,7 +961,7 @@ def get_poo_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1022,9 +1013,10 @@ def get_economia_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
+            - PC 5
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1078,7 +1070,7 @@ def get_probabilidades_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1126,7 +1118,6 @@ def get_redes_2_examenes_embed():
         title="Practicas y exámenes de redes_2:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
-            - Prueba de entrada
             - PC 1
             - PC 2
             - PC 3
@@ -1184,7 +1175,7 @@ def get_intro_moderna_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1239,7 +1230,7 @@ def get_circuitos_1_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1293,7 +1284,7 @@ def get_calc_vectorial_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1346,9 +1337,10 @@ def get_analisis_senales_examenes_embed():
             - PC 2
             - PC 3
             - PC 4
+            - PC 5
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1403,7 +1395,7 @@ def get_operativos_2_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1457,7 +1449,7 @@ def get_electrotecnia_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1511,7 +1503,7 @@ def get_metodos_numericos_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1565,7 +1557,7 @@ def get_etica_filosofia_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
@@ -1619,7 +1611,7 @@ def get_procesos_estocasticos_examenes_embed():
             - PC 4
             - Examen Parcial
             - Examen Final
-            - Examen sustitutorio
+            - Examen Sustitutorio
         """),
         color=0x701B13)
     embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
