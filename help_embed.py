@@ -6,12 +6,12 @@ def get_ayuda_embed(prefix):
     embed = discord.Embed(
         title="Lista de comandos de FIEE-BOT.",
         description=textwrap.dedent(f"""\
-            El prefix configurado para este servidor es `{prefix}`.\n
+            El prefix configurado para este servidor es `f!`.\n
             Aquí tienes una lista de los comandos disponibles:
-            - {prefix}help: Muestra este mensaje de ayuda.
-            - {prefix}menu: Muestra el menú de navegación principal, de todo el material disponible.
-            - {prefix}creditos: Muestra los créditos y agradecimientos de FIEE-BOT.
-            - {prefix}aportar: Muestra información de contacto para aportar material académico al proyecto.
+            - `{prefix}help`: Muestra este mensaje de ayuda.
+            - `{prefix}menu`: Muestra el menú de navegación principal, de todo el material disponible.
+            - `{prefix}creditos`: Muestra los créditos y agradecimientos de FIEE-BOT.
+            - `{prefix}aportar`: Muestra nuestro repositorio en GitHub disponible para aportar al proyecto.
         """),
         color=0x701B13  # Color del borde del embed (hexadecimal)
     )

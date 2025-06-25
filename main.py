@@ -1,6 +1,5 @@
 import discord # Importa el módulo principal "discord" de la librería discord.py
 from discord.ext import commands # Importa el submódulo "commands" desde el submódulo de extensiones discord.ext, que facilita crear comandos para el bot
-import textwrap
 from first_and_second_pages import get_ciclos_embeds, get_ciclos_cursos_embeds
 from third_pages import get_lista_cursos_suprema_embeds
 from help_embed import get_ayuda_embed
@@ -20,9 +19,9 @@ intents.presences = False         # Ver estados de usuarios (online, offline)
 intents.guilds = False            # Ver información del servidor
 
 
-prefix = "!"  # Define el prefijo que se usará para los comandos del bot
+prefix = "/"
 
-bot = commands.Bot(command_prefix = prefix, intents=intents, help_command=None) # Define el prefijo de los comandos y las "intenciones" (permisos internos) del bot
+bot = commands.Bot(command_prefix = "f!", intents=intents, help_command=None) # Define el prefijo de los comandos y las "intenciones" (permisos internos) del bot
 
 # ////////////////////////////////////////////////////////////////////////
 
@@ -399,9 +398,9 @@ async def show_help(ctx_or_interaction):
     embed = get_ayuda_embed(prefix)
 
     if isinstance(ctx_or_interaction, commands.Context):
-        await ctx_or_interaction.send(embed=embed) # Responde al comando de texto con el embed
+        await ctx_or_interaction.send(embed=embed)
     else:
-        await ctx_or_interaction.response.send_message(embed=embed, ephemeral=False)  # Responde al comando slash con el embed
+        await ctx_or_interaction.response.send_message(embed=embed, ephemeral=False)
 
 
 async def show_menu(ctx_or_interaction):
@@ -411,9 +410,9 @@ async def show_menu(ctx_or_interaction):
     embed = get_ciclos_embeds()
 
     if isinstance(ctx_or_interaction, commands.Context):
-        await ctx_or_interaction.send(view=view, embed=embed) # Responde al comando de texto con el embed
+        await ctx_or_interaction.send(view=view, embed=embed)
     else:
-        await ctx_or_interaction.response.send_message(view=view, embed=embed, ephemeral=False)  # Responde al comando slash con el embed
+        await ctx_or_interaction.response.send_message(view=view, embed=embed, ephemeral=False)
 
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
@@ -529,6 +528,7 @@ class NumeroMenuOpcionesCurso(discord.ui.View):
 
         self.select.callback = self.select_callback
         self.add_item(self.select)
+
 
 
     async def select_callback(self, interaction: discord.Interaction):
