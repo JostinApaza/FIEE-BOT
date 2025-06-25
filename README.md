@@ -6,7 +6,9 @@
 
 Un bot de Discord creado con el fin de servir como repositorio académico de la FIEE-UNI, transparente y de libre disponibilidad utilizando la API de Discord.
 
-![Preview del Bot](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s)
+<p align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s" alt="Preview" width="300"/>
+</p>
 
 ## ✨ Características principales
 
