@@ -2912,3 +2912,32 @@ def get_embeds_dibujo_tecnico_pcs():
 
     return lista
 # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+def get_embeds_cursos_labs_pcs_clases_primer_ciclo():
+
+    lista1 = [] # Laboratorios
+
+    lista1.append(get_embeds_fisica_1_labos())
+
+    lista2 = [] # PC's, exámenes
+
+    lista2.append(get_embeds_fisica_1_pcs())
+    lista2.append(get_embeds_calc_diferencial_pcs())
+    lista2.append(get_embeds_algebra_lineal_pcs())
+    lista2.append(get_embeds_dibujo_tecnico_pcs())
+    lista2.append(get_embeds_intro_computacion_pcs())
+    lista2.append(get_embeds_fundamentos_programacion_pcs())
+
+    lista3 = [] # Clases
+
+    lista3.append(get_embeds_fisica_1_clases())
+
+    lista = [] # Laboratorios, PC's y clases unidas
+
+    lista.append(lista1) # [0] Laboratorios
+    lista.append(lista2) # [1] PC's, exámenes
+    lista.append(lista3) # [2] Clases
+
+    return lista
+
+# $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
