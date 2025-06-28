@@ -1,4 +1,5 @@
 import discord # Importa el módulo principal "discord" de la librería discord.py
+import textwrap # Importa el módulo "textwrap" para formatear texto en varias líneas
 from discord.ext import commands # Importa el submódulo "commands" desde el submódulo de extensiones discord.ext, que facilita crear comandos para el bot
 from first_and_second_pages import get_ciclos_embeds, get_ciclos_cursos_embeds
 from third_pages import get_lista_cursos_suprema_embeds
@@ -17,7 +18,6 @@ intents.message_content = True    # Leer mensajes (necesario para reconocer coma
 intents.members = False           # Ver miembros del servidor
 intents.presences = False         # Ver estados de usuarios (online, offline)
 intents.guilds = False            # Ver información del servidor
-
 
 prefix = "/"
 
@@ -169,9 +169,6 @@ def despliegue_lista_5PCS_NO_EXAMEN():
 
     return opciones
 
-
-
-
 def despliegue_lista_LABS_fisica_1():
 
     opciones = []
@@ -208,6 +205,13 @@ def despliegue_lista_CLASES_etica():
 
     return opciones
 
+def despliegue_lista_LABS_fisica_3():
+
+    opciones = []
+
+    opciones.append(discord.SelectOption(label="Laboratorios 2021-II", value=1))
+
+    return opciones
 
 def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opcion_elegida):
 
@@ -249,6 +253,7 @@ def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opc
     if ciclo_seleccionado == 2: # Tercer ciclo
         if curso_seleccionado == 0: # Fundamentos de Electricidad y Magnetismo
             despliegue_lista_pcs = despliegue_lista_4PCS()
+            despliegue_lista_labs = despliegue_lista_LABS_fisica_3()
         if curso_seleccionado == 1: # Ecuaciones diferenciales
             despliegue_lista_pcs = despliegue_lista_5PCS()
         if curso_seleccionado == 2: # Probabilidades y estadística
@@ -390,6 +395,23 @@ def despliegue_lista_PCS_LABS_CLASES(ciclo_seleccionado, curso_seleccionado, opc
 
     return devolver
 
+def get_credits_embed():
+
+    embed = discord.Embed(
+        title="Agradecimientos de FIEE-BOT.",
+        description=textwrap.dedent(f"""\
+            **Agradecimientos a:**
+            - Junior Veli, propietario de DriveFIEE-CCT por su contribución al material académico de FIEE-BOT.
+            - Demás aportantes al DriveFIEE-CCT además de Veli, que mantuvieron actualizado el repositorio de OneDrive.
+            **Link del repositorio de GitHub:**
+            - [FIEE-BOT](https://github.com/JostinApaza/FIEE-BOT)
+        """),
+        color=0x701B13  # Color del borde del embed (hexadecimal)
+    )
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")  # opcional
+    
+    return embed
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -414,6 +436,18 @@ async def show_menu(ctx_or_interaction):
     else:
         await ctx_or_interaction.response.send_message(view=view, embed=embed, ephemeral=False)
 
+async def show_credits(ctx_or_interaction):
+
+    view = None
+
+    embed = get_credits_embed()
+
+    if isinstance(ctx_or_interaction, commands.Context):
+        await ctx_or_interaction.send(view=view, embed=embed)
+    else:
+        await ctx_or_interaction.response.send_message(view=view, embed=embed, ephemeral=False)
+
+
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -434,6 +468,9 @@ async def help_text(ctx):
 async def help_slash(interaction: discord.Interaction):
     await show_menu(interaction)
 
+@bot.tree.command(name="creditos", description="Muestra los agradecimientos de FIEE-BOT.")
+async def help_slash(interaction: discord.Interaction):
+    await show_credits(interaction)
 
 # //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -707,4 +744,4 @@ class PaginaAnteriorPCS_LABS(discord.ui.View):
 
 # ///////////////////////////////////////////////////////////////////////////////////////////
 
-bot.run("MTM3OTg5MDYyMjQ1Nzk3NDc5NA.GImQaj.DtnWgE3UF2m9wyTtqBeWGchyCRfROuHbD2pofM")
+bot.run("")

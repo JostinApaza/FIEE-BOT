@@ -135,7 +135,7 @@ def devolver_terceras_listas(ciclo_seleccionado, curso_seleccionado):
 
     if ciclo_seleccionado == 2:  # Tercer ciclo
         if curso_seleccionado == 0: 
-            opciones = despliegue_lista_opciones_NO_LAB()
+            opciones = despliegue_lista_opciones_LAB()
 
         if curso_seleccionado == 1: 
             opciones = despliegue_lista_opciones_NO_LAB()

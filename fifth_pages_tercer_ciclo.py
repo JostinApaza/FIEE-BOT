@@ -1,6 +1,45 @@
 import discord
 import textwrap
 
+def get_embed_fisica_3_laboratorios_2021_II_pag1():
+
+    embed = discord.Embed(
+        title="Laboratorios de BFI03 - 2021-II",
+        description=textwrap.dedent(f"""\
+            - [BFI03-GUIA1-LAB1.docx](https://docs.google.com/document/d/1ivndE4rbtDD2Q64qhKG5aQoiWVcExdUu/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [BFI03O-LAB1-INFORME.pdf](https://drive.google.com/file/d/1tcRmzR916j3amexZzXKnST_2TXyFe1Vp/view?usp=drive_link)
+            - [BFI03-GUIA2-LAB2.docx](https://docs.google.com/document/d/1rwwXNmeiTnoWW3QGAJjGi6Rcrp-j6pdZ/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [BFI03-LAB2-GRUPO8.pdf](https://drive.google.com/file/d/1uHVhuI9dFqAC99bLmXohPQ3m9nkX4Ukt/view?usp=drive_link)
+            - [BFI03-GUIA-LAB3.docx](https://docs.google.com/document/d/1EGCeIhg6K9YhIWzbUNV_Cy5JMzwMcVrw/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [BFI03-LAB3-GRUPO8.pdf](https://drive.google.com/file/d/1rNR1oTz0Nm2OJWxwqLKqUIzOvwJj4JB3/view?usp=drive_link)
+            - [BFI03-GUIA-LAB4.docx](https://docs.google.com/document/d/143RfBbipyRz01wjEd7ShsP1HGclOnzzS/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 1. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+def get_embed_fisica_3_laboratorios_2021_II_pag2():
+
+    embed = discord.Embed(
+        title="Laboratorios de BFI03 - 2021-II",
+        description=textwrap.dedent(f"""\
+            - [BFI03-LAB4-GRUPO8.pdf](https://drive.google.com/file/d/1-9PvuZCff9g85fdJTUcJBjns13siimXW/view?usp=drive_link)
+            - [BFI03-GUIA-LAB5.docx](https://docs.google.com/document/d/1Y7RvbxCj9PWamYzix4kxOGln_rqm9vha/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [BFI03-LAB5-GRUPO8.pdf](https://drive.google.com/file/d/1Ol-fb5dqyi31Qe6hNFQ_JRY0hB5yoksR/view?usp=drive_link)
+            - [BFI03-GUIA-LAB6.docx](https://docs.google.com/document/d/1V9wz6qiw-juXpnkcO7KBF9t8Hp3QHxga/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [BFI03-LAB6-GRUPO8.pdf](https://drive.google.com/file/d/18c7o35N4M7he-PhJ7UsZODLjv6D7yrkN/view?usp=drive_link)
+            - [BFI03-GUIA-LAB7.docx](https://docs.google.com/document/d/1gJqfENQrcgCFbgo3j6jGpwRPl4iPYLMb/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
+            - [BFI03-LAB7-GRUPO8.pdf](https://drive.google.com/file/d/1JNpGM6aTZMvru8_o6j3jlpxQYzEEAN6L/view?usp=drive_link)
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Página 2. Gracias por usar FIEE-BOT.")
+    embed.set_thumbnail(url="https://example.com/fisica_1_laboratorios_thumbnail.png")
+
+    return embed
+
+
 def get_embed_fund_electricidad_magnetismo_pc1():
     embed = discord.Embed(
         title="1ra PC - Fundamentos de Electricidad y Magnetismo",
@@ -40,7 +79,7 @@ def get_embed_fund_electricidad_magnetismo_pc2():
     return embed
 def get_embed_fund_electricidad_magnetismo_pc3():
     embed = discord.Embed(
-        title="3ra PC - fund_electricidad_magnetismo",
+        title="3ra PC - Fundamentos de Electricidad y Magnetismo",
         description=textwrap.dedent(f"""\
             - [PC 3 23-1](https://docs.google.com/document/d/1JuOCyrdmJMEItOcr1Cjj2pC9g_Ky7w1q6Mca-aO2-qA/edit?tab=t.0)
             - [PC 3 22-3](https://docs.google.com/document/d/1qL2emhlNC4bm1h4aHZujYQcdRhN1hA2FlEg4s2KCSmU/edit?tab=t.0)
@@ -59,7 +98,7 @@ def get_embed_fund_electricidad_magnetismo_pc3():
 
 def get_embed_fund_electricidad_magnetismo_pc4():
     embed = discord.Embed(
-        title="4ta PC - fund_electricidad_magnetismo",
+        title="4ta PC - Fundamentos de Electricidad y Magnetismo",
         description=textwrap.dedent(f"""\
             - [PC 4 23-2](https://docs.google.com/document/d/1JPu9PyKpVDSsk0bXNPR_OP6Ahn5LigLnrxsuHFjjOVA/edit?tab=t.0)
             - [PC 4 23-1](https://docs.google.com/document/d/1QwbESc41YqzdhshYqSw9AFipHTOL-D2KXBACEvHJVrk/edit?tab=t.0)
@@ -78,7 +117,7 @@ def get_embed_fund_electricidad_magnetismo_pc4():
 
 def get_embed_fund_electricidad_magnetismo_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - fund_electricidad_magnetismo",
+        title="Ex. Parciales - Fundamentos de Electricidad y Magnetismo",
         description=textwrap.dedent(f"""\
             - [EP 23-2](https://docs.google.com/document/d/1wZw_A9wFICV6ICiAMLQ1D8pflpydEP3dOHMHm3J6ZpE/edit?tab=t.0)
             - [EP 23-1](https://docs.google.com/document/d/1J5zRyEMZ0S99yel8pwLTJyanNWVCHlk2f78TQ-mgIK8/edit?tab=t.0)
@@ -97,7 +136,7 @@ def get_embed_fund_electricidad_magnetismo_exparcial():
 
 def get_embed_fund_electricidad_magnetismo_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - fund_electricidad_magnetismo",
+        title="Ex. finales - Fundamentos de Electricidad y Magnetismo",
         description=textwrap.dedent(f"""\
             - [EF 23-2](https://docs.google.com/document/d/1Em3mNtQJ6g7TCRz1RFWLqCx2L580h17ikXwAvfLhrYI/edit?tab=t.0)
             - [EF 23-1](https://docs.google.com/document/d/1lJGLCGb-zuoltFkDA885JsaG7RIDysYDH2Q_K2yzmE8/edit?tab=t.0)
@@ -117,7 +156,7 @@ def get_embed_fund_electricidad_magnetismo_exfinal():
 
 def get_embed_fund_electricidad_magnetismo_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - fund_electricidad_magnetismo",
+        title="Ex. sustitutorio - Fundamentos de Electricidad y Magnetismo",
         description=textwrap.dedent(f"""\
             - [ES 23-1](https://docs.google.com/document/d/1I5wf8XWKGB3vgUwF35wdfZF-rNS25xyCAi6Gpx5x-9E/edit?tab=t.0)
             - [ES 22-2](https://docs.google.com/document/d/1_GNTXgD4CbmDrId_G4P7_opGlFVgxZM7f3IVYC7vwE8/edit?tab=t.0)
@@ -136,7 +175,7 @@ def get_embed_fund_electricidad_magnetismo_exsusti():
 
 def get_embed_fund_electricidad_magnetismo_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - fund_electricidad_magnetismo",
+        title="Pruebas de entrada - Fundamentos de Electricidad y Magnetismo",
         description=textwrap.dedent(f"""\
             - [PE 23-2](https://docs.google.com/document/d/1YOCdsA0wtlDSidy1vFBMVDAyFHm9ZJb94PPfwBwgnLU/edit?tab=t.0)
             - [PE 23-1]()
@@ -158,7 +197,7 @@ def get_embed_fund_electricidad_magnetismo_entrada():
 
 def get_embed_ecuaciones_diferenciales_pc1():
     embed = discord.Embed(
-        title="1ra PC - ecuaciones_diferenciales",
+        title="1ra PC - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [PC 1 23-2](https://docs.google.com/document/d/16r6nRiYTOOS2-I3BYjYgaC0E0AlEAG1r9e25d841x5w/edit?tab=t.0)
             - [PC 1 23-1](https://docs.google.com/document/d/1g0lzVcOrlsSTyzAIC9q8hoy6ZbpJMJMhGo5-p3HNlN0/edit?tab=t.0)
@@ -178,7 +217,7 @@ def get_embed_ecuaciones_diferenciales_pc1():
 
 def get_embed_ecuaciones_diferenciales_pc2():
     embed = discord.Embed(
-        title="2da PC - ecuaciones_diferenciales",
+        title="2da PC - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [PC 2 23-2](https://docs.google.com/document/d/1qbqtJd7XvKtTTe5rBW8F9IAHeIFuXFiHOJXwo-DJdeE/edit?tab=t.0)
             - [PC 2 23-1](https://docs.google.com/document/d/1iFLQ1E3nlST69eDx_mu3AIxBcnxcasaNNjmgR6hbBDU/edit?tab=t.0)
@@ -197,7 +236,7 @@ def get_embed_ecuaciones_diferenciales_pc2():
     return embed
 def get_embed_ecuaciones_diferenciales_pc3():
     embed = discord.Embed(
-        title="3ra PC - ecuaciones_diferenciales",
+        title="3ra PC - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [PC 3 23-2](https://docs.google.com/document/d/1ImVJJQV4de2mr51zmnOx4v2LY54vugUyg-DKPKIl348/edit?tab=t.0)
             - [PC 3 23-1](https://docs.google.com/document/d/1iBo_yFL8IIBGd8FlaGkmEROXHfXchs704OJXQzy3Bgk/edit?tab=t.0)
@@ -217,7 +256,7 @@ def get_embed_ecuaciones_diferenciales_pc3():
 
 def get_embed_ecuaciones_diferenciales_pc4():
     embed = discord.Embed(
-        title="4ta PC - ecuaciones_diferenciales",
+        title="4ta PC - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [PC 4 23-2](https://docs.google.com/document/d/13P6DQPURWR_UPc0OiUASFEs6npqDp1yvNDqwvfwVs8M/edit?tab=t.0)
             - [PC 4 23-1](https://docs.google.com/document/d/1zZUulPvMbbhyKpSLV4bX2P7zvzJvFwgqS4OggcwzJIE/edit?tab=t.0)
@@ -237,7 +276,7 @@ def get_embed_ecuaciones_diferenciales_pc4():
 
 def get_embed_ecuaciones_diferenciales_pc5():
     embed = discord.Embed(
-        title="5ta PC - ecuaciones_diferenciales",
+        title="5ta PC - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [PC 5 23-1](https://docs.google.com/document/d/1KSi6J9oHPpE8YVUN-hpvRxuq5AEaU_A76bMqL6R4840/edit?tab=t.0)
             - [PC 5 22-2](https://docs.google.com/document/d/1zFN6Nyppgz7HO2IbhKzXj9gduh9L0TsS3g8TjGAERLo/edit?tab=t.0)
@@ -257,7 +296,7 @@ def get_embed_ecuaciones_diferenciales_pc5():
 
 def get_embed_ecuaciones_diferenciales_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - ecuaciones_diferenciales",
+        title="Ex. Parciales - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [EP 23-2](https://docs.google.com/document/d/1lKRpUnvk2cPt2YBygTtIhFRAlOf3WQcggXmVPnxzm4I/edit?tab=t.0)
             - [EP 23-1](https://docs.google.com/document/d/1rO-EOJBmK18Xg9mrl06SP1R390ybqglcYRMwAiRXspA/edit?tab=t.0)
@@ -277,7 +316,7 @@ def get_embed_ecuaciones_diferenciales_exparcial():
 
 def get_embed_ecuaciones_diferenciales_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - ecuaciones_diferenciales",
+        title="Ex. finales - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [EF 23-1](https://docs.google.com/document/d/19SDNtJcoP1Fw06eqgUAK8nT6f_2FoNkDTw6VSYN7-FQ/edit?tab=t.0)
             - [EF 22-2](https://docs.google.com/document/d/1kdH0uDrDES5XfIXv-13AmLy8qp1WSzjnvN7rs2zlZGM/edit?tab=t.0)
@@ -297,7 +336,7 @@ def get_embed_ecuaciones_diferenciales_exfinal():
 
 def get_embed_ecuaciones_diferenciales_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - ecuaciones_diferenciales",
+        title="Ex. sustitutorio - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [ES 22-1](https://docs.google.com/document/d/1ZY0wrbsGZZ2Wb_N6ZrHbJR5huCwEKmxKLlRtKYkbcN4/edit?tab=t.0)
             - [ES 21-2](https://docs.google.com/document/d/1fus_cbUhGsZtAAMaY-4t57O6MNwrUPSJu2pe6cm5KRQ/edit?tab=t.0)
@@ -317,7 +356,7 @@ def get_embed_ecuaciones_diferenciales_exsusti():
 
 def get_embed_ecuaciones_diferenciales_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - ecuaciones_diferenciales",
+        title="Pruebas de entrada - Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             - [PE 22-2](https://docs.google.com/document/d/15kfS75D5Hdb_pLdOhmPLtGuAP1P1VubnV79FaoBrrms/edit?tab=t.0)
             - [PE 21-2](https://docs.google.com/document/d/1y2xorrX6SUt2fYWa4FEW0A2JkzusztdCqcxhAZeTHxU/edit?tab=t.0)
@@ -339,7 +378,7 @@ def get_embed_ecuaciones_diferenciales_entrada():
 
 def get_embed_probabilidades_pc1():
     embed = discord.Embed(
-        title="1ra PC - probabilidades",
+        title="1ra PC - Probabilidades y Estadística",
         description=textwrap.dedent(f"""\
             - [PC 1 23-3](https://docs.google.com/document/d/18lVJ_dC5l2hMBzSBsrJF0ulgQEx_izrO1rKDu2YcKeY/edit?tab=t.0)
             - [PC 1 23-2](https://docs.google.com/document/d/1vXHI6s0T8gVwtPmnRTyT_MkDrFnS7SkdRTyC8OenM_4/edit?tab=t.0)
@@ -359,7 +398,7 @@ def get_embed_probabilidades_pc1():
 
 def get_embed_probabilidades_pc2():
     embed = discord.Embed(
-        title="2da PC - probabilidades",
+        title="2da PC - Probabilidades y Estadística",
         description=textwrap.dedent(f"""\
             - [PC 2 23-2]()
             - [PC 2 23-1]()
@@ -378,7 +417,7 @@ def get_embed_probabilidades_pc2():
     return embed
 def get_embed_probabilidades_pc3():
     embed = discord.Embed(
-        title="3ra PC - probabilidades",
+        title="3ra PC - Probabilidades y Estadística",
         description=textwrap.dedent(f"""\
             - [PC 3 23-3](https://docs.google.com/document/d/1r075gBxNPLnZW15e1wtXJw6QwhaMyLGsmhNrUNP_YSg/edit?tab=t.0) 
             - [PC 3 23-2](https://docs.google.com/document/d/1CioGtZlOBcq2M7D8NlgGRqo9fySVlWiXnGXEuY1PHHM/edit?tab=t.0)
@@ -398,7 +437,7 @@ def get_embed_probabilidades_pc3():
 
 def get_embed_probabilidades_pc4():
     embed = discord.Embed(
-        title="4ta PC - probabilidades",
+        title="4ta PC - Probabilidades y Estadística",
         description=textwrap.dedent(f"""\
             - [PC 4 23-3](https://docs.google.com/document/d/1ACD3kcyR41k5zDFL2rpaRDbWngnzFxPu3RNx-8QHd9g/edit?tab=t.0)
             - [PC 4 23-2](https://docs.google.com/document/d/1DjwW1jaN7Ajqw1URbg1QBahwU5LBXVLDR_4p2U9YKp8/edit?tab=t.0)
@@ -417,7 +456,7 @@ def get_embed_probabilidades_pc4():
 
 def get_embed_probabilidades_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - probabilidades",
+        title="Ex. Parciales - Probabilidades y Estadística",
         description=textwrap.dedent(f"""\
             - [EP 23-3](https://docs.google.com/document/d/1HDvD_okY1_7VHSSI-Cwkw55aqvDQOx4uoJYQuc5C2BA/edit?tab=t.0) 
             - [EP 23-2](https://docs.google.com/document/d/1pDUpEt7ynsOU_hLeLA-jCQe6ImqjC4qz9e0Q2zJ1ulA/edit?tab=t.0)
@@ -436,7 +475,7 @@ def get_embed_probabilidades_exparcial():
 
 def get_embed_probabilidades_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - probabilidades",
+        title="Ex. finales - Probabilidades y Estadística",
         description=textwrap.dedent(f"""\
             - [EF 23-3](https://docs.google.com/document/d/1uoNzQcLVT8QvMoFhExNZGvtI3lyCB8u3TKvNrJURg4Y/edit?tab=t.0)
             - [EF 23-2](https://docs.google.com/document/d/1vqXspyvu7DmP8U3BqAL55dEAf-iNnWjucWhrXOuzb5A/edit?tab=t.0)
@@ -455,7 +494,7 @@ def get_embed_probabilidades_exfinal():
 
 def get_embed_probabilidades_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - probabilidades",
+        title="Ex. sustitutorio - Probabilidades y Estadística",
         description=textwrap.dedent(f"""\
             - [ES 23-1](https://docs.google.com/document/d/1QM0affHuzmEPtn4mGyecJMyeWjnLqWjOPH82vAYa3i0/edit?tab=t.0)
             - [ES 22-2](https://docs.google.com/document/d/1hXNqgJLdB0-jn9fgw5Vx-Q0AM7EATsT8wMzQzVPlAI8/edit?tab=t.0)
@@ -471,7 +510,7 @@ def get_embed_probabilidades_exsusti():
 
 def get_embed_probabilidades_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - probabilidades",
+        title="Pruebas de entrada - Probabilidades y Estadística",
         description=textwrap.dedent(f"""\
             - [PE 23-2](https://docs.google.com/document/d/1GWrWmqNh9KUG-sRhIJQuTH1f0UCUhUJO52TM3hHZ_vA/edit?tab=t.0)
         """),
@@ -485,7 +524,7 @@ def get_embed_probabilidades_entrada():
 
 def get_embed_poo_pc1():
     embed = discord.Embed(
-        title="1ra PC - poo",
+        title="1ra PC - Programación Orientada a Objetos",
         description=textwrap.dedent(f"""\
             - [PC 1 21-2](https://docs.google.com/document/d/14b7uqFSENHp3ewRZSLqpLmHp6B2HFFt02GuQooSGsZA/edit?tab=t.0)
             - [PC 1 21-1](https://app.luminpdf.com/es/viewer/6857ae783f71a4f930a374a9?credentials-id=cdd8ca46-0de3-490e-8674-c8c36e195707&authStatus=sign_up&can-join-paid-circle=false&from=drive)
@@ -501,7 +540,7 @@ def get_embed_poo_pc1():
 
 def get_embed_poo_pc2():
     embed = discord.Embed(
-        title="2da PC - poo",
+        title="2da PC - Programación Orientada a Objetos",
         description=textwrap.dedent(f"""\
             - [PC 2 21-2](https://docs.google.com/document/d/1hGV7FDjkzipGT2hEgzuIFA1McCB8xYzDmTqsseqxj30/edit?tab=t.0)
             - [PC 2 21-1.1](https://docs.google.com/document/d/1FL-KKEfV3JJMH-KqKZJpJWElOsDMOwUN5hcgIHyarRk/edit?tab=t.0)
@@ -514,7 +553,7 @@ def get_embed_poo_pc2():
     return embed
 def get_embed_poo_pc3():
     embed = discord.Embed(
-        title="3ra PC - poo",
+        title="3ra PC - Programación Orientada a Objetos",
         description=textwrap.dedent(f"""\
             - [PC 3 21-2](https://docs.google.com/document/d/1ap4YFdES7DTlNh1N5NqGcOz7wTRjypmDQTxYY8L0Rcs/edit?tab=t.0)
             - [PC 3 21-1.1](https://docs.google.com/document/d/1MaAm3dD3WEujHWee-4CQuGbzuzQBHcORFD-WGnoFZpE/edit?tab=t.0)
@@ -531,7 +570,7 @@ def get_embed_poo_pc3():
 
 def get_embed_poo_pc4():
     embed = discord.Embed(
-        title="4ta PC - poo",
+        title="4ta PC - Programación Orientada a Objetos",
         description=textwrap.dedent(f"""\
             - [PC 4 21-1.1](https://docs.google.com/document/d/1-lWdw0APWYGeMJnizf4WIWg8h3lA7LJBwDpHhGRvjaw/edit?tab=t.0)
             - [PC 4 21-1.2](https://docs.google.com/document/d/190NLvH3W0u3tz_K3h-GqsmCdZOfX9sSM7zINp-z-IQ8/edit?tab=t.0)
@@ -546,7 +585,7 @@ def get_embed_poo_pc4():
 
 def get_embed_poo_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - poo",
+        title="Ex. Parciales - Programación Orientada a Objetos",
         description=textwrap.dedent(f"""\
             - [EP 22-1](https://docs.google.com/document/d/1bI3DzmnfAcba_HxpD522-TR6VJPZH40IH1Q1_NbE_tc/edit?tab=t.0)
             - [EP 21-2](https://docs.google.com/document/d/1ZpeKcLK482r5EAxGk1ae5usf0PpTwnG2RryXSEY6Yug/edit?tab=t.0)
@@ -562,7 +601,7 @@ def get_embed_poo_exparcial():
 
 def get_embed_poo_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - poo",
+        title="Ex. finales - Programación Orientada a Objetos",
         description=textwrap.dedent(f"""\
             - [EF 22-1](https://docs.google.com/document/d/1LPP40J-VKyTbQUhPDUOar8XC82zKmmaClnODiuth1n0/edit?tab=t.0)
             - [EF 21-2](https://docs.google.com/document/d/1DAt-mNhDktkUU5lQ06asfPKvhYdRV7vn6XEw3u_ZnUE/edit?tab=t.0)
@@ -580,7 +619,7 @@ def get_embed_poo_exfinal():
 
 def get_embed_poo_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - poo",
+        title="Ex. sustitutorio - Programación Orientada a Objetos",
         description=textwrap.dedent(f"""\
             - [ES 22-1](https://docs.google.com/document/d/1WCv6FXtIZ6TNqrf_Hq3zK_H03ibrhXp6gbWT9ORal4Y/edit?tab=t.0)
             - [ES 21-1.1](https://docs.google.com/document/d/1T92EAJOkU4i5SXum1nUtRrmYaCfbBHXcAkaPnno_gmg/edit?tab=t.0)
@@ -595,7 +634,7 @@ def get_embed_poo_exsusti():
 
 def get_embed_poo_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - poo",
+        title="Pruebas de entrada - Programación Orientada a Objetos",
         description=textwrap.dedent(f"""\
             - [PE 21-1](https://docs.google.com/document/d/1h9akbHQHSEdqaQTzpV7RQhwsbxRBIZxfLwj7_D8pffs/edit?tab=t.0)
             - [PE 21-1](https://docs.google.com/document/d/16VM01jUTgoV30IetYkjbLxii2Q4Xys1m/edit)
@@ -611,7 +650,7 @@ def get_embed_poo_entrada():
 
 def get_embed_economia_pc1():
     embed = discord.Embed(
-        title="1ra PC - economia",
+        title="1ra PC - Economía General",
         description=textwrap.dedent(f"""\
             - [PC 1 23-2](https://docs.google.com/document/d/1MYlqzaatp_xr0t9Wbut42RAPLPlHfZjEFRQr0B6nhxM/edit?tab=t.0)
             - [PC 1 22-1](https://docs.google.com/document/d/1HsGHnS0vcXeASxcw1tg6utQgTk3kNb37mzqZC3JH5so/edit?tab=t.0)
@@ -630,7 +669,7 @@ def get_embed_economia_pc1():
 
 def get_embed_economia_pc2():
     embed = discord.Embed(
-        title="2da PC - economia",
+        title="2da PC - Economía General",
         description=textwrap.dedent(f"""\
             - [PC 2 23-2](https://docs.google.com/document/d/17YCJdQ9cE2URok87rFvo5QQhnmDpM5YJVoLUnCHmF-s/edit?tab=t.0)
             - [PC 2 22-1](https://docs.google.com/document/d/1C-o0WVNkY8Q1hmJCxr1HlEvQLPECF4S0ySs94x4iYEU/edit?tab=t.0)
@@ -649,7 +688,7 @@ def get_embed_economia_pc2():
     return embed
 def get_embed_economia_pc3():
     embed = discord.Embed(
-        title="3ra PC - economia",
+        title="3ra PC - Economía General",
         description=textwrap.dedent(f"""\
             - [PC 3 23-2](https://docs.google.com/document/d/1q5yuYx8ucRID7TUodokxrAaxRwUdyhBznxvnDF73X3g/edit?tab=t.0)
             - [PC 3 22-1](https://docs.google.com/document/d/1I99Y1-6YqdITtiffJBW9-FoZ-QDgglReKEMeIECiVe8/edit?tab=t.0)
@@ -667,7 +706,7 @@ def get_embed_economia_pc3():
 
 def get_embed_economia_pc4():
     embed = discord.Embed(
-        title="4ta PC - economia",
+        title="4ta PC - Economía General",
         description=textwrap.dedent(f"""\
             - [PC 4 22-1](https://docs.google.com/document/d/11TjDFwdwozt_kvEqE7KA_VgjCkOuR7UnCKIVjwEqHR4/edit?tab=t.0)
             - [PC 4 21-1](https://docs.google.com/document/d/1ofYgDUFeoGOHWEw1CcBNWXfdkP6DEibBTABsrHKWae8/edit?tab=t.0)
@@ -684,7 +723,7 @@ def get_embed_economia_pc4():
 
 def get_embed_economia_pc5():
     embed = discord.Embed(
-        title="5ta PC - economia",
+        title="5ta PC - Economía General",
         description=textwrap.dedent(f"""\
             - [PC 5 20-1](https://docs.google.com/document/d/1czUQEvD4hjfpXDYV9Fa-sA475hopNl7j/edit)
             - [PC 5 20-2](https://docs.google.com/document/d/1372Qx7zkuW9f_zTMbNMORaYqdUJCUzTQZYln5SHE68g/edit?tab=t.0)
@@ -699,7 +738,7 @@ def get_embed_economia_pc5():
 
 def get_embed_economia_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - economia",
+        title="Ex. Parciales - Economía General",
         description=textwrap.dedent(f"""\
             - [EP 23-2](https://docs.google.com/document/d/1iOeTldd4PfQMLW4KK7AeaxImge_-qw7_kvKiB26t46k/edit?tab=t.0)
             - [EP 22-1](https://docs.google.com/document/d/1vdmEeaNaH2pkgZVtjaJeU8tU9JC94mi-eSclcpz3Yh0/edit?tab=t.0)
@@ -720,7 +759,7 @@ def get_embed_economia_exparcial():
 
 def get_embed_economia_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - economia",
+        title="Ex. finales - Economía General",
         description=textwrap.dedent(f"""\
             - [EF 23-2](https://docs.google.com/document/d/1cxhKXXOzZ66cXCWSU85h8i_lQLhI5gvrTtp6Zu8cXug/edit?tab=t.0)
             - [EF 22-1](https://docs.google.com/document/d/1vq3UBgL0p-JB1nfubbotLrAbxCPVx30TW7QZsiHnRvM/edit?tab=t.0)
@@ -740,7 +779,7 @@ def get_embed_economia_exfinal():
 
 def get_embed_economia_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - economia",
+        title="Ex. sustitutorio - Economía General",
         description=textwrap.dedent(f"""\
             - [ES 21-1](https://docs.google.com/document/d/1w_qvnaufkfoOBeCICHcnGDys3qFtkostFBLDwIhkOtI/edit?tab=t.0)
             - [ES 20-2](https://docs.google.com/document/d/189s8G5V6TTS9zUO4dzd6oxd1VJC-LWHmDJvbVtUloe0/edit?tab=t.0)
@@ -753,7 +792,7 @@ def get_embed_economia_exsusti():
 
 def get_embed_redes_2_pc1():
     embed = discord.Embed(
-        title="1ra PC - redes_2",
+        title="1ra PC - Redes de Datos II",
         description=textwrap.dedent(f"""\
             - [PC 1 21-1](https://docs.google.com/document/d/1Oz-OZi7UixtNUArGu6eJzJQnlZKDydBij8vPdQH_X88/edit?tab=t.0)
         """),
@@ -765,7 +804,7 @@ def get_embed_redes_2_pc1():
 
 def get_embed_redes_2_pc2():
     embed = discord.Embed(
-        title="2da PC - redes_2",
+        title="2da PC - Redes de Datos II",
         description=textwrap.dedent(f"""\
             - [PC 2 21-1](https://docs.google.com/document/d/1Z1ZtyZuP5Pvh-qXFlS3byLV43yj5kdf7RmZQ4DEHwXY/edit?tab=t.0)
         """),
@@ -776,7 +815,7 @@ def get_embed_redes_2_pc2():
     return embed
 def get_embed_redes_2_pc3():
     embed = discord.Embed(
-        title="3ra PC - redes_2",
+        title="3ra PC - Redes de Datos II",
         description=textwrap.dedent(f"""\
             - [PC 3 21-1](https://docs.google.com/document/d/1TrYpdFLqCm4SDPqPjbeosHVRGM0QECorpC56vD255ek/edit?tab=t.0)
         """),
@@ -788,7 +827,7 @@ def get_embed_redes_2_pc3():
 
 def get_embed_redes_2_pc4():
     embed = discord.Embed(
-        title="4ta PC - redes_2",
+        title="4ta PC - Redes de Datos II",
         description=textwrap.dedent(f"""\
             - [PC 4 21-1](https://docs.google.com/document/d/1u-7wggf4F6oJf7G2v9MGqs68_9qSfKWnMni8x6Q76CM/edit?tab=t.0)
         """),
@@ -904,7 +943,7 @@ def get_embeds_cursos_labs_pcs_clases_tercer_ciclo():
 
     lista1 = [] # Laboratorios
 
-    lista1.append("blank")
+    lista1.append([[get_embed_fisica_3_laboratorios_2021_II_pag1(), get_embed_fisica_3_laboratorios_2021_II_pag2()]])
 
     lista2 = [] # PC's, exámenes
 

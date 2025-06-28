@@ -76,7 +76,7 @@ def get_embed_fisica_2_pc1_1():
 
 def get_embed_fisica_2_pc1_2():
     embed = discord.Embed(
-        title="1ra PC - Física 2",
+        title="1ra PC - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PC-1 2021-2 (Prof. Durand y Llamoja Secc. M).pdf](https://drive.google.com/file/d/1j_pNPAuDEdsPvy-Aq-ZP787i0LTnw7wE/view?usp=sharing)
             - [PC-1 2021-1 (Prof. Alva).pdf](https://drive.google.com/file/d/1nZnBzXYJt_SK6IA3bjbh7cwvIfwTfMCW/view?usp=sharing)
@@ -96,7 +96,7 @@ def get_embed_fisica_2_pc1_2():
 
 def get_embed_fisica_2_pc2_1():
     embed = discord.Embed(
-        title="2da PC - Física 2",
+        title="2da PC - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PC2 BFI05 M 2023-3.pdf](https://drive.google.com/file/d/1n1k6pQ-EnPxvXuFARWZV6boJVlso4Ayw/view?usp=sharing)
             - [PC2 BFI05 2023-2.pdf](https://drive.google.com/file/d/1NoKz-EuweiFsDF1w_tH0WkrpHKUillXb/view?usp=sharing)
@@ -116,7 +116,7 @@ def get_embed_fisica_2_pc2_1():
 
 def get_embed_fisica_2_pc2_2():
     embed = discord.Embed(
-        title="2da PC - Física 2",
+        title="2da PC - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PC-2 2021-1 (Prof. Alva).pdf](https://drive.google.com/file/d/10mNS_obj5N4jdBSbgF_R0_rHdxzsAcwF/view?usp=sharing)
             - [PC-2 2021-1 (Prof. Durand).pdf](https://drive.google.com/file/d/1KYlvGI0M66FbozT4WhkeUjA_saO-ybgp/view?usp=sharing)
@@ -136,7 +136,7 @@ def get_embed_fisica_2_pc2_2():
 
 def get_embed_fisica_2_pc3_1():
     embed = discord.Embed(
-        title="3ra PC - Fisica 2",
+        title="3ra PC - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PC3 BFI05 M 2023-3.pdf](https://drive.google.com/file/d/1Rf-l6liNtnX6QgSjB14WwcpZejKXf1GO/view?usp=sharing) 
             - [PC3 BFI05 2023-2.pdf](https://drive.google.com/file/d/1FrFX6ieDstOKFUvlKkpLwBhwn6_LHWbP/view?usp=sharing)
@@ -155,7 +155,7 @@ def get_embed_fisica_2_pc3_1():
 
 def get_embed_fisica_2_pc3_2():
     embed = discord.Embed(
-        title="3ra PC - Fisica 2",
+        title="3ra PC - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PC-3 2021-2 (Prof. Durand y Llamoja Secc. M).pdf](https://drive.google.com/file/d/11r_PJImMe7UrJio2-PUJsjcsRUaEeUZL/view?usp=sharing)
             - [PC-3 2021-1 (Prof. Alva).pdf](https://drive.google.com/file/d/1jn-tbyr0l7eLWjPWPvd_ySdE9rmmayOA/view?usp=sharing)
@@ -175,7 +175,7 @@ def get_embed_fisica_2_pc3_2():
 
 def get_embed_fisica_2_pc4_1():
     embed = discord.Embed(
-        title="4ta PC - Física 2",
+        title="4ta PC - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PC4 BFI05 M 2023-3.pdf](https://drive.google.com/file/d/1SUW1z3DEwpxEhRdB5Se8fF7RzbAVVGna/view?usp=sharing)
             - [PC4 BFI05 2023-2.pdf](https://drive.google.com/file/d/1sSIFals02rHOV5H5Mu9944AGfAl1IiY1/view?usp=sharing)
@@ -194,7 +194,7 @@ def get_embed_fisica_2_pc4_1():
 
 def get_embed_fisica_2_pc4_2():
     embed = discord.Embed(
-        title="4ta PC - Física 2",
+        title="4ta PC - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PC-4 2021-1 (Prof. Alva).pdf](https://drive.google.com/file/d/1rZ_bI0WZBvfTt7oWm49giFZ4ACjR55yQ/view?usp=sharing)
             - [PC-4 2021-1 (Prof. Durand).pdf](https://drive.google.com/file/d/1sSVEW9h49hflo6GpMYFbtCqOsa1hfBK9/view?usp=sharing)
@@ -213,7 +213,7 @@ def get_embed_fisica_2_pc4_2():
 
 def get_embed_fisica_2_pc5():
     embed = discord.Embed(
-        title="5ta PC - fisica_2",
+        title="5ta PC - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PC-5 2021-2 (Prof. Durand y Llamoja Secc. M).pdf](https://drive.google.com/file/d/1L8bhDoPOLCGltirTEXn1mkpmEd9hTk0e/view?usp=sharing)                     
             - [PC-5 2022-1.pdf](https://drive.google.com/file/d/1UAkwBBeP4RQgwksvRjGZ93mSCnoRmkZ9/view?usp=sharing)
@@ -231,7 +231,7 @@ def get_embed_fisica_2_pc5():
 
 def get_embed_fisica_2_exparcial_1():
     embed = discord.Embed(
-        title="Ex. Parciales - fisica_2",
+        title="Ex. Parciales - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PARCIAL BFI05 M 2023-3.pdf](https://drive.google.com/file/d/1hWPYPYUSG5zoiCAEq0_BIn3My4Jt7bPz/view?usp=sharing)
             - [PARCIAL BFI05 2023-2.pdf](https://drive.google.com/file/d/1RVYS3WWxfJnZywREdsEfdEN-loMVWEJs/view?usp=sharing)
@@ -250,7 +250,7 @@ def get_embed_fisica_2_exparcial_1():
 
 def get_embed_fisica_2_exparcial_2():
     embed = discord.Embed(
-        title="Ex. Parciales - fisica_2",
+        title="Ex. Parciales - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PARCIAL 2021-2 Pt.1 (Prof. Durand y Llamoja Secc. M).pdf]()
             - [PARCIAL 2021-1 (Prof. Alva).pdf](https://drive.google.com/file/d/1ExXqQ08k2NZwzGD3-SHXw7qmtiSW9F4W/view?usp=sharing)
@@ -270,7 +270,7 @@ def get_embed_fisica_2_exparcial_2():
 
 def get_embed_fisica_2_exparcial_3():
     embed = discord.Embed(
-        title="Ex. Parciales - fisica_2",
+        title="Ex. Parciales - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [PARCIAL 2020-2 (Prof. Caro).pdf](https://drive.google.com/file/d/1WzBhS9SUnxbbieSJtBUs3yz19WEYbnY4/view?usp=sharing)
             - [PARCIAL 2020-1 (Prof. Barrientos).pdf](https://drive.google.com/file/d/1GwRYpctpHg7UiAR6WVCmwY2_wHvjoOAq/view?usp=sharing)       
@@ -287,7 +287,7 @@ def get_embed_fisica_2_exparcial_3():
 
 def get_embed_fisica_2_exfinal_1():
     embed = discord.Embed(
-        title="Ex. finales - fisica_2",
+        title="Ex. finales - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [Ex.Final BFI05 M 2023-3.pdf](https://drive.google.com/file/d/1vkatDTCyTBzQqael6zTBBxP54119IXN8/view?usp=sharing)
             - [Ex.Final BFI05 A 2023-2.pdf](https://drive.google.com/file/d/14aTGiNLsei7JlIPArZZfQ99AI0dz2P5_/view?usp=sharing)
@@ -306,7 +306,7 @@ def get_embed_fisica_2_exfinal_1():
 
 def get_embed_fisica_2_exfinal_2():
     embed = discord.Embed(
-        title="Ex. finales - fisica_2",
+        title="Ex. finales - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [Ex.Final A 2022-1.pdf](https://drive.google.com/file/d/1atTSORPWhbT4_KiK_CspD-wJNaj9mpRR/view?usp=sharing)
             - [Ex.Final 2021-2 (Prof. Roy Secc. Q).pdf](https://drive.google.com/file/d/1e1KV5oLWdTlgPuSI_FrbOq2aSPd1eduE/view?usp=sharing)                      
@@ -323,7 +323,7 @@ def get_embed_fisica_2_exfinal_2():
 
 def get_embed_fisica_2_exfinal_3():
     embed = discord.Embed(
-        title="Ex. finales - fisica_2",
+        title="Ex. finales - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [FINAL 2020-2 Pt.2 (Prof. Llamoja).pdf](https://drive.google.com/file/d/1XdGYS2--wN1zb6X5NR94J4VcppWmriCj/view?usp=sharing)
             - [FINAL 2020-2 Pt.1 (Prof. Llamoja).pdf](https://drive.google.com/file/d/1_9c_coh3vpj6S5y-eQ3RYGTRk8i7C8oI/view?usp=sharing)
@@ -340,7 +340,7 @@ def get_embed_fisica_2_exfinal_3():
 
 def get_embed_fisica_2_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - fisica_2",
+        title="Ex. sustitutorio - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [SUSTI BFI05 2023-2.pdf](https://drive.google.com/file/d/1WNmhmrNWIN9sbzYbnP-Jsd9B2RBFEt8p/view?usp=sharing)
             - [SUSTI 2022-2.pdf](https://drive.google.com/file/d/1PSOyQG1bQ_NEQYdYNd0sqbDGAP4icOPg/view?usp=sharing)
@@ -360,7 +360,7 @@ def get_embed_fisica_2_exsusti():
 
 def get_embed_fisica_2_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - fisica_2",
+        title="Pruebas de entrada - Fund. de Ing. térmica y de fluidos",
         description=textwrap.dedent(f"""\
             - [Prueba de Entrada BFI05 2023-2.pdf](https://drive.google.com/file/d/13HCHKxXxxOgY7QhXzotr7p8uz5x4BuIT/view?usp=sharing)
             - [Prueba de Entrada 2022-2.pdf](https://drive.google.com/file/d/1BRn5vYK0R3BIgqpb1_28Wa2rJNN7cZiU/view?usp=sharing)                       
@@ -386,7 +386,7 @@ def get_embed_calculo_integral_pc1():
 
 def get_embed_calculo_integral_pc1_0():
     embed = discord.Embed(
-        title="1ra PC - calculo_integral",
+        title="1ra PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-1 2023-3.pdf](https://drive.google.com/file/d/1orGkJ6SmVRdfZK3l2AjeIvd-7JLt9Vzx/view?usp=sharing)
             - [PC-1 2023-2.pdf](https://drive.google.com/file/d/14FXucz08MnRxm864S4CgqFL8O0ixQB4W/view?usp=sharing)
@@ -404,7 +404,7 @@ def get_embed_calculo_integral_pc1_0():
 
 def get_embed_calculo_integral_pc1_1():
     embed = discord.Embed(
-        title="1ra PC - calculo_integral",
+        title="1ra PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-1 2021-2 N (Prof Cornejo).pdf](https://drive.google.com/file/d/1ldbz4Z8u3vTFFP_PNVR2J_Pdfdapqs6w/view?usp=sharing)
             - [PC-1 2021-2 M (Prof Saal).pdf](https://drive.google.com/file/d/1giZDAWC81yYY2ZLpdquBSm4TByYBnN-y/view?usp=sharing)
@@ -422,7 +422,7 @@ def get_embed_calculo_integral_pc1_1():
 
 def get_embed_calculo_integral_pc1_2():
     embed = discord.Embed(
-        title="1ra PC - calculo_integral",
+        title="1ra PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-1 2020-2 (Prof Erquizio).pdf](https://drive.google.com/file/d/1fNrRjCqAe7fOGmnYdM71UT6nLvP4O3sw/view?usp=sharing)
             - [PC-1 2020-1 Sol.(Prof Oria).pdf](https://drive.google.com/file/d/1vt_Qsv2g40sF3fN3hJW5kk8uemVizFYB/view?usp=sharing)
@@ -442,7 +442,7 @@ def get_embed_calculo_integral_pc1_2():
 
 def get_embed_calculo_integral_pc1_3():
     embed = discord.Embed(
-        title="1ra PC - calculo_integral",
+        title="1ra PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-1 2018-1.pdf](https://drive.google.com/file/d/199k-E_IIjwBpPmH_FKw9aWM_fN9RXdV8/view?usp=sharing)
             - [PC-1 2017-2.pdf](https://drive.google.com/file/d/1s5AfZD01w-ah7I4rPVCBb5RwMADVf0B9/view?usp=sharing)
@@ -462,7 +462,7 @@ def get_embed_calculo_integral_pc1_3():
 
 def get_embed_calculo_integral_pc1_4():
     embed = discord.Embed(
-        title="1ra PC - calculo_integral",
+        title="1ra PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-1 2014-2.pdf](https://drive.google.com/file/d/1USJuIG9F4olN1HTT3UJA3lG14kzBzMlf/view?usp=sharing)
             - [PC-1 2013-3.jpg](https://drive.google.com/file/d/1xHI9XieaGidKTO9ZVa1DOaKtngfaEpHn/view?usp=sharing)
@@ -492,7 +492,7 @@ def get_embed_calculo_integral_pc2():
 
 def get_embed_calculo_integral_pc2_1():
     embed = discord.Embed(
-        title="2da PC - calculo_integral",
+        title="2da PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-2 2023-3.pdf](https://drive.google.com/file/d/11a-S8JpVFi2s3BoAWiEd1ecCtoSYr4dA/view?usp=sharing)
             - [PC-2 2023-2.pdf](https://drive.google.com/file/d/1vqJC2GHC3K-qScfptv-5DRRWaKrZNEz3/view?usp=sharing)
@@ -510,7 +510,7 @@ def get_embed_calculo_integral_pc2_1():
 
 def get_embed_calculo_integral_pc2_2():
     embed = discord.Embed(
-        title="2da PC - calculo_integral",
+        title="2da PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-2 2021-2 N (Prof Cornejo).pdf](https://drive.google.com/file/d/1FqSNOM_bNnYEUrIHNJxQlVXMwW2Xcur7/view?usp=sharing)
             - [PC-2 2021-2 (Prof Saal).pdf](https://drive.google.com/file/d/11nd9k2vgLafBh55qa7nx5g_Ym1FgUkQM/view?usp=sharing)
@@ -529,7 +529,7 @@ def get_embed_calculo_integral_pc2_2():
 
 def get_embed_calculo_integral_pc2_3():
     embed = discord.Embed(
-        title="2da PC - calculo_integral",
+        title="2da PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-2 2020-2 (Prof Arevalo).pdf](https://drive.google.com/file/d/10tjf-KAgQ7g_yr6VRa4R6MiWeGJm05iH/view?usp=sharing)
             - [PC-2 2020-1 (Prof Saal).pdf](https://drive.google.com/file/d/1gpX_6KIZ7WKWl1N7miK34lmau-WuuAtJ/view?usp=sharing)
@@ -548,7 +548,7 @@ def get_embed_calculo_integral_pc2_3():
 
 def get_embed_calculo_integral_pc2_4():
     embed = discord.Embed(
-        title="2da PC - calculo_integral",
+        title="2da PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-2 2017-2.pdf](https://drive.google.com/file/d/1L6Ej1D_o4sIGEK0paeyKXVXZCH49dXbW/view?usp=sharing)
             - [PC-2 2016-2.pdf](https://drive.google.com/file/d/1Me4AR7fVN-V69eZpRDpmUwspvl4gKOM2/view?usp=sharing)
@@ -567,7 +567,7 @@ def get_embed_calculo_integral_pc2_4():
 
 def get_embed_calculo_integral_pc2_5():
     embed = discord.Embed(
-        title="2da PC - calculo_integral",
+        title="2da PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-2 2012-3.pdf](https://drive.google.com/file/d/16guwYKXRePzdAdgC2kGCHd26SG7m6eWG/view?usp=sharing)
             - [PC-2 2012-2.pdf](https://drive.google.com/file/d/1LBVkKvoRQRrdcvLd-88xj76mcj2s8wnv/view?usp=sharing)
@@ -586,7 +586,7 @@ def get_embed_calculo_integral_pc2_5():
 
 def get_embed_calculo_integral_pc3():
     embed = discord.Embed(
-        title="3ra PC - calculo_integral",
+        title="3ra PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-3 2022-1.pdf](https://drive.google.com/file/d/1jFf4cj3GymvAkqJFtt0nIMj37Ib5HiBi/view?usp=sharing)
             - [PC-3 2022-2.pdf](https://drive.google.com/file/d/17wsCacq_rNNwCy_8CmA8ZmCbKCk_U5GS/view?usp=sharing)
@@ -603,7 +603,7 @@ def get_embed_calculo_integral_pc3():
 
 def get_embed_calculo_integral_pc4():
     embed = discord.Embed(
-        title="4ta PC - calculo_integral",
+        title="4ta PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-4 2022-1.pdf](https://drive.google.com/file/d/13zim1zPNylgIWMwrDgiH7SbwPzJ6cZqF/view?usp=sharing)
             - [PC-4 2022-2.pdf](https://drive.google.com/file/d/1yqCpzLK2MAf9NPd0oq9lDY-xFqix_U7h/view?usp=sharing)
@@ -619,7 +619,7 @@ def get_embed_calculo_integral_pc4():
 
 def get_embed_calculo_integral_pc5():
     embed = discord.Embed(
-        title="5ta PC - calculo_integral",
+        title="5ta PC - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PC-5 2022-1.pdf](https://drive.google.com/file/d/18nhmu5sD6U-3OjhC3quGrRdvwFXypQaY/view?usp=sharing)
             - [PC-5 2022-2.pdf](https://drive.google.com/file/d/13oIKnH-nVigmAAKUtxlV5wkH2S8H_kgr/view?usp=sharing)
@@ -635,7 +635,7 @@ def get_embed_calculo_integral_pc5():
 
 def get_embed_calculo_integral_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - calculo_integral",
+        title="Ex. Parciales - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [Parcial 2022-1.pdf](https://drive.google.com/file/d/17gRQrAYjigjZnn9oCG5qyqByIJThlh08/view?usp=sharing)
             - [Parcial 2022-2.pdf](https://drive.google.com/file/d/1_vy_23vI5A8zWmMnmyLA09xuuIXyBbTK/view?usp=sharing)
@@ -652,7 +652,7 @@ def get_embed_calculo_integral_exparcial():
 
 def get_embed_calculo_integral_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - calculo_integral",
+        title="Ex. finales - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [Final 2022-1.jpg](https://drive.google.com/file/d/1O-Hc8DWjz4VBiLsYGSOFjut7ZJ4EAaxB/view?usp=sharing)
             - [Final 2022-2.pdf](https://drive.google.com/file/d/10tvGI9TWVRBQrjZLb35J2DwmnQ32MZ0j/view?usp=sharing)
@@ -669,7 +669,7 @@ def get_embed_calculo_integral_exfinal():
 
 def get_embed_calculo_integral_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - calculo_integral",
+        title="Ex. sustitutorio - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [Susti 2022-1.pdf](https://drive.google.com/file/d/18PecgJnBzabDCnT8xJ4wN3r7URwWXuwv/view?usp=sharing)
             - [Susti 2022-2.pdf](https://drive.google.com/file/d/1WKxJ-SQF7E-NwdIvkaQCFtOYKmYcDCwo/view?usp=sharing)
@@ -684,7 +684,7 @@ def get_embed_calculo_integral_exsusti():
 
 def get_embed_calculo_integral_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - calculo_integral",
+        title="Pruebas de entrada - Cálculo Integral",
         description=textwrap.dedent(f"""\
             - [PE 2022-1.jpg](https://drive.google.com/file/d/1JqUJw1r5XHz_jjLUpjwe0OqPRz5KYjb6/view?usp=sharing)
             - [PE 2022-2.pdf](https://drive.google.com/file/d/1BGs8EPVJQOx541VqwL3aSHfopvKdb2aM/view?usp=sharing)
@@ -701,7 +701,7 @@ def get_embed_calculo_integral_entrada():
 
 def get_embed_algoritmos_1_pc1():
     embed = discord.Embed(
-        title="1ra PC - algoritmos_1",
+        title="1ra PC - Algoritmos y Estructuras de Datos I",
         description=textwrap.dedent(f"""\
             - [PC1 2022-1(Prof. Butler).pdf](https://drive.google.com/file/d/1pcEoo5uWJo2xZrPzP0qIQYEWqeUUIoGL/view?usp=sharing)
             - [PC1 2022-2 (Prof. Butler).pdf](https://drive.google.com/file/d/1z2NdkrFaN8hlkw8U-q2HmZlQO5HgumFI/view?usp=sharing)
@@ -717,7 +717,7 @@ def get_embed_algoritmos_1_pc1():
 
 def get_embed_algoritmos_1_pc2():
     embed = discord.Embed(
-        title="2da PC - algoritmos_1",
+        title="2da PC - Algoritmos y Estructuras de Datos I",
         description=textwrap.dedent(f"""\
             - [PC2 2022-1(Prof. Butler).pdf](https://drive.google.com/file/d/1BWz0cCZ2pgc0nZHvHP8qsoW6U5iXCtyK/view?usp=sharing)
             - [PC2 2022-2(Prof. Butler).pdf](https://drive.google.com/file/d/1jSxxfvSvZyZkVcBh4Y-n9zZHGwgqJJNe/view?usp=sharing)
@@ -731,7 +731,7 @@ def get_embed_algoritmos_1_pc2():
     return embed
 def get_embed_algoritmos_1_pc3():
     embed = discord.Embed(
-        title="3ra PC - algoritmos_1",
+        title="3ra PC - Algoritmos y Estructuras de Datos I",
         description=textwrap.dedent(f"""\
             - [PC3 2022-1(Prof. Butler).pdf](https://drive.google.com/file/d/1VRYOwVOHx5viVM-A22kL7M07cpE40U19/view?usp=sharing)
             - [PC3 2022-2(Prof. Butler).pdf](https://drive.google.com/file/d/1yF-zkCLs2wSR6sJ8AytjvMt4jj03l7Fv/view?usp=sharing)
@@ -747,7 +747,7 @@ def get_embed_algoritmos_1_pc3():
 
 def get_embed_algoritmos_1_pc4():
     embed = discord.Embed(
-        title="4ta PC - algoritmos_1",
+        title="4ta PC - Algoritmos y Estructuras de Datos I",
         description=textwrap.dedent(f"""\
             - [PC4 2022-1 (Prof. Butler).pdf](https://drive.google.com/file/d/1L64gJx3-eMEgr3lgBVtq4EVaGty2LbnE/view?usp=sharing)
             - [PC4 2022-2 (Prof. Butler).pdf](https://drive.google.com/file/d/1rB9cizci8ggh3nTRyUtAcWYl1Z7eyd13/view?usp=sharing)
@@ -765,7 +765,7 @@ def get_embed_algoritmos_1_pc4():
 
 def get_embed_algoritmos_1_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - algoritmos_1",
+        title="Ex. Parciales - Algoritmos y Estructuras de Datos I",
         description=textwrap.dedent(f"""\
             - [Parcial 2022-1 (Prof. Butler).pdf](https://drive.google.com/file/d/1736wmcSDhq9geikixqlHywB0o31h_9NO/view?usp=sharing)
             - [Parcial Test 2022-1 (Prof. Butler).pdf](https://drive.google.com/file/d/1GHt3QLTMHj_T9M8hpLm8w7oSaUHXZ5Np/view?usp=sharing)
@@ -782,7 +782,7 @@ def get_embed_algoritmos_1_exparcial():
 
 def get_embed_algoritmos_1_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - algoritmos_1",
+        title="Ex. finales - Algoritmos y Estructuras de Datos I",
         description=textwrap.dedent(f"""\
             - [Final 2022-1(Butler).pdf](https://drive.google.com/file/d/1qNXeT1oSCfqfLU9WFXhgj1oPJK8rB1Ik/view?usp=sharing)
             - [Final 2022-2(Butler).pdf](https://drive.google.com/file/d/1e70wbk4262o06R485bnZ3W38QdmGCNOQ/view?usp=sharing)
@@ -799,7 +799,7 @@ def get_embed_algoritmos_1_exfinal():
 
 def get_embed_algoritmos_1_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - algoritmos_1",
+        title="Ex. sustitutorio - Algoritmos y Estructuras de Datos I",
         description=textwrap.dedent(f"""\
             - [Susti 2022-1 (Butler).pdf](https://drive.google.com/file/d/1wdxgWsZmTiSBXk08o5HeqF2nHhNpIegO/view?usp=sharing)
             - [Susti 2022-2 (Butler).pdf](https://drive.google.com/file/d/11QAp8E1OkMb6pFFIj670dKAVhrqQs1s7/view?usp=sharing)
@@ -814,7 +814,7 @@ def get_embed_algoritmos_1_exsusti():
 
 def get_embed_algoritmos_1_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - algoritmos_1",
+        title="Pruebas de entrada - Algoritmos y Estructuras de Datos I",
         description=textwrap.dedent(f"""\
             - [P. Entrada 20-2 (Cañamero).pdf](https://drive.google.com/file/d/1IHkldzN0uU00D_EZKTqV_-aK_DMz91pR/view?usp=sharing)
         """),
@@ -1309,7 +1309,7 @@ def get_embed_redes_1_entrada():
 
 def get_embed_sistemas_operativos_1_pc1():
     embed = discord.Embed(
-        title="1ra PC - sistemas_operativos_1",
+        title="1ra PC - Sistemas operativos I",
         description=textwrap.dedent(f"""\
             - [PC1 25-1 (Prof. Loayza)](https://docs.google.com/document/d/1ASF94Uh3QozChDxFAZHZVfcsaNBU6bWT/edit?usp=sharing&ouid=117048018312182294097&rtpof=true&sd=true)
         """),
@@ -1321,7 +1321,7 @@ def get_embed_sistemas_operativos_1_pc1():
 
 def get_embed_sistemas_operativos_1_pc2():
     embed = discord.Embed(
-        title="2da PC - sistemas_operativos_1",
+        title="2da PC - Sistemas operativos I",
         description=textwrap.dedent(f"""\
             - [PC2 25-1 (Prof. Loayza)](https://docs.google.com/document/d/1faclJj7SagDL8_nCbvNs6-AMqpV6z8Id/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
         """),
@@ -1332,7 +1332,7 @@ def get_embed_sistemas_operativos_1_pc2():
     return embed
 def get_embed_sistemas_operativos_1_pc3():
     embed = discord.Embed(
-        title="3ra PC - sistemas_operativos_1",
+        title="3ra PC - Sistemas operativos I",
         description=textwrap.dedent(f"""\
             - [PC3 25-1 (Prof. Loayza)](https://docs.google.com/document/d/1-PAVTk0T05h48rGI3pKq8cH7j-l3B1wM/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true) 
         """),
@@ -1344,7 +1344,7 @@ def get_embed_sistemas_operativos_1_pc3():
 
 def get_embed_sistemas_operativos_1_pc4():
     embed = discord.Embed(
-        title="4ta PC - sistemas_operativos_1",
+        title="4ta PC - Sistemas operativos I",
         description=textwrap.dedent(f"""\
             - [PC4 25-1 (Prof. Loayza)](https://docs.google.com/document/d/1n3HxZGHRK0JVVUzph59wtHNZEz1tPL_z/edit?usp=drive_link&ouid=117048018312182294097&rtpof=true&sd=true)
         """),

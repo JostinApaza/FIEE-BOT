@@ -46,7 +46,7 @@ def get_embed_intro_moderna_pc2():
     return embed
 def get_embed_intro_moderna_pc3():
     embed = discord.Embed(
-        title="3ra PC - intro_modernaIntroduccion a la Fisica Moderna",
+        title="3ra PC - Introduccion a la Fisica Moderna",
         description=textwrap.dedent(f"""\
             - [PC3 2020-2.pdf](https://drive.google.com/file/d/1Tl4d-N9RfeZY3S1gGzpHFB680KeQBStd/view?usp=sharing)
             - [PC3 Secc. O 2021-1.pdf](https://drive.google.com/file/d/1Pg6q8gXpdEqxgAVQ6ucjpUynT399Kozv/view?usp=sharing)
@@ -176,7 +176,7 @@ def get_embed_intro_moderna_entrada():
 
 def get_embed_analisis_senales_pc1():
     embed = discord.Embed(
-        title="1ra PC - Analisis de Selañes y Sistemas",
+        title="1ra PC - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [PC1 Prof. Arias 2021-1.pdf](https://drive.google.com/file/d/1ZVFCbPk3AlZ9ivkVIafBmumsEO7iqdem/view?usp=sharing)
             - [PC1 Prof. Arevalo 2021-1.pdf](https://drive.google.com/file/d/1VjG9Gp4TZYuqm-AyG6qzO4TZsfgOytk-/view?usp=sharing)
@@ -197,7 +197,7 @@ def get_embed_analisis_senales_pc1():
 
 def get_embed_analisis_senales_pc2():
     embed = discord.Embed(
-        title="2da PC - Analisis de Selañes y Sistemas",
+        title="2da PC - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [PC2 2021-1.pdf](https://drive.google.com/file/d/1FxsLapDsaD0j0xVUkj9lJ2D0kzchG_rQ/view?usp=sharing)
             - [PC2 Secc.N 2021-2.pdf](https://drive.google.com/file/d/1tbLzlPUxGyWPH8ma8FQYyKpFTfCBwE8x/view?usp=sharing)
@@ -214,7 +214,7 @@ def get_embed_analisis_senales_pc2():
     return embed
 def get_embed_analisis_senales_pc3():
     embed = discord.Embed(
-        title="3ra PC - Analisis de Selañes y Sistemas",
+        title="3ra PC - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [PC3 2021-1.pdf](https://drive.google.com/file/d/1LpWeXvYYPF_aBIq78yFq2if52WOImB5m/view?usp=sharing)
             - [PC3 Secc.PQ 2021-2.pdf](https://drive.google.com/file/d/1eCtwb9zixaash1nl_T_8ehGYjbozfJcA/view?usp=sharing)
@@ -231,7 +231,7 @@ def get_embed_analisis_senales_pc3():
 
 def get_embed_analisis_senales_pc4():
     embed = discord.Embed(
-        title="4ta PC - Analisis de Selañes y Sistemas",
+        title="4ta PC - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [PC4 2021-1.pdf](https://drive.google.com/file/d/1fbOGeFlyn2l4JUaeroV9p7aoBzW44bNb/view?usp=sharing)
             - [PC4 2022-2.pdf](https://drive.google.com/file/d/1i5MOVcuUK_bqSP9-_CB8FTaySbjTgMxq/view?usp=sharing)
@@ -248,7 +248,7 @@ def get_embed_analisis_senales_pc4():
 
 def get_embed_analisis_senales_pc5():
     embed = discord.Embed(
-        title="5ta PC - Analisis de Selañes y Sistemas",
+        title="5ta PC - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [PC5 2022-2.pdf](https://drive.google.com/file/d/16Wx6ELPJPJY28pai4W4Sj1cXBIpW7pe5/view?usp=sharing)
             - [PC5 2023-1.pdf](https://drive.google.com/file/d/1NCMUxbo3DPBlfkP_LNVdbtPCvfgRXJnt/view?usp=sharing)
@@ -263,7 +263,7 @@ def get_embed_analisis_senales_pc5():
 
 def get_embed_analisis_senales_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - Analisis de Selañes y Sistemas",
+        title="Ex. Parciales - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [Ex. Parcial 2021-1.pdf](https://drive.google.com/file/d/1GGkyZUt58Mh1H1h1Zh1oFCp9FqGkS99J/view?usp=sharing)
             - [Ex. Parcial Secc.MO 2021-2.pdf](https://drive.google.com/file/d/1rGnF7yzAAGtksZ3zrChPbtg_lQzKe7Zx/view?usp=sharing)
@@ -281,7 +281,7 @@ def get_embed_analisis_senales_exparcial():
 
 def get_embed_analisis_senales_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - Analisis de Selañes y Sistemas",
+        title="Ex. finales - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [Final Prof. Arevalo 2021-1.pdf](https://drive.google.com/file/d/1XkAFHMg6__jW2zAnntHDDNHMwwmiY2_B/view?usp=sharing)
             - [Final Prof. Arias 2021-1.pdf](https://drive.google.com/file/d/1rpFyEx0ROQ101EtcdtEwsRpOY-oIMw3J/view?usp=sharing)
@@ -298,7 +298,7 @@ def get_embed_analisis_senales_exfinal():
 
 def get_embed_analisis_senales_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - Analisis de Selañes y Sistemas",
+        title="Ex. sustitutorio - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [Susti Prof. Israel 2021-1.pdf](https://drive.google.com/file/d/1GD5F3CFVHBqjyzG_5bhTct5mKAEwm7E7/view?usp=sharing)
             - [Susti Prof. Arias 2021-1.pdf](https://drive.google.com/file/d/1AcQn-I0TJe0pX4uu820RaYE_VoVSDZ-V/view?usp=sharing)
@@ -313,7 +313,7 @@ def get_embed_analisis_senales_exsusti():
 
 def get_embed_analisis_senales_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - Analisis de Selañes y Sistemas",
+        title="Pruebas de entrada - Analisis de Señales y Sistemas",
         description=textwrap.dedent(f"""\
             - [PE 2022-2.pdf](https://drive.google.com/file/d/1zyeJSn_hCew_9InzH-f1V5tDsoy8nZbq/view?usp=sharing)
         """),
@@ -326,7 +326,7 @@ def get_embed_analisis_senales_entrada():
 
 def get_embed_calculo_vectorial_pc1():
     embed = discord.Embed(
-        title="1ra PC - calculo_vectorial",
+        title="1ra PC - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [PC1 2020-1.pdf](https://drive.google.com/file/d/16xAhbGWgLl-YWY6lUczRnrgIe2q2S85E/view?usp=sharing)
             - [PC1 Prof. Arevalo 2020-2.pdf](https://drive.google.com/file/d/1E8Mo5Y8sdwfMYMLPBuGp9_lFbb9qn5JI/view?usp=sharing)
@@ -351,7 +351,7 @@ def get_embed_calculo_vectorial_pc1():
 
 def get_embed_calculo_vectorial_pc2():
     embed = discord.Embed(
-        title="2da PC - calculo_vectorial",
+        title="2da PC - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [PC2 Prof. Erquizio 2020-1.pdf](https://drive.google.com/file/d/1l7W4DWZM1EWVdNFeyAUzaJwNky1NgKw4/view?usp=sharing)
             - [PC2 Prof. Rojas 2020-1.pdf](https://drive.google.com/file/d/1Uc3K6rSaXxcMgDuVFfzSVhHVdOspTj3c/view?usp=sharing)
@@ -376,7 +376,7 @@ def get_embed_calculo_vectorial_pc2():
     return embed
 def get_embed_calculo_vectorial_pc3():
     embed = discord.Embed(
-        title="3ra PC - calculo_vectorial",
+        title="3ra PC - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [PC3 Prof. Rojas 2020-1.pdf](https://drive.google.com/file/d/13RGNNWoH5_yl8lp7wAD1fbg2XmKaa9bM/view?usp=sharing)
             - [PC3 Prof. Erquizio 2020-1.pdf](https://drive.google.com/file/d/1JakaCoHl-x8L6Ke8i120Zg_BCt0_Emk0/view?usp=sharing)
@@ -402,7 +402,7 @@ def get_embed_calculo_vectorial_pc3():
 
 def get_embed_calculo_vectorial_pc4():
     embed = discord.Embed(
-        title="4ta PC - calculo_vectorial",
+        title="4ta PC - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [PC4 Prof. Erquizio 2020-1.pdf](https://drive.google.com/file/d/1AWTdYxFXt521EmH8a8_eR_vK_Yppu-u0/view?usp=sharing)
             - [PC4 Prof. Erquizio 2020-2.pdf](https://drive.google.com/file/d/1O6DCDVF3y_6WMDb3psGbtbNpbA3ovkzN/view?usp=sharing)
@@ -425,7 +425,7 @@ def get_embed_calculo_vectorial_pc4():
 
 def get_embed_calculo_vectorial_pc5():
     embed = discord.Embed(
-        title="5ta PC - calculo_vectorial",
+        title="5ta PC - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [PC5 Prof. Erquizio 2020-1.pdf](https://drive.google.com/file/d/1uFp0olaqs7gCIecV_F26bfpV2Pxjvp0F/view?usp=sharing)
             - [PC5 Prof. Erquizio 2020-2.pdf](https://drive.google.com/file/d/1M83umIMrFzajI4SJYUc5Lxo4luTbPiZv/view?usp=sharing)
@@ -440,7 +440,7 @@ def get_embed_calculo_vectorial_pc5():
 
 def get_embed_calculo_vectorial_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - calculo_vectorial",
+        title="Ex. Parciales - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [Ex. Parcial Prof. Erquizio 2020-1.pdf](https://drive.google.com/file/d/1lM0C7ldvJmHqisbBzASZMm0LVsD4jgh6/view?usp=sharing)
             - [Ex. Parcial Prof. Erquizio 2020-2.pdf](https://drive.google.com/file/d/12pdoLu8efIst7aFrmqby5U3hUs37WWPT/view?usp=sharing)
@@ -464,7 +464,7 @@ def get_embed_calculo_vectorial_exparcial():
 
 def get_embed_calculo_vectorial_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - calculo_vectorial",
+        title="Ex. finales - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [Final Prof. Erquizio 2020-1.pdf](https://drive.google.com/file/d/1WFmzPMKLtwULBUBKDt1LMo3MBlpu59BF/view?usp=sharing)
             - [Final Prof. Erquizio 2020-2.pdf](https://drive.google.com/file/d/1o4riyiw5H7wUUw5wBdIcLFfmwNWv2JjT/view?usp=sharing)
@@ -486,7 +486,7 @@ def get_embed_calculo_vectorial_exfinal():
 
 def get_embed_calculo_vectorial_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - calculo_vectorial",
+        title="Ex. sustitutorio - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [Susti Prof. Erquizio 2020-1.pdf](https://drive.google.com/file/d/1bIb0wU5wLS6pOTpSnsG_PxtzDfSNirSg/view?usp=sharing)
             - [Susti Prof. Erquizio 2020-2.pdf](https://drive.google.com/file/d/1qQpa_7AL52tLikICcnhCRkx_XDzgRSdX/view?usp=sharing)
@@ -508,7 +508,7 @@ def get_embed_calculo_vectorial_exsusti():
 
 def get_embed_calculo_vectorial_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - calculo_vectorial",
+        title="Pruebas de entrada - Cálculo Vectorial",
         description=textwrap.dedent(f"""\
             - [PE Prof. Calla 2021-1.pdf](https://drive.google.com/file/d/14DpXA68XDll4HrtHB2bzQd12k0NjqYhU/view?usp=sharing)
             - [PE Prof. Rojas M 2021-1.pdf](https://drive.google.com/file/d/1yfUZGjmYZ65Rbt-kyEAtlNIsrCj2-iMB/view?usp=sharing)
@@ -527,7 +527,7 @@ def get_embed_calculo_vectorial_entrada():
 
 def get_embed_circuitos_1_pc1():
     embed = discord.Embed(
-        title="1ra PC - Circuitos Electricos 1",
+        title="1ra PC - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
             - [PC1 2022-2.pdf](https://drive.google.com/file/d/1Js2YAxXO76anyK6SHFMaRjBLX1jjMaO7/view?usp=sharing)
             - [PC1 2023-1.pdf](https://drive.google.com/file/d/1ISZtx_IFGVqXYwZr_A_U2m2VGwJuGsuv/view?usp=sharing)
@@ -542,7 +542,7 @@ def get_embed_circuitos_1_pc1():
 
 def get_embed_circuitos_1_pc2():
     embed = discord.Embed(
-        title="2da PC - Circuitos Electricos 1",
+        title="2da PC - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
             - [PC2 Prof. Rocha 2021-3.pdf](https://drive.google.com/file/d/1FkZeOv1DhpxtfDAEE590l9CQHSxtkgAd/view?usp=sharing)
             - [PC2 Prof. Tukomori 2021-3.pdf](https://drive.google.com/file/d/1_lydf6LtzJeUaI2LBwG3JTG91FHYMSWJ/view?usp=sharing)
@@ -558,7 +558,7 @@ def get_embed_circuitos_1_pc2():
     return embed
 def get_embed_circuitos_1_pc3():
     embed = discord.Embed(
-        title="3ra PC - Circuitos Electricos 1",
+        title="3ra PC - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
             - [PC3 2022-2.pdf](https://drive.google.com/file/d/1tyHsGtwQlA-u9VlHPkVNNSZK20cv9Vjb/view?usp=sharing)
             - [PC3 2023-1.pdf](https://drive.google.com/file/d/1BpGiKG1zxw8TPB9TkWS0rsvHpmUXz_bn/view?usp=sharing)
@@ -573,7 +573,7 @@ def get_embed_circuitos_1_pc3():
 
 def get_embed_circuitos_1_pc4():
     embed = discord.Embed(
-        title="4ta PC - Circuitos Electricos 1",
+        title="4ta PC - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
             - [PC4 Prof. Negron 2022-2.pdf](https://docs.google.com/document/d/1syYnKD6cSlozQo0Ul9BN2Gs1hPhGTU9u/edit?usp=sharing&ouid=117048018312182294097&rtpof=true&sd=true)
             - [PC4 Prof. Tukomori 2022-2.pdf](https://drive.google.com/file/d/1QY90z9t6IBzdgulN3bTcACz8frkW6BEY/view?usp=sharing)
@@ -588,7 +588,7 @@ def get_embed_circuitos_1_pc4():
 
 def get_embed_circuitos_1_pc5():
     embed = discord.Embed(
-        title="5ta PC - Circuitos Electricos 1",
+        title="5ta PC - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
             - [PC5 Prof. Negron 2022-2.pdf](https://docs.google.com/document/d/1a7xhoYxNo3T67AHl_Yn7-0CbQu1o0biS/edit?usp=sharing&ouid=117048018312182294097&rtpof=true&sd=true)
             - [PC5 2022-2.pdf](https://drive.google.com/file/d/1-9k1M4M6WBg2a-ukkiThkWhGmjG8jFsw/view?usp=sharing)
@@ -603,7 +603,7 @@ def get_embed_circuitos_1_pc5():
 
 def get_embed_circuitos_1_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - Circuitos Electricos 1",
+        title="Ex. Parciales - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
             - [Parcial 2022-2.pdf](https://drive.google.com/file/d/1EhZAOSVYNY9x-WWVwrMCgbfAnCLUkpAH/view?usp=sharing)
             - [Parcial 2023-1.pdf](https://drive.google.com/file/d/1w9Cqbr7FtT9tzr54rvOdzaYu1t8ZRBZa/view?usp=sharing)
@@ -618,7 +618,7 @@ def get_embed_circuitos_1_exparcial():
 
 def get_embed_circuitos_1_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - Circuitos Electricos 1",
+        title="Ex. finales - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
             - [Final 2022-2.pdf](https://drive.google.com/file/d/1Ina7G7WGdG3Jg9KomzQcG4TZnwDGJZwp/view?usp=sharing)
             - [Final 2023-1.pdf](https://drive.google.com/file/d/14w3PFTwtEgY7QWWRx5AccXffm4oRrRVO/view?usp=sharing)
@@ -632,7 +632,7 @@ def get_embed_circuitos_1_exfinal():
 
 def get_embed_circuitos_1_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - Circuitos Electricos 1",
+        title="Ex. sustitutorio - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
             - [Susti 2022-2.pdf](https://drive.google.com/file/d/1yP5ZdZVhNnUtYjgSvAfTn4x-ZO50200r/view?usp=sharing)
             - [Susti 2023-1.pdf](https://drive.google.com/file/d/1okX19ExtqzHyleNgFhKyxKZoPE3WPy8B/view?usp=sharing)
@@ -645,7 +645,7 @@ def get_embed_circuitos_1_exsusti():
 
 def get_embed_circuitos_1_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - Circuitos Electricos 1",
+        title="Pruebas de entrada - Circuitos Eléctricos I",
         description=textwrap.dedent(f"""\
            
         """),
@@ -675,7 +675,7 @@ def get_embeds_circuitos_1_pcs():
 
 def get_embed_metodos_numericos_pc1():
     embed = discord.Embed(
-        title="1ra PC - Metodos_Numericos",
+        title="1ra PC - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [PC1 2021-1.pdf](https://drive.google.com/file/d/1Ix3ZsWHBbgI7EXj3qPRthzx-FKl8AySA/view?usp=sharing)
             - [PC1 2021-1.pdf](https://drive.google.com/file/d/1goNLoBgb_jPUiyhIMVadQ_LXcHskveZU/view?usp=sharing)
@@ -694,7 +694,7 @@ def get_embed_metodos_numericos_pc1():
 
 def get_embed_metodos_numericos_pc2():
     embed = discord.Embed(
-        title="2da PC - Metodos_Numericos",
+        title="2da PC - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [PC2 2021-1.pdf](https://drive.google.com/file/d/1tAUiYYKz7Xd0Orx__hDa8X_6-ABfm58G/view?usp=sharing)
             - [PC2 2021-1.pdf](https://drive.google.com/file/d/1_STRpntu05Jv-O-J_-wTJNX1qIMBtsGl/view?usp=sharing)                        
@@ -713,7 +713,7 @@ def get_embed_metodos_numericos_pc2():
     return embed
 def get_embed_metodos_numericos_pc3():
     embed = discord.Embed(
-        title="3ra PC - Metodos_Numericos",
+        title="3ra PC - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [PC3 2021-1.pdf](https://drive.google.com/file/d/1hK0nFUsl4dXnur26UqBfMwBcy5BEDM19/view?usp=sharing)
             - [PC3 2021-1.pdf](https://drive.google.com/file/d/1K3D1byrc1ze0kOQ5Uvf4QkagAH9q_9aF/view?usp=sharing)
@@ -732,7 +732,7 @@ def get_embed_metodos_numericos_pc3():
 
 def get_embed_metodos_numericos_pc4():
     embed = discord.Embed(
-        title="4ta PC - Metodos_Numericos",
+        title="4ta PC - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [PC4 2021-1.pdf](https://drive.google.com/file/d/1sKQnnM3_0yBWnLlNn2tRjwKQPFcAnriJ/view?usp=sharing)
             - [PC4 2021-1.pdf](https://drive.google.com/file/d/1JmFLtSx7USwq8votxMwTrsoCNqE-Vy3Y/view?usp=sharing)
@@ -751,7 +751,7 @@ def get_embed_metodos_numericos_pc4():
 
 def get_embed_metodos_numericos_pc5():
     embed = discord.Embed(
-        title="5ta PC - Metodos_Numericos",
+        title="5ta PC - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [PC5 2021-2.pdf](https://drive.google.com/file/d/1gEcw8svuu2OGSNgQJgHzc3w9XLbylN2w/view?usp=sharing)
             - [PC5 2021-2.pdf](https://drive.google.com/file/d/1kctfwlMZgOkcfGirC5say7k5w5Ya2U_R/view?usp=sharing)
@@ -764,7 +764,7 @@ def get_embed_metodos_numericos_pc5():
 
 def get_embed_metodos_numericos_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - Metodos_Numericos",
+        title="Ex. Parciales - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [Parcial 2021-1.pdf](https://drive.google.com/file/d/1AWOjcPbMaeDVbbp51AoAcuuvgVlvXUlK/view?usp=sharing)
             - [Parcial 2021-1.pdf](https://drive.google.com/file/d/163JFGZy_zji48IyjBHhVpsCHI-luGQmV/view?usp=sharing)
@@ -782,7 +782,7 @@ def get_embed_metodos_numericos_exparcial():
 
 def get_embed_metodos_numericos_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - Metodos_Numericos",
+        title="Ex. finales - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [Final 2021-1.pdf](https://drive.google.com/file/d/1IbcWuciARcH1bRoeGR0O0e9FuSsfdEE7/view?usp=sharing)
             - [Final 2021-1.pdf](https://drive.google.com/file/d/1VlO3LmDmAmBP1Xg-arDHgaJAlme9bDjq/view?usp=sharing)
@@ -802,7 +802,7 @@ def get_embed_metodos_numericos_exfinal():
 
 def get_embed_metodos_numericos_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - Metodos_Numericos",
+        title="Ex. sustitutorio - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [Susti 2021-1.pdf](https://drive.google.com/file/d/1s75jZWghDzlFITDFhbITNEWkjk6vKBex/view?usp=sharing)
             - [Susti 2022-2.pdf](https://drive.google.com/file/d/1VrqLmqFQPIFrT4a7joRsXtE8u5vjsFkI/view?usp=sharing)
@@ -818,7 +818,7 @@ def get_embed_metodos_numericos_exsusti():
 
 def get_embed_metodos_numericos_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - Metodos_Numericos",
+        title="Pruebas de entrada - Métodos Numéricos",
         description=textwrap.dedent(f"""\
             - [PE 2021-1.pdf](https://drive.google.com/file/d/1SrZFY63R1VCnsO1uCJok23DDvu5-47Eo/view?usp=sharing)
             - [PE 2021-2.pdf](https://drive.google.com/file/d/1aA0auy_bZ7C8SPbIdFeT8I_ANl2zSowK/view?usp=sharing)
@@ -1053,7 +1053,7 @@ def get_embed_etica_filosofia_entrada():
 
 def get_embed_sistemas_operativos_2_pc1():
     embed = discord.Embed(
-        title="1ra PC - sistemas_operativos_2",
+        title="1ra PC - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1073,7 +1073,7 @@ def get_embed_sistemas_operativos_2_pc1():
 
 def get_embed_sistemas_operativos_2_pc2():
     embed = discord.Embed(
-        title="2da PC - sistemas_operativos_2",
+        title="2da PC - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1092,7 +1092,7 @@ def get_embed_sistemas_operativos_2_pc2():
     return embed
 def get_embed_sistemas_operativos_2_pc3():
     embed = discord.Embed(
-        title="3ra PC - sistemas_operativos_2",
+        title="3ra PC - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1112,7 +1112,7 @@ def get_embed_sistemas_operativos_2_pc3():
 
 def get_embed_sistemas_operativos_2_pc4():
     embed = discord.Embed(
-        title="4ta PC - sistemas_operativos_2",
+        title="4ta PC - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1132,7 +1132,7 @@ def get_embed_sistemas_operativos_2_pc4():
 
 def get_embed_sistemas_operativos_2_pc5():
     embed = discord.Embed(
-        title="5ta PC - sistemas_operativos_2",
+        title="5ta PC - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1152,7 +1152,7 @@ def get_embed_sistemas_operativos_2_pc5():
 
 def get_embed_sistemas_operativos_2_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - sistemas_operativos_2",
+        title="Ex. Parciales - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1172,7 +1172,7 @@ def get_embed_sistemas_operativos_2_exparcial():
 
 def get_embed_sistemas_operativos_2_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - sistemas_operativos_2",
+        title="Ex. finales - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1192,7 +1192,7 @@ def get_embed_sistemas_operativos_2_exfinal():
 
 def get_embed_sistemas_operativos_2_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - sistemas_operativos_2",
+        title="Ex. sustitutorio - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1212,7 +1212,7 @@ def get_embed_sistemas_operativos_2_exsusti():
 
 def get_embed_sistemas_operativos_2_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - sistemas_operativos_2",
+        title="Pruebas de entrada - Sistemas Operativos II",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1232,7 +1232,7 @@ def get_embed_sistemas_operativos_2_entrada():
 
 def get_embed_electrotecnia_pc1():
     embed = discord.Embed(
-        title="1ra PC - electrotecnia",
+        title="1ra PC - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1252,7 +1252,7 @@ def get_embed_electrotecnia_pc1():
 
 def get_embed_electrotecnia_pc2():
     embed = discord.Embed(
-        title="2da PC - electrotecnia",
+        title="2da PC - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1271,7 +1271,7 @@ def get_embed_electrotecnia_pc2():
     return embed
 def get_embed_electrotecnia_pc3():
     embed = discord.Embed(
-        title="3ra PC - electrotecnia",
+        title="3ra PC - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1291,7 +1291,7 @@ def get_embed_electrotecnia_pc3():
 
 def get_embed_electrotecnia_pc4():
     embed = discord.Embed(
-        title="4ta PC - electrotecnia",
+        title="4ta PC - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1311,7 +1311,7 @@ def get_embed_electrotecnia_pc4():
 
 def get_embed_electrotecnia_pc5():
     embed = discord.Embed(
-        title="5ta PC - electrotecnia",
+        title="5ta PC - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1331,7 +1331,7 @@ def get_embed_electrotecnia_pc5():
 
 def get_embed_electrotecnia_exparcial():
     embed = discord.Embed(
-        title="Ex. Parciales - electrotecnia",
+        title="Ex. Parciales - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1351,7 +1351,7 @@ def get_embed_electrotecnia_exparcial():
 
 def get_embed_electrotecnia_exfinal():
     embed = discord.Embed(
-        title="Ex. finales - electrotecnia",
+        title="Ex. finales - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1371,7 +1371,7 @@ def get_embed_electrotecnia_exfinal():
 
 def get_embed_electrotecnia_exsusti():
     embed = discord.Embed(
-        title="Ex. sustitutorio - electrotecnia",
+        title="Ex. sustitutorio - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 
@@ -1391,7 +1391,7 @@ def get_embed_electrotecnia_exsusti():
 
 def get_embed_electrotecnia_entrada():
     embed = discord.Embed(
-        title="Pruebas de entrada - electrotecnia",
+        title="Pruebas de entrada - Electrotecnia e Instalación de Redes",
         description=textwrap.dedent(f"""\
             - 
             - 

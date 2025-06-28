@@ -4,7 +4,7 @@ import textwrap
 def get_fisica_1_laboratorios_embed():
 
     embed = discord.Embed(
-        title="Laboratorios de Física 1",
+        title="Laboratorios de Física I",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el periodo.\n
             - Laboratorios 2019-II
@@ -21,7 +21,7 @@ def get_fisica_1_laboratorios_embed():
 def get_quimica_1_laboratorios_embed():
 
     embed = discord.Embed(
-        title="Laboratorios de Química 1",
+        title="Laboratorios de Química I",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista desplegable para seleccionar el periodo.\n
             - Test de laboratorios 2021-II
@@ -37,7 +37,7 @@ def get_quimica_1_laboratorios_embed():
 def get_fisica_1_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de Física 1",
+        title="Clases de Física I",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Clases PDF's - Prof. Caro
@@ -52,7 +52,7 @@ def get_fisica_1_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de Física 1",
+        title="Practicas y exámenes de Física I",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -73,7 +73,7 @@ def get_fisica_1_examenes_embed():
 def get_fisica_1_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de Física 1",
+        title="Cuadernos y libros de Física I",
         description=textwrap.dedent(f"""\
             \n
             - [Cuaderno Física 2020-03-20 16.04.15.pdf](https://download1500.mediafire.com/9w6sla8v5drgfzbpYQAEk7ve62ssrG0oi4m88TeX2yG9NckODt96EyTnC5O4h4YlRsm2u76ObJx0NljObrDBiTuZ4auoTJ6hCWptUqNOp9-DRkVhGnbND5czu8ISHfknX6GKTWwrIVq17R3tt5NNDJ4uYEyalqY4Pwcw2DdN5XI24m8/xsswn33etbow4ng/Cuaderno+F%C3%ADsica+2020-03-20+16.04.15.pdf)
@@ -91,7 +91,7 @@ def get_fisica_1_cuadernos_embed():
 def get_calc_diferencial_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de calc. diferencial.",
+        title="Clases de Cálculo Diferencial.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -106,7 +106,7 @@ def get_calc_diferencial_clases_embed():
 def get_calc_diferencial_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de cálculo diferencial:",
+        title="Practicas y exámenes de Cálculo Diferencial:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -128,7 +128,7 @@ def get_calc_diferencial_examenes_embed():
 def get_calc_diferencial_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de cálculo diferencial",
+        title="Cuadernos y libros de Cálculo Diferencial",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -161,7 +161,7 @@ def get_algebra_lineal_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de algebra_lineal:",
+        title="Practicas y exámenes de Álgebra Lineal:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -216,7 +216,7 @@ def get_dibujo_tecnico_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de dibujo_tecnico:",
+        title="Practicas y exámenes de Dibujo técnico:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -269,7 +269,7 @@ def get_intro_computacion_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de intro_computacion:",
+        title="Practicas y exámenes de Introducción a la computación:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -325,7 +325,7 @@ def get_realidad_nacional_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de realidad_nacional:",
+        title="Practicas y exámenes de Realidad Nac. Const. y DD.HH:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -377,7 +377,7 @@ def get_fundamentos_programacion_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de fundamentos_programacion:",
+        title="Practicas y exámenes de Fundamentos de programación:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -429,7 +429,7 @@ def get_fisica_2_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de fisica_2:",
+        title="Practicas y exámenes de Fund. de Ing. térmica y de fluidos:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -470,7 +470,7 @@ def get_fisica_2_cuadernos_embed():
 def get_calculo_integral_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de calculo_integral.",
+        title="Clases de Cálculo Integral.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -485,7 +485,7 @@ def get_calculo_integral_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de calculo_integral:",
+        title="Practicas y exámenes de Cálculo Integral:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -507,7 +507,7 @@ def get_calculo_integral_examenes_embed():
 def get_calculo_integral_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de calculo_integral:",
+        title="Cuadernos y libros de Cálculo Integral:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -526,7 +526,7 @@ def get_calculo_integral_cuadernos_embed():
 def get_algoritmos_1_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de algoritmos_1.",
+        title="Clases de Algoritmos y Estructuras de Datos I.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -541,7 +541,7 @@ def get_algoritmos_1_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de algoritmos_1:",
+        title="Practicas y exámenes de Algoritmos y Estructuras de Datos I:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - PC 1
@@ -561,7 +561,7 @@ def get_algoritmos_1_examenes_embed():
 def get_algoritmos_1_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de algoritmos_1:",
+        title="Cuadernos y libros de Algoritmos y Estructuras de Datos I:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -580,7 +580,7 @@ def get_algoritmos_1_cuadernos_embed():
 def get_quimica_1_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de quimica_1.",
+        title="Clases de Química.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -595,7 +595,7 @@ def get_quimica_1_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de quimica_1:",
+        title="Practicas y exámenes de Química:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - PC 1
@@ -615,7 +615,7 @@ def get_quimica_1_examenes_embed():
 def get_quimica_1_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de quimica_1:",
+        title="Cuadernos y libros de Química:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -634,7 +634,7 @@ def get_quimica_1_cuadernos_embed():
 def get_fundamentos_computador_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de fundamentos_computador.",
+        title="Clases de Fund. de Ing. del computador.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -649,7 +649,7 @@ def get_fundamentos_computador_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de fundamentos_computador:",
+        title="Practicas y exámenes de Fund. de Ing. del computador:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - PC 1
@@ -666,7 +666,7 @@ def get_fundamentos_computador_examenes_embed():
 def get_fundamentos_computador_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de fundamentos_computador:",
+        title="Cuadernos y libros de Fund. de Ing. del computador:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -699,7 +699,7 @@ def get_redaccion_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de redaccion:",
+        title="Practicas y exámenes de Redacción y comunicación:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -720,7 +720,7 @@ def get_redaccion_examenes_embed():
 def get_redaccion_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de redaccion:",
+        title="Cuadernos y libros de Redacción y comunicación:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -738,7 +738,7 @@ def get_redaccion_cuadernos_embed():
 def get_redes_1_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de redes_1.",
+        title="Clases de Redes de Datos I.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -753,7 +753,7 @@ def get_redes_1_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de redes_1:",
+        title="Practicas y exámenes de Redes de Datos I:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -807,7 +807,7 @@ def get_operativos_1_clases_embed():
 def get_operativos_1_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de operativos_1:",
+        title="Practicas y exámenes de Sistemas Operativos I:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - PC 1
@@ -824,7 +824,7 @@ def get_operativos_1_examenes_embed():
 def get_operativos_1_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de operativos_1:",
+        title="Cuadernos y libros de Sistemas Operativos I:",
         description=textwrap.dedent(f"""\
             \n
             - [Sistemas operativos 1.pdf](https://drive.google.com/file/d/1w_a106iLivyMDykHIlhjRL6q7D7TXmvS/view?usp=drive_link)
@@ -840,7 +840,7 @@ def get_operativos_1_cuadernos_embed():
 def get_fundamentos_electricidad_magnetismo_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de fundamentos_electricidad_magnetismo.",
+        title="Clases de Fund. de Electricidad y Magnetismo",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -851,11 +851,27 @@ def get_fundamentos_electricidad_magnetismo_clases_embed():
     embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
 
     return embed
+
+def get_fundamentos_electricidad_magnetismo_laboratorios_embed():
+
+
+    embed = discord.Embed(
+        title="Practicas y exámenes de Fund. de Electricidad y Magnetismo:",
+        description=textwrap.dedent(f"""\
+            Selecciona un periodo de la lista.\n
+            - Laboratorios 2021-II (Prof. Waters) 
+        """),
+        color=0x701B13)
+    embed.set_footer(text="Gracias por usar FIEE-BOT.")  # Pie de página del embed
+    embed.set_thumbnail(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRthy5kvoXKOzuuUpKXllMvUWD7UxBC0r0CEg&s")
+
+    return embed
+
 def get_fundamentos_electricidad_magnetismo_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de fundamentos_electricidad_magnetismo:",
+        title="Practicas y exámenes de Fund. de Electricidad y Magnetismo:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -876,7 +892,7 @@ def get_fundamentos_electricidad_magnetismo_examenes_embed():
 def get_fundamentos_electricidad_magnetismo_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de fundamentos_electricidad_magnetismo:",
+        title="Cuadernos y libros de Fund. de Electricidad y Magnetismo",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -895,7 +911,7 @@ def get_fundamentos_electricidad_magnetismo_cuadernos_embed():
 def get_ecuaciones_diferenciales_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de ecuaciones_diferenciales.",
+        title="Clases de Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -910,7 +926,7 @@ def get_ecuaciones_diferenciales_clases_embed():
 def get_ecuaciones_diferenciales_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de ecuaciones_diferenciales:",
+        title="Practicas y exámenes de Ecuaciones Diferenciales:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -932,7 +948,7 @@ def get_ecuaciones_diferenciales_examenes_embed():
 def get_ecuaciones_diferenciales_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de ecuaciones_diferenciales:",
+        title="Cuadernos y libros de Ecuaciones Diferenciales",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -951,7 +967,7 @@ def get_ecuaciones_diferenciales_cuadernos_embed():
 def get_poo_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de poo.",
+        title="Clases de Programación Orientada a Objetos.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -966,7 +982,7 @@ def get_poo_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de poo:",
+        title="Practicas y exámenes de Programación Orientada a Objetos:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -1005,7 +1021,7 @@ def get_poo_cuadernos_embed():
 def get_economia_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de economia.",
+        title="Clases de Economía General",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -1020,7 +1036,7 @@ def get_economia_clases_embed():
 def get_economia_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de economia:",
+        title="Practicas y exámenes de Economía General:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -1042,7 +1058,7 @@ def get_economia_examenes_embed():
 def get_economia_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de economia:",
+        title="Cuadernos y libros de Economía General:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -1060,7 +1076,7 @@ def get_economia_cuadernos_embed():
 def get_probabilidades_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de probabilidades.",
+        title="Clases de Probabilidades y Estadística.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -1075,7 +1091,7 @@ def get_probabilidades_clases_embed():
 def get_probabilidades_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de probabilidades:",
+        title="Practicas y exámenes de Probabilidades y Estadística:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -1096,7 +1112,7 @@ def get_probabilidades_examenes_embed():
 def get_probabilidades_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de probabilidades:",
+        title="Cuadernos y libros de Probabilidades y Estadística:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -1115,7 +1131,7 @@ def get_probabilidades_cuadernos_embed():
 def get_redes_2_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de redes_2.",
+        title="Clases de Redes de Datos II.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -1130,7 +1146,7 @@ def get_redes_2_clases_embed():
 def get_redes_2_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de redes_2:",
+        title="Practicas y exámenes de Redes de Datos II:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - PC 1
@@ -1147,7 +1163,7 @@ def get_redes_2_examenes_embed():
 def get_redes_2_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de redes_2:",
+        title="Cuadernos y libros de Redes de Datos II:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -1165,7 +1181,7 @@ def get_redes_2_cuadernos_embed():
 def get_intro_moderna_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de intro_moderna.",
+        title="Clases de Intr. a la Física Moderna.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -1180,7 +1196,7 @@ def get_intro_moderna_clases_embed():
 def get_intro_moderna_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de intro_moderna:",
+        title="Practicas y exámenes de Intr. a la Física Moderna:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -1201,7 +1217,7 @@ def get_intro_moderna_examenes_embed():
 def get_intro_moderna_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de intro_moderna:",
+        title="Cuadernos y libros de Intr. a la Física Moderna:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -1220,7 +1236,7 @@ def get_intro_moderna_cuadernos_embed():
 def get_circuitos_1_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de circuitos_1.",
+        title="Clases de Circuitos Eléctricos I.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -1235,7 +1251,7 @@ def get_circuitos_1_examenes_embed():
 
 
     embed = discord.Embed(
-        title="Practicas y exámenes de circuitos_1:",
+        title="Practicas y exámenes de Circuitos Eléctricos I:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -1256,7 +1272,7 @@ def get_circuitos_1_examenes_embed():
 def get_circuitos_1_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de circuitos_1:",
+        title="Cuadernos y libros de Circuitos Eléctricos I:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -1274,7 +1290,7 @@ def get_circuitos_1_cuadernos_embed():
 def get_calc_vectorial_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de calc_vectorial.",
+        title="Clases de Cálculo Vectorial.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -1289,7 +1305,7 @@ def get_calc_vectorial_clases_embed():
 def get_calc_vectorial_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de calc_vectorial:",
+        title="Practicas y exámenes de Cálculo Vectorial:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -1310,7 +1326,7 @@ def get_calc_vectorial_examenes_embed():
 def get_calculo_vectorial_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de calc_vectorial:",
+        title="Cuadernos y libros de Cálculo Vectorial:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -1329,7 +1345,7 @@ def get_calculo_vectorial_cuadernos_embed():
 def get_analisis_senales_clases_embed():
 
     embed = discord.Embed(
-        title="Clases de analisis_senales.",
+        title="Clases de Análisis de Señales y Sistemas.",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - -
@@ -1344,7 +1360,7 @@ def get_analisis_senales_clases_embed():
 def get_analisis_senales_examenes_embed():
 
     embed = discord.Embed(
-        title="Practicas y exámenes de analisis_senales:",
+        title="Practicas y exámenes de Análisis de Señales y Sistemas:",
         description=textwrap.dedent(f"""\
             Selecciona una opción de la lista.\n
             - Prueba de entrada
@@ -1366,7 +1382,7 @@ def get_analisis_senales_examenes_embed():
 def get_analisis_senales_cuadernos_embed():
 
     embed = discord.Embed(
-        title="Cuadernos y libros de analisis_senales:",
+        title="Cuadernos y libros de Análisis de Señales y Sistemas:",
         description=textwrap.dedent(f"""\
             \n
             - Prueba
@@ -2139,7 +2155,7 @@ def opciones_sistemas_operativos_1_embeds():
 def opciones_fundamentos_electricidad_magnetismo_embeds():
     embeds = []
 
-    embeds.append("get_fundamentos_electricidad_magnetismo_laboratorios_embed()")  # [0]
+    embeds.append(get_fundamentos_electricidad_magnetismo_laboratorios_embed())  # [0]
     embeds.append(get_fundamentos_electricidad_magnetismo_examenes_embed())      # [1]
     embeds.append(get_fundamentos_electricidad_magnetismo_clases_embed())        # [2]
     embeds.append(get_fundamentos_electricidad_magnetismo_cuadernos_embed())     # [3]
